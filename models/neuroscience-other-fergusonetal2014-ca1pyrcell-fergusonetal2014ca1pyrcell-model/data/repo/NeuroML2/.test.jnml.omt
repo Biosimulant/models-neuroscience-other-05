@@ -1,0 +1,28 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation 
+
+target: LEMS_TwoCells.xml
+engine: jNeuroML
+mep: ../Brian2/.test.mep
+experiments:
+  weak:
+    observables:
+      spike times:
+        file: 
+          path: TwoCells.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 1.2315606093476853e-16
+  strong:
+    observables:
+      spike times:
+        file: 
+          path: TwoCells.dat
+          columns: [0,2]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 2.2169128444045438e-16

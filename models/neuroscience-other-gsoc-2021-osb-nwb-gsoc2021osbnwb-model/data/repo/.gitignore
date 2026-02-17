@@ -1,0 +1,14 @@
+# python
+.idea/
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+
+# patchmaster data files
+*.dat
+*.pgf
+*.pul
+
+# dandi data files
+test_data/sub*
+

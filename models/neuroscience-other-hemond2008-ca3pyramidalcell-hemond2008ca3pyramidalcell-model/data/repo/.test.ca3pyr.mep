@@ -1,0 +1,7 @@
+system: Testing Hemond et al 2008 CA3 pyramidal cell model
+
+experiments:
+  current clamp:
+    expected:
+      spike times: [110.51, 118.85, 130.2]
+

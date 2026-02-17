@@ -1,0 +1,92 @@
+<Lems>
+
+<!--
+    Definition in LEMS of a new ComponentType for the modified Izhikevich model in Ferguson KA, Huh CY, Amilhon B, Williams S, Skinner FK (2014)
+-->
+
+<!--
+Already defined...
+
+<Dimension name="per_voltage" m="-1" l="-2" t="3" i="1"/>
+<Dimension name="conductance" m="-1" l="-2" t="3" i="2"/>
+-->
+
+<Dimension name="conductance_per_voltage" m="-2" l="-4" t="6" i="3"/>
+
+<Unit symbol="nS_per_mV" dimension="conductance_per_voltage" power="-6"/>
+
+<ComponentType name="izhikevichFergusonCell"
+        extends="baseCellMembPotCap"
+        description="Cell based on the modified Izhikevich model in Ferguson KA, Huh CY, Amilhon B, Williams S, Skinner FK (2014)">
+
+        <Parameter name="v0" dimension="voltage"/>  
+        
+        <!--
+        Defined in baseCellMembPotCap:
+        
+        <Parameter name="C" dimension="capacitance"/>
+        -->
+        <Parameter name="vr" dimension="voltage"/> 
+        <Parameter name="vpeak" dimension="voltage"/> 
+        <Parameter name="vt" dimension="voltage"/> 
+        <Parameter name="c" dimension="voltage"/>
+        <Parameter name="klow" dimension="conductance_per_voltage"/>
+        <Parameter name="khigh" dimension="conductance_per_voltage"/>
+        <Parameter name="a" dimension="per_time"/>
+        <Parameter name="b" dimension="conductance"/>
+        <Parameter name="d" dimension="current"/>
+        
+
+        <Attachments name="synapses" type="basePointCurrent"/>
+
+        <Exposure name="u" dimension="current"/>
+        <Exposure name="k" dimension="conductance_per_voltage"/>
+
+        <Dynamics>
+
+            <StateVariable name="v" dimension="voltage" exposure="v"/>
+            <StateVariable name="u" dimension="current" exposure="u"/>
+
+            <DerivedVariable name="iSyn"  dimension="current" exposure="iSyn" select="synapses[*]/i" reduce="add" />
+            <!-- TODO: Investigate why this fails:
+            
+            <DerivedVariable name="iMemb" dimension="current" exposure="iMemb" value="k * (v-vr) * (v-vt) + iSyn - u"/>
+            
+            ConditionalDerivedVariable not seen from DerivedVariable?
+            See https://github.com/LEMS/jLEMS/issues/68
+            -->
+            
+            <ConditionalDerivedVariable name="k" exposure="k" dimension="conductance_per_voltage">
+                <Case condition="v .lt. vt" value="klow"/>
+                <Case value="khigh"/>
+            </ConditionalDerivedVariable>
+            
+            <TimeDerivative variable="v" value="(k * (v-vr) * (v-vt) + iSyn - u) / C"/>
+            <TimeDerivative variable="u" value="a * (b * (v-vr) - u)"/>
+
+            <OnStart>
+                <StateAssignment variable="v" value="v0"/>
+                <StateAssignment variable="u" value="0"/>
+            </OnStart>
+
+            <OnCondition test="v .gt. vpeak">
+                <StateAssignment variable="v" value="c"/>
+                <StateAssignment variable="u" value="u + d"/>
+                <EventOut port="spike"/>
+            </OnCondition>
+            
+        </Dynamics>
+
+    </ComponentType>
+
+    <!-- Some example cells -->
+
+    <izhikevichFergusonCell id="weaklyAdapting" v0 = "-65mV" C="300 pF" vr = "-61.8 mV"
+                            vpeak = "22.6 mV" c = "-65.8 mV" klow = "0.5 nS_per_mV" khigh = "3.3 nS_per_mV"
+                            a = "0.001 per_ms" d = "5 pA" vt = "-57.0 mV" b = "3 nS"/>
+
+    <izhikevichFergusonCell id="stronglyAdapting" v0 = "-65mV" C="115 pF" vr = "-61.8 mV"
+                            vpeak = "22.6 mV" c = "-65.8 mV" klow = "0.1 nS_per_mV" khigh = "3.3 nS_per_mV"
+                            a = "0.0012 per_ms" d = "10 pA" vt = "-57.0 mV" b = "3 nS"/>
+
+</Lems>

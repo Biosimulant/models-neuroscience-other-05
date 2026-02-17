@@ -1,0 +1,17 @@
+target: LEMS_granule.xml
+engine: jNeuroML_NEURON
+mep: ../.test.granulecell.mep
+
+experiments:
+  current clamp:
+    observables:
+      spike times:
+        file:
+          path: granulecell.dat
+          columns: [0, 1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.00575
+

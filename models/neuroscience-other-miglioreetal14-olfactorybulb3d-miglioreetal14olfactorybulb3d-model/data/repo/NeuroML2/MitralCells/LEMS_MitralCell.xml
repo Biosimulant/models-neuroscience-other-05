@@ -1,0 +1,50 @@
+<Lems>
+    
+    <!-- Specify which component to run -->
+    <Target component="MitralSim"/>
+    
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="Exported/Mitral_0_1.cell.nml"/>
+    <Include file="../Channels/pas.channel.nml"/>
+    <Include file="../Channels/nax__sh0.channel.nml"/>
+    <Include file="../Channels/nax__sh10.channel.nml"/>
+    <Include file="../Channels/kamt.channel.nml"/>
+    <Include file="../Channels/kdrmt.channel.nml"/>
+
+    <pulseGenerator id="input_3" delay="40ms" duration="100ms" amplitude="5 nA"/>
+    
+    <network id="network" type="networkWithTemperature" temperature="35 degC">
+        <population id="MitralPop3" type="populationList" component="Mitral_0_1" size="1">
+            <instance id="0">
+                <location y="0." x="200." z="0."/>
+            </instance>
+        </population>
+
+        <inputList id="input_3" component="input_3" population="MitralPop3">
+            <input destination="synapses" id="0" target="../MitralPop3[0]"/>
+        </inputList>
+    </network>
+    
+    
+    <Simulation id="MitralSim" length="180ms" step="0.01ms" target="network">
+        <!-- 5 nA -->
+        
+        <Display id="Mitral_3D" title="Mitral Cell (5 nA)" timeScale="1ms" xmin="-18.0" xmax="198.0" ymin="-90" ymax="50">
+            <Line id="soma_v5nA"       quantity="MitralPop3/0/Mitral_0_1/0/v"  scale="1" color="#f3e4c5" timeScale="1ms"/>
+            <Line id="initialseg_v5nA" quantity="MitralPop3/0/Mitral_0_1/101/v"  scale="1" color="#283ab0" timeScale="1ms"/>
+            <Line id="priden_v5nA"     quantity="MitralPop3/0/Mitral_0_1/100/v" scale="1" color="#c6d577" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Mitral_3F" fileName="Mitral_5nA.dat">
+            <OutputColumn id="soma_v5nA"       quantity="MitralPop3/0/Mitral_0_1/0/v"/>
+            <OutputColumn id="initialseg_v5nA" quantity="MitralPop3/0/Mitral_0_1/101/v"/>
+            <OutputColumn id="priden_v5nA"     quantity="MitralPop3/0/Mitral_0_1/100/v"/>
+        </OutputFile>
+        
+    </Simulation>
+    
+</Lems>

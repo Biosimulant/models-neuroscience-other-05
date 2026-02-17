@@ -1,0 +1,33 @@
+<Lems>
+
+<!-- Specify which component to run -->
+<Target component="sim1"/>
+
+<!-- Include core NeuroML2 ComponentType definitions -->
+<Include file="Cells.xml"/>
+<Include file="Networks.xml"/>
+<Include file="Simulation.xml"/>
+
+<Include file="IzhikevichFerguson.xml"/>
+
+<Include file="TwoCells.net.nml"/>
+
+
+<Simulation id="sim1" length="1000ms" step="0.002ms" target="net1">
+
+    <Display id="d1" title="Weakly adapting PYR model 1 with 100 pA input" timeScale="1ms" xmin="-100" xmax="1100" ymin="-80" ymax="40">
+        <Line id ="weaklyAdapting v" quantity="weakpop/0/weaklyAdapting/v" scale="1mV"  color="#0000ff" timeScale="1ms"/>
+    </Display>
+    
+    <Display id="d2" title="Strongly adapting PYR model with 100 pA input" timeScale="1ms" xmin="-100" xmax="1100" ymin="-80" ymax="40">
+        <Line id ="stronglyAdapting v" quantity="strongpop/0/stronglyAdapting/v" scale="1mV"  color="#0000ff" timeScale="1ms"/>
+    </Display>
+    
+    <OutputFile id="of0" fileName="TwoCells.dat">
+        <OutputColumn id="w" quantity="weakpop/0/weaklyAdapting/v" />
+        <OutputColumn id="s" quantity="strongpop/0/stronglyAdapting/v" />
+    </OutputFile>
+      
+</Simulation>
+
+</Lems>

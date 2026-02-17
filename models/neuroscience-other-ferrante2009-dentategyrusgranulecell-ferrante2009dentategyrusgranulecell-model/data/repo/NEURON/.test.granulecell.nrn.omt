@@ -1,0 +1,17 @@
+target: test_granulecell.hoc
+engine: NEURON
+mep: ../.test.granulecell.mep
+
+experiments:
+  current clamp:
+    observables:
+      spike times:
+        file:
+          path: granulecell.dat
+          columns: [0, 1]
+          scaling: [1, 1]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.0
+
