@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144518
   download_url: https://modeldb.science/download/144518
   license: ''
-bsim:
+biosim:
   entrypoint: src.half_center_oscillator_database_of_leech_heart_i_144518_model:HalfCenterOscillatorDatabaseOfLeechHeartI144518Model
   init_kwargs:
     model_path: data/144518.zip

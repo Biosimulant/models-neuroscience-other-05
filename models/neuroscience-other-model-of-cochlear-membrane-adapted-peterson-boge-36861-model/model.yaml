@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/36861
   download_url: https://modeldb.science/download/36861
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_cochlear_membrane_adapted_peterson_boge_36861_model:ModelOfCochlearMembraneAdaptedPetersonBoge36861Model
   init_kwargs:
     model_path: data/36861.zip

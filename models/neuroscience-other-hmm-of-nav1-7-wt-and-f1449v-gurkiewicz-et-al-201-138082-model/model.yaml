@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/138082
   download_url: https://modeldb.science/download/138082
   license: ''
-bsim:
+biosim:
   entrypoint: src.hmm_of_nav1_7_wt_and_f1449v_gurkiewicz_et_al_201_138082_model:HmmOfNav17WtAndF1449vGurkiewiczEtAl201138082Model
   init_kwargs:
     model_path: data/138082.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/53876
   download_url: https://modeldb.science/download/53876
   license: ''
-bsim:
+biosim:
   entrypoint: src.medial_vestibular_neuron_models_quadroni_and_kno_53876_model:MedialVestibularNeuronModelsQuadroniAndKno53876Model
   init_kwargs:
     model_path: data/53876.zip

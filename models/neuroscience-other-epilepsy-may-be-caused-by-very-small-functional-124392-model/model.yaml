@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/124392
   download_url: https://modeldb.science/download/124392
   license: ''
-bsim:
+biosim:
   entrypoint: src.epilepsy_may_be_caused_by_very_small_functional_124392_model:EpilepsyMayBeCausedByVerySmallFunctional124392Model
   init_kwargs:
     model_path: data/124392.zip

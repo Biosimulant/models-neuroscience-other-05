@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/7400
   download_url: https://modeldb.science/download/7400
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_7400_7400_model:Modeldb74007400Model
   init_kwargs:
     model_path: data/7400.zip

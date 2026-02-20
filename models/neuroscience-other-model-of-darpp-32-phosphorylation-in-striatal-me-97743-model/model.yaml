@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/97743
   download_url: https://modeldb.science/download/97743
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_darpp_32_phosphorylation_in_striatal_me_97743_model:ModelOfDarpp32PhosphorylationInStriatalMe97743Model
   init_kwargs:
     model_path: data/97743.zip

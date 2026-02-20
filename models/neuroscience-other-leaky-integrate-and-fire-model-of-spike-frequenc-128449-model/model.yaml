@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128449
   download_url: https://modeldb.science/download/128449
   license: ''
-bsim:
+biosim:
   entrypoint: src.leaky_integrate_and_fire_model_of_spike_frequenc_128449_model:LeakyIntegrateAndFireModelOfSpikeFrequenc128449Model
   init_kwargs:
     model_path: data/128449.zip

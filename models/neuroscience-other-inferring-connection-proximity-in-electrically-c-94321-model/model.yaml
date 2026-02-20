@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/94321
   download_url: https://modeldb.science/download/94321
   license: ''
-bsim:
+biosim:
   entrypoint: src.inferring_connection_proximity_in_electrically_c_94321_model:InferringConnectionProximityInElectricallyC94321Model
   init_kwargs:
     model_path: data/94321.zip

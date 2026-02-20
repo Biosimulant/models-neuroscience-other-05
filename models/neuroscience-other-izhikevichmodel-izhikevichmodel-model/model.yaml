@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/IzhikevichModel
   download_url: https://github.com/OpenSourceBrain/IzhikevichModel.git
   license: BSD-3-Clause
-bsim:
+biosim:
   entrypoint: src.izhikevichmodel_izhikevichmodel_model:IzhikevichmodelIzhikevichmodelModel
   init_kwargs:
     model_path: data/repo

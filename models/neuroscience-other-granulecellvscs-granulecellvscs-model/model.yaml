@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GranuleCellVSCS
   download_url: https://github.com/OpenSourceBrain/GranuleCellVSCS.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.granulecellvscs_granulecellvscs_model:GranulecellvscsGranulecellvscsModel
   init_kwargs:
     model_path: data/repo

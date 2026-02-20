@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/117207
   download_url: https://modeldb.science/download/117207
   license: ''
-bsim:
+biosim:
   entrypoint: src.excitability_of_pfc_basal_dendrites_acker_and_an_117207_model:ExcitabilityOfPfcBasalDendritesAckerAndAn117207Model
   init_kwargs:
     model_path: data/117207.zip

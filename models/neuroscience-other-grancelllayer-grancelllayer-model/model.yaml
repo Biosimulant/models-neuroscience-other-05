@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GranCellLayer
   download_url: https://github.com/OpenSourceBrain/GranCellLayer.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.grancelllayer_grancelllayer_model:GrancelllayerGrancelllayerModel
   init_kwargs:
     model_path: data/repo

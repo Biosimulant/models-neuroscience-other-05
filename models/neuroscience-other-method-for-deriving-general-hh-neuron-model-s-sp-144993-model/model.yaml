@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144993
   download_url: https://modeldb.science/download/144993
   license: ''
-bsim:
+biosim:
   entrypoint: src.method_for_deriving_general_hh_neuron_model_s_sp_144993_model:MethodForDerivingGeneralHhNeuronModelSSp144993Model
   init_kwargs:
     model_path: data/144993.zip

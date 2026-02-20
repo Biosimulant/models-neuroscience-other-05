@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/117330
   download_url: https://modeldb.science/download/117330
   license: ''
-bsim:
+biosim:
   entrypoint: src.hodgkin_huxley_simplifed_2d_and_3d_models_lundst_117330_model:HodgkinHuxleySimplifed2dAnd3dModelsLundst117330Model
   init_kwargs:
     model_path: data/117330.zip

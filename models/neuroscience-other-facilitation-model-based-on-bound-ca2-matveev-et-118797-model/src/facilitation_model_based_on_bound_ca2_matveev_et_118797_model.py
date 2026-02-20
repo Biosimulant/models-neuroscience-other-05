@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherFacilitationModelBasedOnBoundCa2MatveevEtAl2006(bsim.BioModule):
+class OtherFacilitationModelBasedOnBoundCa2MatveevEtAl2006(biosim.BioModule):
     """Placeholder BioModule wrapper for: Facilitation model based on bound Ca2+ (Matveev et al. 2006).
 
     This model's original format is not directly supported by the auto-generator.

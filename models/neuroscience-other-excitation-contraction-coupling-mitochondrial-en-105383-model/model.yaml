@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/105383
   download_url: https://modeldb.science/download/105383
   license: ''
-bsim:
+biosim:
   entrypoint: src.excitation_contraction_coupling_mitochondrial_en_105383_model:ExcitationContractionCouplingMitochondrialEn105383Model
   init_kwargs:
     model_path: data/105383.zip

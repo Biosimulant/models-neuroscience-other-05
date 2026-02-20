@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150538
   download_url: https://modeldb.science/download/150538
   license: ''
-bsim:
+biosim:
   entrypoint: src.l5_pyr_cell_spiking_control_by_oscillatory_inhib_150538_model:L5PyrCellSpikingControlByOscillatoryInhib150538Model
   init_kwargs:
     model_path: data/150538.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/95990
   download_url: https://modeldb.science/download/95990
   license: ''
-bsim:
+biosim:
   entrypoint: src.kinetics_of_the_p2x7_receptor_as_expressed_in_xe_95990_model:KineticsOfTheP2x7ReceptorAsExpressedInXe95990Model
   init_kwargs:
     model_path: data/95990.zip

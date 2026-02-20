@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/HindmarshRose1984
   download_url: https://github.com/OpenSourceBrain/HindmarshRose1984.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.hindmarshrose1984_hindmarshrose1984_model:Hindmarshrose1984Hindmarshrose1984Model
   init_kwargs:
     model_path: data/repo

@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/8284
   download_url: https://modeldb.science/download/8284
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_8284_8284_model:Modeldb82848284Model
   init_kwargs:
     model_path: data/8284.zip

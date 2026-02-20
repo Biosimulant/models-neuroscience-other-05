@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114643
   download_url: https://modeldb.science/download/114643
   license: ''
-bsim:
+biosim:
   entrypoint: src.high_res_recordings_using_a_real_time_computatio_114643_model:HighResRecordingsUsingARealTimeComputatio114643Model
   init_kwargs:
     model_path: data/114643.zip

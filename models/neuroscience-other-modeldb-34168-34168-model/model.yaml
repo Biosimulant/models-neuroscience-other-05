@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/34168
   download_url: https://modeldb.science/download/34168
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_34168_34168_model:Modeldb3416834168Model
   init_kwargs:
     model_path: data/34168.zip

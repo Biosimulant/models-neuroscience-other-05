@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/143751
   download_url: https://modeldb.science/download/143751
   license: ''
-bsim:
+biosim:
   entrypoint: src.inhibitory_plasticity_balances_excitation_and_in_143751_model:InhibitoryPlasticityBalancesExcitationAndIn143751Model
   init_kwargs:
     model_path: data/143751.zip

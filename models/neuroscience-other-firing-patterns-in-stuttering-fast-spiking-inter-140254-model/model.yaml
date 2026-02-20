@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/140254
   download_url: https://modeldb.science/download/140254
   license: ''
-bsim:
+biosim:
   entrypoint: src.firing_patterns_in_stuttering_fast_spiking_inter_140254_model:FiringPatternsInStutteringFastSpikingInter140254Model
   init_kwargs:
     model_path: data/140254.zip

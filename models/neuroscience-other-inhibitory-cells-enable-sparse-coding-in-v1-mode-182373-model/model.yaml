@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/182373
   download_url: https://modeldb.science/download/182373
   license: ''
-bsim:
+biosim:
   entrypoint: src.inhibitory_cells_enable_sparse_coding_in_v1_mode_182373_model:InhibitoryCellsEnableSparseCodingInV1Mode182373Model
   init_kwargs:
     model_path: data/182373.zip

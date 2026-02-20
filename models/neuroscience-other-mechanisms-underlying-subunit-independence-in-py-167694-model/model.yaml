@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/167694
   download_url: https://modeldb.science/download/167694
   license: ''
-bsim:
+biosim:
   entrypoint: src.mechanisms_underlying_subunit_independence_in_py_167694_model:MechanismsUnderlyingSubunitIndependenceInPy167694Model
   init_kwargs:
     model_path: data/167694.zip

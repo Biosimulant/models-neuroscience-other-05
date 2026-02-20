@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/118389
   download_url: https://modeldb.science/download/118389
   license: ''
-bsim:
+biosim:
   entrypoint: src.gap_junction_coupled_network_of_striatal_fast_sp_118389_model:GapJunctionCoupledNetworkOfStriatalFastSp118389Model
   init_kwargs:
     model_path: data/118389.zip

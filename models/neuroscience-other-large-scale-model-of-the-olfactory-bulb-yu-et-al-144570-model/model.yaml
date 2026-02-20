@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144570
   download_url: https://modeldb.science/download/144570
   license: ''
-bsim:
+biosim:
   entrypoint: src.large_scale_model_of_the_olfactory_bulb_yu_et_al_144570_model:LargeScaleModelOfTheOlfactoryBulbYuEtAl144570Model
   init_kwargs:
     model_path: data/144570.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/Hemond2008-CA3PyramidalCell
   download_url: https://github.com/OpenSourceBrain/Hemond2008-CA3PyramidalCell.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.hemond2008_ca3pyramidalcell_hemond2008ca3pyramidalcell_model:Hemond2008Ca3pyramidalcellHemond2008ca3pyramidalcellModel
   init_kwargs:
     model_path: data/repo

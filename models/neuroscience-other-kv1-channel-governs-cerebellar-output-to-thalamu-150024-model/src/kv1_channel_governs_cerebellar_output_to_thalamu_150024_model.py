@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherKv1ChannelGovernsCerebellarOutputToThalamusOvsepian(bsim.BioModule):
+class OtherKv1ChannelGovernsCerebellarOutputToThalamusOvsepian(biosim.BioModule):
     """Placeholder BioModule wrapper for: KV1 channel governs cerebellar output to thalamus (Ovsepian et al. 2013).
 
     This model's original format is not directly supported by the auto-generator.

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/82394
   download_url: https://modeldb.science/download/82394
   license: ''
-bsim:
+biosim:
   entrypoint: src.high_dimensional_dynamics_and_low_dimensional_re_82394_model:HighDimensionalDynamicsAndLowDimensionalRe82394Model
   init_kwargs:
     model_path: data/82394.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/83590
   download_url: https://modeldb.science/download/83590
   license: ''
-bsim:
+biosim:
   entrypoint: src.input_fluctuations_effects_on_f_i_curves_arsiero_83590_model:InputFluctuationsEffectsOnFICurvesArsiero83590Model
   init_kwargs:
     model_path: data/83590.zip

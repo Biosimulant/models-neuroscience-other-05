@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/82385
   download_url: https://modeldb.science/download/82385
   license: ''
-bsim:
+biosim:
   entrypoint: src.information_processing_in_lamina_specific_cortic_82385_model:InformationProcessingInLaminaSpecificCortic82385Model
   init_kwargs:
     model_path: data/82385.zip

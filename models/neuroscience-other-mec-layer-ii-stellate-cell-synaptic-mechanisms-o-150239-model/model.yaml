@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150239
   download_url: https://modeldb.science/download/150239
   license: ''
-bsim:
+biosim:
   entrypoint: src.mec_layer_ii_stellate_cell_synaptic_mechanisms_o_150239_model:MecLayerIiStellateCellSynapticMechanismsO150239Model
   init_kwargs:
     model_path: data/150239.zip

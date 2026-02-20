@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/97863
   download_url: https://modeldb.science/download/97863
   license: ''
-bsim:
+biosim:
   entrypoint: src.mammalian_ventricular_cell_beeler_and_reuter_197_97863_model:MammalianVentricularCellBeelerAndReuter19797863Model
   init_kwargs:
     model_path: data/97863.zip

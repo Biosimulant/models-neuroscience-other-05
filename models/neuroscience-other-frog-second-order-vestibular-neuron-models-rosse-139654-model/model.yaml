@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/139654
   download_url: https://modeldb.science/download/139654
   license: ''
-bsim:
+biosim:
   entrypoint: src.frog_second_order_vestibular_neuron_models_rosse_139654_model:FrogSecondOrderVestibularNeuronModelsRosse139654Model
   init_kwargs:
     model_path: data/139654.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/126471
   download_url: https://modeldb.science/download/126471
   license: ''
-bsim:
+biosim:
   entrypoint: src.formation_of_synfire_chains_jun_and_jin_2007_126471_model:FormationOfSynfireChainsJunAndJin2007126471Model
   init_kwargs:
     model_path: data/126471.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128079
   download_url: https://modeldb.science/download/128079
   license: ''
-bsim:
+biosim:
   entrypoint: src.fast_sodium_channel_gating_in_mossy_fiber_axons_128079_model:FastSodiumChannelGatingInMossyFiberAxons128079Model
   init_kwargs:
     model_path: data/128079.zip

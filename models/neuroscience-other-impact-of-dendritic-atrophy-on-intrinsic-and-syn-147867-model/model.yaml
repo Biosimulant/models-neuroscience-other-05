@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/147867
   download_url: https://modeldb.science/download/147867
   license: ''
-bsim:
+biosim:
   entrypoint: src.impact_of_dendritic_atrophy_on_intrinsic_and_syn_147867_model:ImpactOfDendriticAtrophyOnIntrinsicAndSyn147867Model
   init_kwargs:
     model_path: data/147867.zip

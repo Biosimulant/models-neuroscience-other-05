@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/102279
   download_url: https://modeldb.science/download/102279
   license: ''
-bsim:
+biosim:
   entrypoint: src.leech_s_cell_modulation_of_excitability_by_serot_102279_model:LeechSCellModulationOfExcitabilityBySerot102279Model
   init_kwargs:
     model_path: data/102279.zip

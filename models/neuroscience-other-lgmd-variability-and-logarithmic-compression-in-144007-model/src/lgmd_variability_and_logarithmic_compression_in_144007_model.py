@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherLgmdVariabilityAndLogarithmicCompressionInDendrites(bsim.BioModule):
+class OtherLgmdVariabilityAndLogarithmicCompressionInDendrites(biosim.BioModule):
     """Placeholder BioModule wrapper for: LGMD Variability and logarithmic compression in dendrites (Jones and Gabbiani, 2012, 2012B).
 
     This model's original format is not directly supported by the auto-generator.

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/83491
   download_url: https://modeldb.science/download/83491
   license: ''
-bsim:
+biosim:
   entrypoint: src.ina_and_ikv4_3_heterogeneity_in_canine_lv_myocyt_83491_model:InaAndIkv43HeterogeneityInCanineLvMyocyt83491Model
   init_kwargs:
     model_path: data/83491.zip

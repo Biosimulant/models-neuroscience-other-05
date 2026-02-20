@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/151817
   download_url: https://modeldb.science/download/151817
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_repetitive_firing_in_grueneberg_ganglio_151817_model:ModelOfRepetitiveFiringInGruenebergGanglio151817Model
   init_kwargs:
     model_path: data/151817.zip

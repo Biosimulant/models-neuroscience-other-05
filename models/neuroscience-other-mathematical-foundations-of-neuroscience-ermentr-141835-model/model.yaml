@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/141835
   download_url: https://modeldb.science/download/141835
   license: ''
-bsim:
+biosim:
   entrypoint: src.mathematical_foundations_of_neuroscience_ermentr_141835_model:MathematicalFoundationsOfNeuroscienceErmentr141835Model
   init_kwargs:
     model_path: data/141835.zip

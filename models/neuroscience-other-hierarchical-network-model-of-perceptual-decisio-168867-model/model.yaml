@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/168867
   download_url: https://modeldb.science/download/168867
   license: ''
-bsim:
+biosim:
   entrypoint: src.hierarchical_network_model_of_perceptual_decisio_168867_model:HierarchicalNetworkModelOfPerceptualDecisio168867Model
   init_kwargs:
     model_path: data/168867.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/84167
   download_url: https://modeldb.science/download/84167
   license: ''
-bsim:
+biosim:
   entrypoint: src.linking_stdp_and_dopamine_action_to_solve_the_di_84167_model:LinkingStdpAndDopamineActionToSolveTheDi84167Model
   init_kwargs:
     model_path: data/84167.zip

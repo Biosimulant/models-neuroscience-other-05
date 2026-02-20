@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/57910
   download_url: https://modeldb.science/download/57910
   license: ''
-bsim:
+biosim:
   entrypoint: src.herg_k_channels_spike_frequency_adaptation_chies_57910_model:HergKChannelsSpikeFrequencyAdaptationChies57910Model
   init_kwargs:
     model_path: data/57910.zip

@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/3511
   download_url: https://modeldb.science/download/3511
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_3511_3511_model:Modeldb35113511Model
   init_kwargs:
     model_path: data/3511.zip

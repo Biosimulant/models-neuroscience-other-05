@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/120783
   download_url: https://modeldb.science/download/120783
   license: ''
-bsim:
+biosim:
   entrypoint: src.generating_oscillatory_bursts_from_a_network_of_120783_model:GeneratingOscillatoryBurstsFromANetworkOf120783Model
   init_kwargs:
     model_path: data/120783.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150211
   download_url: https://modeldb.science/download/150211
   license: ''
-bsim:
+biosim:
   entrypoint: src.emergence_of_connectivity_motifs_in_networks_of_150211_model:EmergenceOfConnectivityMotifsInNetworksOf150211Model
   init_kwargs:
     model_path: data/150211.zip

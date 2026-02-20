@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/2730
   download_url: https://modeldb.science/download/2730
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_2730_2730_model:Modeldb27302730Model
   init_kwargs:
     model_path: data/2730.zip

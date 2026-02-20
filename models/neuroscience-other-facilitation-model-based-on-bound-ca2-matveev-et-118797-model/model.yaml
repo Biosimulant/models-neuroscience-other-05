@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/118797
   download_url: https://modeldb.science/download/118797
   license: ''
-bsim:
+biosim:
   entrypoint: src.facilitation_model_based_on_bound_ca2_matveev_et_118797_model:FacilitationModelBasedOnBoundCa2MatveevEt118797Model
   init_kwargs:
     model_path: data/118797.zip

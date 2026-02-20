@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/123815
   download_url: https://modeldb.science/download/123815
   license: ''
-bsim:
+biosim:
   entrypoint: src.encoding_and_retrieval_in_a_model_of_the_hippoca_123815_model:EncodingAndRetrievalInAModelOfTheHippoca123815Model
   init_kwargs:
     model_path: data/123815.zip

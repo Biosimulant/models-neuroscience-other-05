@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/154096
   download_url: https://modeldb.science/download/154096
   license: ''
-bsim:
+biosim:
   entrypoint: src.electrostimulation_to_reduce_synaptic_scaling_dr_154096_model:ElectrostimulationToReduceSynapticScalingDr154096Model
   init_kwargs:
     model_path: data/154096.zip

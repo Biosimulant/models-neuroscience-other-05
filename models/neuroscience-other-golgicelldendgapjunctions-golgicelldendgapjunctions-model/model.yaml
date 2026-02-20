@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GolgiCellDendGapJunctions
   download_url: https://github.com/OpenSourceBrain/GolgiCellDendGapJunctions.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.golgicelldendgapjunctions_golgicelldendgapjunctions_model:GolgicelldendgapjunctionsGolgicelldendgapjunctionsModel
   init_kwargs:
     model_path: data/repo

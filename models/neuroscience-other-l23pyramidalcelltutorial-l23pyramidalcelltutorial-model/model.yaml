@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/L23PyramidalCellTutorial
   download_url: https://github.com/OpenSourceBrain/L23PyramidalCellTutorial.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.l23pyramidalcelltutorial_l23pyramidalcelltutorial_model:L23pyramidalcelltutorialL23pyramidalcelltutorialModel
   init_kwargs:
     model_path: data/repo

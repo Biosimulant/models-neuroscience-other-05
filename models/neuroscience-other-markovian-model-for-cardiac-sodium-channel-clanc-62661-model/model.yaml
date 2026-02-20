@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/62661
   download_url: https://modeldb.science/download/62661
   license: ''
-bsim:
+biosim:
   entrypoint: src.markovian_model_for_cardiac_sodium_channel_clanc_62661_model:MarkovianModelForCardiacSodiumChannelClanc62661Model
   init_kwargs:
     model_path: data/62661.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/97747
   download_url: https://modeldb.science/download/97747
   license: ''
-bsim:
+biosim:
   entrypoint: src.fast_spiking_cortical_interneuron_golomb_et_al_2_97747_model:FastSpikingCorticalInterneuronGolombEtAl297747Model
   init_kwargs:
     model_path: data/97747.zip

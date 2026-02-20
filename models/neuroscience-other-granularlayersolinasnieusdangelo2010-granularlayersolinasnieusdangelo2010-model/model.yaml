@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GranularLayerSolinasNieusDAngelo2010
   download_url: https://github.com/OpenSourceBrain/GranularLayerSolinasNieusDAngelo2010.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.granularlayersolinasnieusdangelo2010_granularlayersolinasnieusdangelo2010_model:Granularlayersolinasnieusdangelo2010Granularlayersolinasnieusdangelo2010Model
   init_kwargs:
     model_path: data/repo

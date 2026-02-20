@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/154348
   download_url: https://modeldb.science/download/154348
   license: ''
-bsim:
+biosim:
   entrypoint: src.late_emergence_of_the_whisker_direction_selectiv_154348_model:LateEmergenceOfTheWhiskerDirectionSelectiv154348Model
   init_kwargs:
     model_path: data/154348.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/181010
   download_url: https://modeldb.science/download/181010
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_working_memory_based_on_negative_deriva_181010_model:ModelOfWorkingMemoryBasedOnNegativeDeriva181010Model
   init_kwargs:
     model_path: data/181010.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/146499
   download_url: https://modeldb.science/download/146499
   license: ''
-bsim:
+biosim:
   entrypoint: src.mean_field_equations_for_two_dimensional_integra_146499_model:MeanFieldEquationsForTwoDimensionalIntegra146499Model
   init_kwargs:
     model_path: data/146499.zip

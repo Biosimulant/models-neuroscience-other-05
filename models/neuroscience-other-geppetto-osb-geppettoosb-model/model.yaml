@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/geppetto-osb
   download_url: https://github.com/OpenSourceBrain/geppetto-osb.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.geppetto_osb_geppettoosb_model:GeppettoOsbGeppettoosbModel
   init_kwargs:
     model_path: data/repo

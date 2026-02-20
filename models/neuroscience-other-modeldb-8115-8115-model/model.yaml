@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/8115
   download_url: https://modeldb.science/download/8115
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_8115_8115_model:Modeldb81158115Model
   init_kwargs:
     model_path: data/8115.zip

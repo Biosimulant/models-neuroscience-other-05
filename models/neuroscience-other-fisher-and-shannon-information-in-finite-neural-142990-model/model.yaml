@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/142990
   download_url: https://modeldb.science/download/142990
   license: ''
-bsim:
+biosim:
   entrypoint: src.fisher_and_shannon_information_in_finite_neural_142990_model:FisherAndShannonInformationInFiniteNeural142990Model
   init_kwargs:
     model_path: data/142990.zip

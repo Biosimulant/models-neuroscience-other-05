@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/100603
   download_url: https://modeldb.science/download/100603
   license: ''
-bsim:
+biosim:
   entrypoint: src.erg_current_in_repolarizing_plateau_potentials_i_100603_model:ErgCurrentInRepolarizingPlateauPotentialsI100603Model
   init_kwargs:
     model_path: data/100603.zip

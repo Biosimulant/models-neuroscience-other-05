@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/122369
   download_url: https://modeldb.science/download/122369
   license: ''
-bsim:
+biosim:
   entrypoint: src.investigation_of_different_targets_in_deep_brain_122369_model:InvestigationOfDifferentTargetsInDeepBrain122369Model
   init_kwargs:
     model_path: data/122369.zip

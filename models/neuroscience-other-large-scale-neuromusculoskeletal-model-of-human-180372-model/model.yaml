@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/180372
   download_url: https://modeldb.science/download/180372
   license: ''
-bsim:
+biosim:
   entrypoint: src.large_scale_neuromusculoskeletal_model_of_human_180372_model:LargeScaleNeuromusculoskeletalModelOfHuman180372Model
   init_kwargs:
     model_path: data/180372.zip

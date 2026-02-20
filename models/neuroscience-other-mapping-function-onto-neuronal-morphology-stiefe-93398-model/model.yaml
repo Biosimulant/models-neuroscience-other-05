@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/93398
   download_url: https://modeldb.science/download/93398
   license: ''
-bsim:
+biosim:
   entrypoint: src.mapping_function_onto_neuronal_morphology_stiefe_93398_model:MappingFunctionOntoNeuronalMorphologyStiefe93398Model
   init_kwargs:
     model_path: data/93398.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/149737
   download_url: https://modeldb.science/download/149737
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeling_conductivity_profiles_in_the_deep_neoco_149737_model:ModelingConductivityProfilesInTheDeepNeoco149737Model
   init_kwargs:
     model_path: data/149737.zip

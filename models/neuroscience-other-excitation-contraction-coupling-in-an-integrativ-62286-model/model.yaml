@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/62286
   download_url: https://modeldb.science/download/62286
   license: ''
-bsim:
+biosim:
   entrypoint: src.excitation_contraction_coupling_in_an_integrativ_62286_model:ExcitationContractionCouplingInAnIntegrativ62286Model
   init_kwargs:
     model_path: data/62286.zip

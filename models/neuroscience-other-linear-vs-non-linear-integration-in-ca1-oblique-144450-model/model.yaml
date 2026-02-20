@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144450
   download_url: https://modeldb.science/download/144450
   license: ''
-bsim:
+biosim:
   entrypoint: src.linear_vs_non_linear_integration_in_ca1_oblique_144450_model:LinearVsNonLinearIntegrationInCa1Oblique144450Model
   init_kwargs:
     model_path: data/144450.zip

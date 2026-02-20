@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/143072
   download_url: https://modeldb.science/download/143072
   license: ''
-bsim:
+biosim:
   entrypoint: src.explaining_pathological_changes_in_axonal_excita_143072_model:ExplainingPathologicalChangesInAxonalExcita143072Model
   init_kwargs:
     model_path: data/143072.zip

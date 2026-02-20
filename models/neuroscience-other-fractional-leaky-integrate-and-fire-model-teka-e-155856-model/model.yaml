@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/155856
   download_url: https://modeldb.science/download/155856
   license: ''
-bsim:
+biosim:
   entrypoint: src.fractional_leaky_integrate_and_fire_model_teka_e_155856_model:FractionalLeakyIntegrateAndFireModelTekaE155856Model
   init_kwargs:
     model_path: data/155856.zip

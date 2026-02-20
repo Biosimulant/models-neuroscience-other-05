@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/139421
   download_url: https://modeldb.science/download/139421
   license: ''
-bsim:
+biosim:
   entrypoint: src.ketamine_disrupts_theta_modulation_of_gamma_in_a_139421_model:KetamineDisruptsThetaModulationOfGammaInA139421Model
   init_kwargs:
     model_path: data/139421.zip

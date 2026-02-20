@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/181962
   download_url: https://modeldb.science/download/181962
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_eupnea_and_sigh_generation_in_respirato_181962_model:ModelOfEupneaAndSighGenerationInRespirato181962Model
   init_kwargs:
     model_path: data/181962.zip

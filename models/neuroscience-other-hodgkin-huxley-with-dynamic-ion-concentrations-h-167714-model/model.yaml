@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/167714
   download_url: https://modeldb.science/download/167714
   license: ''
-bsim:
+biosim:
   entrypoint: src.hodgkin_huxley_with_dynamic_ion_concentrations_h_167714_model:HodgkinHuxleyWithDynamicIonConcentrationsH167714Model
   init_kwargs:
     model_path: data/167714.zip

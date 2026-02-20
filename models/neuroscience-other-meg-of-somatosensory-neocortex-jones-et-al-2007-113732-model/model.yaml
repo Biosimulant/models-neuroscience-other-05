@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/113732
   download_url: https://modeldb.science/download/113732
   license: ''
-bsim:
+biosim:
   entrypoint: src.meg_of_somatosensory_neocortex_jones_et_al_2007_113732_model:MegOfSomatosensoryNeocortexJonesEtAl2007113732Model
   init_kwargs:
     model_path: data/113732.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/125748
   download_url: https://modeldb.science/download/125748
   license: ''
-bsim:
+biosim:
   entrypoint: src.huntington_s_disease_model_gambazzi_et_al_2010_125748_model:HuntingtonSDiseaseModelGambazziEtAl2010125748Model
   init_kwargs:
     model_path: data/125748.zip

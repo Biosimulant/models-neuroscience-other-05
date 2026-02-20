@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/L5bPyrCellHayEtAl2011
   download_url: https://github.com/OpenSourceBrain/L5bPyrCellHayEtAl2011.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.l5bpyrcellhayetal2011_l5bpyrcellhayetal2011_model:L5bpyrcellhayetal2011L5bpyrcellhayetal2011Model
   init_kwargs:
     model_path: data/repo

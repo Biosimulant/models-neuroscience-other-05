@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/167638
   download_url: https://modeldb.science/download/167638
   license: ''
-bsim:
+biosim:
   entrypoint: src.generation_of_granule_cell_dendritic_morphology_167638_model:GenerationOfGranuleCellDendriticMorphology167638Model
   init_kwargs:
     model_path: data/167638.zip

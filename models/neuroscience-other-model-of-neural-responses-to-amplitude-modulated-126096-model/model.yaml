@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/126096
   download_url: https://modeldb.science/download/126096
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_neural_responses_to_amplitude_modulated_126096_model:ModelOfNeuralResponsesToAmplitudeModulated126096Model
   init_kwargs:
     model_path: data/126096.zip

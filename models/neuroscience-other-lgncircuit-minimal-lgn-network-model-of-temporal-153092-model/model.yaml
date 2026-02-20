@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/153092
   download_url: https://modeldb.science/download/153092
   license: ''
-bsim:
+biosim:
   entrypoint: src.lgncircuit_minimal_lgn_network_model_of_temporal_153092_model:LgncircuitMinimalLgnNetworkModelOfTemporal153092Model
   init_kwargs:
     model_path: data/153092.zip

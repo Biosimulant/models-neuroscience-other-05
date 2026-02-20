@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/151825
   download_url: https://modeldb.science/download/151825
   license: ''
-bsim:
+biosim:
   entrypoint: src.ionic_mechanisms_of_dendritic_spikes_almog_and_k_151825_model:IonicMechanismsOfDendriticSpikesAlmogAndK151825Model
   init_kwargs:
     model_path: data/151825.zip

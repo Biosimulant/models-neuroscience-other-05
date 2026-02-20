@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/116094
   download_url: https://modeldb.science/download/116094
   license: ''
-bsim:
+biosim:
   entrypoint: src.lateral_dendrodenditic_inhibition_in_the_olfacto_116094_model:LateralDendrodenditicInhibitionInTheOlfacto116094Model
   init_kwargs:
     model_path: data/116094.zip

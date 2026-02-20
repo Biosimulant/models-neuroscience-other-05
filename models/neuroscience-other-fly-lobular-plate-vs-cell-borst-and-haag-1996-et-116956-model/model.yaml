@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/116956
   download_url: https://modeldb.science/download/116956
   license: ''
-bsim:
+biosim:
   entrypoint: src.fly_lobular_plate_vs_cell_borst_and_haag_1996_et_116956_model:FlyLobularPlateVsCellBorstAndHaag1996Et116956Model
   init_kwargs:
     model_path: data/116956.zip

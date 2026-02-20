@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/3810
   download_url: https://modeldb.science/download/3810
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_3810_3810_model:Modeldb38103810Model
   init_kwargs:
     model_path: data/3810.zip

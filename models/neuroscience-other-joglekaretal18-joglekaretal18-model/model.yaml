@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/JoglekarEtAl18
   download_url: https://github.com/OpenSourceBrain/JoglekarEtAl18.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.joglekaretal18_joglekaretal18_model:Joglekaretal18Joglekaretal18Model
   init_kwargs:
     model_path: data/repo

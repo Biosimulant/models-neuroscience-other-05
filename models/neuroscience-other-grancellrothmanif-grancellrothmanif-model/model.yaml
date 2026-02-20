@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GranCellRothmanIf
   download_url: https://github.com/OpenSourceBrain/GranCellRothmanIf.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.grancellrothmanif_grancellrothmanif_model:GrancellrothmanifGrancellrothmanifModel
   init_kwargs:
     model_path: data/repo

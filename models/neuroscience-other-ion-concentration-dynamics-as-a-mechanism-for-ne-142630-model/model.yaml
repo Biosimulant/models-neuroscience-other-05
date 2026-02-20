@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/142630
   download_url: https://modeldb.science/download/142630
   license: ''
-bsim:
+biosim:
   entrypoint: src.ion_concentration_dynamics_as_a_mechanism_for_ne_142630_model:IonConcentrationDynamicsAsAMechanismForNe142630Model
   init_kwargs:
     model_path: data/142630.zip

@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/M1NetworkModel
   download_url: https://github.com/OpenSourceBrain/M1NetworkModel.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.m1networkmodel_m1networkmodel_model:M1networkmodelM1networkmodelModel
   init_kwargs:
     model_path: data/repo

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/182784
   download_url: https://modeldb.science/download/182784
   license: ''
-bsim:
+biosim:
   entrypoint: src.functional_balanced_networks_with_synaptic_plast_182784_model:FunctionalBalancedNetworksWithSynapticPlast182784Model
   init_kwargs:
     model_path: data/182784.zip

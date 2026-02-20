@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/137505
   download_url: https://modeldb.science/download/137505
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_long_range_transmission_of_gamma_oscill_137505_model:ModelOfLongRangeTransmissionOfGammaOscill137505Model
   init_kwargs:
     model_path: data/137505.zip

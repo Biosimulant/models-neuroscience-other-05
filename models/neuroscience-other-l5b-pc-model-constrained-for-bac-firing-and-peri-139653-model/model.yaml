@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/139653
   download_url: https://modeldb.science/download/139653
   license: ''
-bsim:
+biosim:
   entrypoint: src.l5b_pc_model_constrained_for_bac_firing_and_peri_139653_model:L5bPcModelConstrainedForBacFiringAndPeri139653Model
   init_kwargs:
     model_path: data/139653.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/152539
   download_url: https://modeldb.science/download/152539
   license: ''
-bsim:
+biosim:
   entrypoint: src.iandf_recurrent_networks_with_current_or_conduct_152539_model:IandfRecurrentNetworksWithCurrentOrConduct152539Model
   init_kwargs:
     model_path: data/152539.zip

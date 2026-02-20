@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/151945
   download_url: https://modeldb.science/download/151945
   license: ''
-bsim:
+biosim:
   entrypoint: src.electrodiffusive_astrocytic_and_extracellular_io_151945_model:ElectrodiffusiveAstrocyticAndExtracellularIo151945Model
   init_kwargs:
     model_path: data/151945.zip

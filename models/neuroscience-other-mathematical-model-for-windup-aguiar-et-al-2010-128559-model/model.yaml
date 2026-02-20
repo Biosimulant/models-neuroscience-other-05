@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128559
   download_url: https://modeldb.science/download/128559
   license: ''
-bsim:
+biosim:
   entrypoint: src.mathematical_model_for_windup_aguiar_et_al_2010_128559_model:MathematicalModelForWindupAguiarEtAl2010128559Model
   init_kwargs:
     model_path: data/128559.zip

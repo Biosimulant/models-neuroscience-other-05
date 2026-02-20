@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherMarkovModelsOfScn1aNav11AppliedToAbnormalGating(bsim.BioModule):
+class OtherMarkovModelsOfScn1aNav11AppliedToAbnormalGating(biosim.BioModule):
     """Placeholder BioModule wrapper for: Markov models of SCN1A (NaV1.1) applied to abnormal gating and epilepsy (Clancy and Kass 2004).
 
     This model's original format is not directly supported by the auto-generator.

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/151338
   download_url: https://modeldb.science/download/151338
   license: ''
-bsim:
+biosim:
   entrypoint: src.gating_of_steering_signals_through_phasic_modula_151338_model:GatingOfSteeringSignalsThroughPhasicModula151338Model
   init_kwargs:
     model_path: data/151338.zip

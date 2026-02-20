@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/102871
   download_url: https://modeldb.science/download/102871
   license: ''
-bsim:
+biosim:
   entrypoint: src.elementary_mechanisms_producing_facilitation_of_102871_model:ElementaryMechanismsProducingFacilitationOf102871Model
   init_kwargs:
     model_path: data/102871.zip

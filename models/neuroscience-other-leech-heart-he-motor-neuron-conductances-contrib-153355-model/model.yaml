@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/153355
   download_url: https://modeldb.science/download/153355
   license: ''
-bsim:
+biosim:
   entrypoint: src.leech_heart_he_motor_neuron_conductances_contrib_153355_model:LeechHeartHeMotorNeuronConductancesContrib153355Model
   init_kwargs:
     model_path: data/153355.zip

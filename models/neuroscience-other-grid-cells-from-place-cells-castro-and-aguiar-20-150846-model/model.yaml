@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150846
   download_url: https://modeldb.science/download/150846
   license: ''
-bsim:
+biosim:
   entrypoint: src.grid_cells_from_place_cells_castro_and_aguiar_20_150846_model:GridCellsFromPlaceCellsCastroAndAguiar20150846Model
   init_kwargs:
     model_path: data/150846.zip

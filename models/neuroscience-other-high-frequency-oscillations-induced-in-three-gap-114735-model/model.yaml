@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114735
   download_url: https://modeldb.science/download/114735
   license: ''
-bsim:
+biosim:
   entrypoint: src.high_frequency_oscillations_induced_in_three_gap_114735_model:HighFrequencyOscillationsInducedInThreeGap114735Model
   init_kwargs:
     model_path: data/114735.zip

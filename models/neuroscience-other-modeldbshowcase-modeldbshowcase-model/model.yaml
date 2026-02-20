@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/ModelDBShowcase
   download_url: https://github.com/OpenSourceBrain/ModelDBShowcase.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldbshowcase_modeldbshowcase_model:ModeldbshowcaseModeldbshowcaseModel
   init_kwargs:
     model_path: data/repo

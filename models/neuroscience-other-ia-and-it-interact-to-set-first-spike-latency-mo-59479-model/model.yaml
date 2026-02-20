@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/59479
   download_url: https://modeldb.science/download/59479
   license: ''
-bsim:
+biosim:
   entrypoint: src.ia_and_it_interact_to_set_first_spike_latency_mo_59479_model:IaAndItInteractToSetFirstSpikeLatencyMo59479Model
   init_kwargs:
     model_path: data/59479.zip

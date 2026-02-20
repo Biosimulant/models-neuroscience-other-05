@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/126052
   download_url: https://modeldb.science/download/126052
   license: ''
-bsim:
+biosim:
   entrypoint: src.integrate_and_fire_model_code_for_spike_based_co_126052_model:IntegrateAndFireModelCodeForSpikeBasedCo126052Model
   init_kwargs:
     model_path: data/126052.zip

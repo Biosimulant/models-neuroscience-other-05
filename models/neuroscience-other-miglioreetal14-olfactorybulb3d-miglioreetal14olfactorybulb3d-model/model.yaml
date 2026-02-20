@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D
   download_url: https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.miglioreetal14_olfactorybulb3d_miglioreetal14olfactorybulb3d_model:Miglioreetal14Olfactorybulb3dMiglioreetal14olfactorybulb3dModel
   init_kwargs:
     model_path: data/repo

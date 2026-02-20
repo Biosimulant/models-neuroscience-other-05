@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/139760
   download_url: https://modeldb.science/download/139760
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_peristalsis_in_the_dorsal_blood_vessel_139760_model:ModelOfPeristalsisInTheDorsalBloodVessel139760Model
   init_kwargs:
     model_path: data/139760.zip

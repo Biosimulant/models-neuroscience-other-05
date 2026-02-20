@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150225
   download_url: https://modeldb.science/download/150225
   license: ''
-bsim:
+biosim:
   entrypoint: src.fast_convergence_of_cerebellar_learning_luque_et_150225_model:FastConvergenceOfCerebellarLearningLuqueEt150225Model
   init_kwargs:
     model_path: data/150225.zip

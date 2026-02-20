@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/135787
   download_url: https://modeldb.science/download/135787
   license: ''
-bsim:
+biosim:
   entrypoint: src.intracortical_synaptic_potential_modulation_by_p_135787_model:IntracorticalSynapticPotentialModulationByP135787Model
   init_kwargs:
     model_path: data/135787.zip

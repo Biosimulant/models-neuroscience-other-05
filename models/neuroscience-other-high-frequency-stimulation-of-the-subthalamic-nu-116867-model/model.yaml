@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/116867
   download_url: https://modeldb.science/download/116867
   license: ''
-bsim:
+biosim:
   entrypoint: src.high_frequency_stimulation_of_the_subthalamic_nu_116867_model:HighFrequencyStimulationOfTheSubthalamicNu116867Model
   init_kwargs:
     model_path: data/116867.zip

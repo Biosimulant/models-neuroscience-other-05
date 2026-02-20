@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/146509
   download_url: https://modeldb.science/download/146509
   license: ''
-bsim:
+biosim:
   entrypoint: src.functional_impact_of_dendritic_branch_point_morp_146509_model:FunctionalImpactOfDendriticBranchPointMorp146509Model
   init_kwargs:
     model_path: data/146509.zip

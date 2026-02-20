@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114359
   download_url: https://modeldb.science/download/114359
   license: ''
-bsim:
+biosim:
   entrypoint: src.impact_of_dendritic_size_and_topology_on_pyramid_114359_model:ImpactOfDendriticSizeAndTopologyOnPyramid114359Model
   init_kwargs:
     model_path: data/114359.zip

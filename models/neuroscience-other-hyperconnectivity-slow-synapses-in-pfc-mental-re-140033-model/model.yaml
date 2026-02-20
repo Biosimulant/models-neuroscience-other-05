@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/140033
   download_url: https://modeldb.science/download/140033
   license: ''
-bsim:
+biosim:
   entrypoint: src.hyperconnectivity_slow_synapses_in_pfc_mental_re_140033_model:HyperconnectivitySlowSynapsesInPfcMentalRe140033Model
   init_kwargs:
     model_path: data/140033.zip

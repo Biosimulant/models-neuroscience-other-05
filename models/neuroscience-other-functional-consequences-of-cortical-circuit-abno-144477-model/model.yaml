@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144477
   download_url: https://modeldb.science/download/144477
   license: ''
-bsim:
+biosim:
   entrypoint: src.functional_consequences_of_cortical_circuit_abno_144477_model:FunctionalConsequencesOfCorticalCircuitAbno144477Model
   init_kwargs:
     model_path: data/144477.zip

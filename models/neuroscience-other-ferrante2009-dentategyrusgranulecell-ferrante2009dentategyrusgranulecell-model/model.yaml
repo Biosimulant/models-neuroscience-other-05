@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/Ferrante2009-DentateGyrusGranuleCell
   download_url: https://github.com/OpenSourceBrain/Ferrante2009-DentateGyrusGranuleCell.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.ferrante2009_dentategyrusgranulecell_ferrante2009dentategyrusgranulecell_model:Ferrante2009DentategyrusgranulecellFerrante2009dentategyrusgranulecellModel
   init_kwargs:
     model_path: data/repo

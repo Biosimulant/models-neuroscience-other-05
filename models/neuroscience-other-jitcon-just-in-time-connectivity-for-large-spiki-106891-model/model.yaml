@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/106891
   download_url: https://modeldb.science/download/106891
   license: ''
-bsim:
+biosim:
   entrypoint: src.jitcon_just_in_time_connectivity_for_large_spiki_106891_model:JitconJustInTimeConnectivityForLargeSpiki106891Model
   init_kwargs:
     model_path: data/106891.zip

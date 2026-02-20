@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/129149
   download_url: https://modeldb.science/download/129149
   license: ''
-bsim:
+biosim:
   entrypoint: src.increased_computational_accuracy_in_multi_compar_129149_model:IncreasedComputationalAccuracyInMultiCompar129149Model
   init_kwargs:
     model_path: data/129149.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/141061
   download_url: https://modeldb.science/download/141061
   license: ''
-bsim:
+biosim:
   entrypoint: src.measuring_neuronal_identification_quality_in_ens_141061_model:MeasuringNeuronalIdentificationQualityInEns141061Model
   init_kwargs:
     model_path: data/141061.zip

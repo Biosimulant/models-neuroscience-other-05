@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherModelOfArrhythmiasInACardiacCellsNetworkCasaleggio(bsim.BioModule):
+class OtherModelOfArrhythmiasInACardiacCellsNetworkCasaleggio(biosim.BioModule):
     """Placeholder BioModule wrapper for: Model of arrhythmias in a cardiac cells network (Casaleggio et al. 2014).
 
     This model's original format is not directly supported by the auto-generator.

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/139457
   download_url: https://modeldb.science/download/139457
   license: ''
-bsim:
+biosim:
   entrypoint: src.mathematics_for_neuroscientists_gabbiani_and_cox_139457_model:MathematicsForNeuroscientistsGabbianiAndCox139457Model
   init_kwargs:
     model_path: data/139457.zip

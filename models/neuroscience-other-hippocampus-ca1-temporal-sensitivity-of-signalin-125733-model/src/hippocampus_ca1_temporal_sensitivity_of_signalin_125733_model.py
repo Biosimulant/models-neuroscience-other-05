@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherHippocampusCa1TemporalSensitivityOfSignalingPathways(bsim.BioModule):
+class OtherHippocampusCa1TemporalSensitivityOfSignalingPathways(biosim.BioModule):
     """Placeholder BioModule wrapper for: Hippocampus CA1: Temporal sensitivity of signaling pathways underlying LTP (Kim et al. 2010).
 
     This model's original format is not directly supported by the auto-generator.

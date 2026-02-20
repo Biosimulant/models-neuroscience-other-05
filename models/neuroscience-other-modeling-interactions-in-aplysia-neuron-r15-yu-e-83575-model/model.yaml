@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/83575
   download_url: https://modeldb.science/download/83575
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeling_interactions_in_aplysia_neuron_r15_yu_e_83575_model:ModelingInteractionsInAplysiaNeuronR15YuE83575Model
   init_kwargs:
     model_path: data/83575.zip

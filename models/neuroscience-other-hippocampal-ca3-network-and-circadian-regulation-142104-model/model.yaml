@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/142104
   download_url: https://modeldb.science/download/142104
   license: ''
-bsim:
+biosim:
   entrypoint: src.hippocampal_ca3_network_and_circadian_regulation_142104_model:HippocampalCa3NetworkAndCircadianRegulation142104Model
   init_kwargs:
     model_path: data/142104.zip

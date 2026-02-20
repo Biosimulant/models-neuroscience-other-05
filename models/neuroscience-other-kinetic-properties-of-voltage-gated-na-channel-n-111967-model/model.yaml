@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/111967
   download_url: https://modeldb.science/download/111967
   license: ''
-bsim:
+biosim:
   entrypoint: src.kinetic_properties_of_voltage_gated_na_channel_n_111967_model:KineticPropertiesOfVoltageGatedNaChannelN111967Model
   init_kwargs:
     model_path: data/111967.zip

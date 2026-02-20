@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/93315
   download_url: https://modeldb.science/download/93315
   license: ''
-bsim:
+biosim:
   entrypoint: src.implementation_issues_in_approximate_methods_for_93315_model:ImplementationIssuesInApproximateMethodsFor93315Model
   init_kwargs:
     model_path: data/93315.zip

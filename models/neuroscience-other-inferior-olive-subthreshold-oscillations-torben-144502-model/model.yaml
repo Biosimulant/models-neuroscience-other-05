@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144502
   download_url: https://modeldb.science/download/144502
   license: ''
-bsim:
+biosim:
   entrypoint: src.inferior_olive_subthreshold_oscillations_torben_144502_model:InferiorOliveSubthresholdOscillationsTorben144502Model
   init_kwargs:
     model_path: data/144502.zip

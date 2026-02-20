@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/53457
   download_url: https://modeldb.science/download/53457
   license: ''
-bsim:
+biosim:
   entrypoint: src.method_of_probabilistic_principle_surfaces_pps_c_53457_model:MethodOfProbabilisticPrincipleSurfacesPpsC53457Model
   init_kwargs:
     model_path: data/53457.zip

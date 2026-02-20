@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114639
   download_url: https://modeldb.science/download/114639
   license: ''
-bsim:
+biosim:
   entrypoint: src.globus_pallidus_multi_compartmental_model_neuron_114639_model:GlobusPallidusMultiCompartmentalModelNeuron114639Model
   init_kwargs:
     model_path: data/114639.zip

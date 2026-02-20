@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/125290
   download_url: https://modeldb.science/download/125290
   license: ''
-bsim:
+biosim:
   entrypoint: src.maximum_entropy_model_to_predict_spatiotemporal_125290_model:MaximumEntropyModelToPredictSpatiotemporal125290Model
   init_kwargs:
     model_path: data/125290.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/62268
   download_url: https://modeldb.science/download/62268
   license: ''
-bsim:
+biosim:
   entrypoint: src.inhibitory_control_by_an_integral_feedback_signa_62268_model:InhibitoryControlByAnIntegralFeedbackSigna62268Model
   init_kwargs:
     model_path: data/62268.zip

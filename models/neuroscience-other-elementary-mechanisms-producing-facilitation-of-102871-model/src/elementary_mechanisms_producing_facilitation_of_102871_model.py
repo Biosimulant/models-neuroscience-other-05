@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherElementaryMechanismsProducingFacilitationOfCav21PQ(bsim.BioModule):
+class OtherElementaryMechanismsProducingFacilitationOfCav21PQ(biosim.BioModule):
     """Placeholder BioModule wrapper for: Elementary mechanisms producing facilitation of Cav2.1 (P/Q-type) channels.
 
     This model's original format is not directly supported by the auto-generator.

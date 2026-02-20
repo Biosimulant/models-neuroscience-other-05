@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/180791
   download_url: https://modeldb.science/download/180791
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeling_hebbian_and_homeostatic_plasticity_toyo_180791_model:ModelingHebbianAndHomeostaticPlasticityToyo180791Model
   init_kwargs:
     model_path: data/180791.zip

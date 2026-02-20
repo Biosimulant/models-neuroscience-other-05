@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/170029
   download_url: https://modeldb.science/download/170029
   license: ''
-bsim:
+biosim:
   entrypoint: src.microglial_cytokine_network_anderson_et_al_2015_170029_model:MicroglialCytokineNetworkAndersonEtAl2015170029Model
   init_kwargs:
     model_path: data/170029.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/140964
   download_url: https://modeldb.science/download/140964
   license: ''
-bsim:
+biosim:
   entrypoint: src.event_related_simulation_of_neural_processing_in_140964_model:EventRelatedSimulationOfNeuralProcessingIn140964Model
   init_kwargs:
     model_path: data/140964.zip

@@ -16,13 +16,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class OtherKineticsOfTheP2x7ReceptorAsExpressedInXenopus(bsim.BioModule):
+class OtherKineticsOfTheP2x7ReceptorAsExpressedInXenopus(biosim.BioModule):
     """Placeholder BioModule wrapper for: Kinetics of the P2X7 receptor as expressed in Xenopus oocytes (Riedel et al. 2007a,b).
 
     This model's original format is not directly supported by the auto-generator.

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/115813
   download_url: https://modeldb.science/download/115813
   license: ''
-bsim:
+biosim:
   entrypoint: src.human_attentional_networks_a_connectionist_model_115813_model:HumanAttentionalNetworksAConnectionistModel115813Model
   init_kwargs:
     model_path: data/115813.zip

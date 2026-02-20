@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/154770
   download_url: https://modeldb.science/download/154770
   license: ''
-bsim:
+biosim:
   entrypoint: src.input_strength_and_time_varying_oscillation_peak_154770_model:InputStrengthAndTimeVaryingOscillationPeak154770Model
   init_kwargs:
     model_path: data/154770.zip

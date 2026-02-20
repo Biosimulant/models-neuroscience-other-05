@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/LarkumEtAl2009
   download_url: https://github.com/OpenSourceBrain/LarkumEtAl2009.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.larkumetal2009_larkumetal2009_model:Larkumetal2009Larkumetal2009Model
   init_kwargs:
     model_path: data/repo

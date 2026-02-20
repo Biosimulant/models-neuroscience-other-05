@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/143148
   download_url: https://modeldb.science/download/143148
   license: ''
-bsim:
+biosim:
   entrypoint: src.extraction_and_classification_of_three_cortical_143148_model:ExtractionAndClassificationOfThreeCortical143148Model
   init_kwargs:
     model_path: data/143148.zip

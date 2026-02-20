@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/147748
   download_url: https://modeldb.science/download/147748
   license: ''
-bsim:
+biosim:
   entrypoint: src.human_sleep_wake_cycle_rempe_et_al_2010_147748_model:HumanSleepWakeCycleRempeEtAl2010147748Model
   init_kwargs:
     model_path: data/147748.zip

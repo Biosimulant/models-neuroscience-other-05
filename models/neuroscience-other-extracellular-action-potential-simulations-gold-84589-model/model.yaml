@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/84589
   download_url: https://modeldb.science/download/84589
   license: ''
-bsim:
+biosim:
   entrypoint: src.extracellular_action_potential_simulations_gold_84589_model:ExtracellularActionPotentialSimulationsGold84589Model
   init_kwargs:
     model_path: data/84589.zip

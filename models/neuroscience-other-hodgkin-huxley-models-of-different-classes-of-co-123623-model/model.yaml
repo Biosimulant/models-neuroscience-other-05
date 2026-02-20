@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/123623
   download_url: https://modeldb.science/download/123623
   license: ''
-bsim:
+biosim:
   entrypoint: src.hodgkin_huxley_models_of_different_classes_of_co_123623_model:HodgkinHuxleyModelsOfDifferentClassesOfCo123623Model
   init_kwargs:
     model_path: data/123623.zip

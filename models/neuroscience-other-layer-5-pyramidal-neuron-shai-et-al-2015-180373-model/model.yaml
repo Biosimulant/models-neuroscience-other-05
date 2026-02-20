@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/180373
   download_url: https://modeldb.science/download/180373
   license: ''
-bsim:
+biosim:
   entrypoint: src.layer_5_pyramidal_neuron_shai_et_al_2015_180373_model:Layer5PyramidalNeuronShaiEtAl2015180373Model
   init_kwargs:
     model_path: data/180373.zip

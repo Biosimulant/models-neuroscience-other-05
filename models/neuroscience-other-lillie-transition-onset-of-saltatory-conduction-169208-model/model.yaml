@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/169208
   download_url: https://modeldb.science/download/169208
   license: ''
-bsim:
+biosim:
   entrypoint: src.lillie_transition_onset_of_saltatory_conduction_169208_model:LillieTransitionOnsetOfSaltatoryConduction169208Model
   init_kwargs:
     model_path: data/169208.zip

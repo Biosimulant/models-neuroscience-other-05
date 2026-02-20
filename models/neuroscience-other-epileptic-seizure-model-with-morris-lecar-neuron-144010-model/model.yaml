@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144010
   download_url: https://modeldb.science/download/144010
   license: ''
-bsim:
+biosim:
   entrypoint: src.epileptic_seizure_model_with_morris_lecar_neuron_144010_model:EpilepticSeizureModelWithMorrisLecarNeuron144010Model
   init_kwargs:
     model_path: data/144010.zip

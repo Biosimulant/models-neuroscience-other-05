@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/Hippocampus3DDemo
   download_url: https://github.com/OpenSourceBrain/Hippocampus3DDemo.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.hippocampus3ddemo_hippocampus3ddemo_model:Hippocampus3ddemoHippocampus3ddemoModel
   init_kwargs:
     model_path: data/repo

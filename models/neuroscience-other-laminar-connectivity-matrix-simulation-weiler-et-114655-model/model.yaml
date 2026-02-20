@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114655
   download_url: https://modeldb.science/download/114655
   license: ''
-bsim:
+biosim:
   entrypoint: src.laminar_connectivity_matrix_simulation_weiler_et_114655_model:LaminarConnectivityMatrixSimulationWeilerEt114655Model
   init_kwargs:
     model_path: data/114655.zip

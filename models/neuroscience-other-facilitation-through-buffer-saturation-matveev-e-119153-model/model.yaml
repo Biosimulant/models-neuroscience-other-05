@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/119153
   download_url: https://modeldb.science/download/119153
   license: ''
-bsim:
+biosim:
   entrypoint: src.facilitation_through_buffer_saturation_matveev_e_119153_model:FacilitationThroughBufferSaturationMatveevE119153Model
   init_kwargs:
     model_path: data/119153.zip

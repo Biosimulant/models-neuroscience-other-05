@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/50207
   download_url: https://modeldb.science/download/50207
   license: ''
-bsim:
+biosim:
   entrypoint: src.kinetic_nmda_receptor_model_kampa_et_al_2004_50207_model:KineticNmdaReceptorModelKampaEtAl200450207Model
   init_kwargs:
     model_path: data/50207.zip

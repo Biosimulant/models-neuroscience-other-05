@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/FergusonEtAl2013-PVFastFiringCell
   download_url: https://github.com/OpenSourceBrain/FergusonEtAl2013-PVFastFiringCell.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.fergusonetal2013_pvfastfiringcell_fergusonetal2013pvfastfiringcell_model:Fergusonetal2013PvfastfiringcellFergusonetal2013pvfastfiringcellModel
   init_kwargs:
     model_path: data/repo

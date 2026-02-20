@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GranCellSolinasEtAl10
   download_url: https://github.com/OpenSourceBrain/GranCellSolinasEtAl10.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.grancellsolinasetal10_grancellsolinasetal10_model:Grancellsolinasetal10Grancellsolinasetal10Model
   init_kwargs:
     model_path: data/repo

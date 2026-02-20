@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/7509
   download_url: https://modeldb.science/download/7509
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_7509_7509_model:Modeldb75097509Model
   init_kwargs:
     model_path: data/7509.zip

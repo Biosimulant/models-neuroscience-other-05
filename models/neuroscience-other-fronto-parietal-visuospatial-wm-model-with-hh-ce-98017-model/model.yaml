@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/98017
   download_url: https://modeldb.science/download/98017
   license: ''
-bsim:
+biosim:
   entrypoint: src.fronto_parietal_visuospatial_wm_model_with_hh_ce_98017_model:FrontoParietalVisuospatialWmModelWithHhCe98017Model
   init_kwargs:
     model_path: data/98017.zip

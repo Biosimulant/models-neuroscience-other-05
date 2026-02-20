@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114337
   download_url: https://modeldb.science/download/114337
   license: ''
-bsim:
+biosim:
   entrypoint: src.ionic_mechanisms_of_bursting_in_ca3_pyramidal_ne_114337_model:IonicMechanismsOfBurstingInCa3PyramidalNe114337Model
   init_kwargs:
     model_path: data/114337.zip

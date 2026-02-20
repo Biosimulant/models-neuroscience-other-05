@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/83516
   download_url: https://modeldb.science/download/83516
   license: ''
-bsim:
+biosim:
   entrypoint: src.hippocampal_context_dependent_retrieval_hasselmo_83516_model:HippocampalContextDependentRetrievalHasselmo83516Model
   init_kwargs:
     model_path: data/83516.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/125733
   download_url: https://modeldb.science/download/125733
   license: ''
-bsim:
+biosim:
   entrypoint: src.hippocampus_ca1_temporal_sensitivity_of_signalin_125733_model:HippocampusCa1TemporalSensitivityOfSignalin125733Model
   init_kwargs:
     model_path: data/125733.zip

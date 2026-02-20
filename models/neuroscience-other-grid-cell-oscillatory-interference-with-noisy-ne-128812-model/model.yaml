@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128812
   download_url: https://modeldb.science/download/128812
   license: ''
-bsim:
+biosim:
   entrypoint: src.grid_cell_oscillatory_interference_with_noisy_ne_128812_model:GridCellOscillatoryInterferenceWithNoisyNe128812Model
   init_kwargs:
     model_path: data/128812.zip

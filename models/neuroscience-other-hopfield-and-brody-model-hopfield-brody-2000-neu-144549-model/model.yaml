@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/144549
   download_url: https://modeldb.science/download/144549
   license: ''
-bsim:
+biosim:
   entrypoint: src.hopfield_and_brody_model_hopfield_brody_2000_neu_144549_model:HopfieldAndBrodyModelHopfieldBrody2000Neu144549Model
   init_kwargs:
     model_path: data/144549.zip

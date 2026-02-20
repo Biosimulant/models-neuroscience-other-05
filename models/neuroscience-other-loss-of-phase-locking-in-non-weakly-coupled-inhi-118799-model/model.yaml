@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/118799
   download_url: https://modeldb.science/download/118799
   license: ''
-bsim:
+biosim:
   entrypoint: src.loss_of_phase_locking_in_non_weakly_coupled_inhi_118799_model:LossOfPhaseLockingInNonWeaklyCoupledInhi118799Model
   init_kwargs:
     model_path: data/118799.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/113939
   download_url: https://modeldb.science/download/113939
   license: ''
-bsim:
+biosim:
   entrypoint: src.kinness_a_modular_framework_for_computational_ne_113939_model:KinnessAModularFrameworkForComputationalNe113939Model
   init_kwargs:
     model_path: data/113939.zip

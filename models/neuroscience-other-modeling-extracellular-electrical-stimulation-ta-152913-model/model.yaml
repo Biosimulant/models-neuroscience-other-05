@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/152913
   download_url: https://modeldb.science/download/152913
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeling_extracellular_electrical_stimulation_ta_152913_model:ModelingExtracellularElectricalStimulationTa152913Model
   init_kwargs:
     model_path: data/152913.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/93319
   download_url: https://modeldb.science/download/93319
   license: ''
-bsim:
+biosim:
   entrypoint: src.lamprey_spinal_cpg_neuron_huss_et_al_2007_93319_model:LampreySpinalCpgNeuronHussEtAl200793319Model
   init_kwargs:
     model_path: data/93319.zip

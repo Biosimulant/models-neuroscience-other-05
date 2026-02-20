@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144007
   download_url: https://modeldb.science/download/144007
   license: ''
-bsim:
+biosim:
   entrypoint: src.lgmd_variability_and_logarithmic_compression_in_144007_model:LgmdVariabilityAndLogarithmicCompressionIn144007Model
   init_kwargs:
     model_path: data/144007.zip

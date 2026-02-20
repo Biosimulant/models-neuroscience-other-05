@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144006
   download_url: https://modeldb.science/download/144006
   license: ''
-bsim:
+biosim:
   entrypoint: src.grid_cell_spatial_firing_models_zilli_2012_144006_model:GridCellSpatialFiringModelsZilli2012144006Model
   init_kwargs:
     model_path: data/144006.zip

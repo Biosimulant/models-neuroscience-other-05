@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/151951
   download_url: https://modeldb.science/download/151951
   license: ''
-bsim:
+biosim:
   entrypoint: src.mechanisms_for_stable_robust_and_adaptive_develo_151951_model:MechanismsForStableRobustAndAdaptiveDevelo151951Model
   init_kwargs:
     model_path: data/151951.zip

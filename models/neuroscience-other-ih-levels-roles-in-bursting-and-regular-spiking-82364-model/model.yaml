@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/82364
   download_url: https://modeldb.science/download/82364
   license: ''
-bsim:
+biosim:
   entrypoint: src.ih_levels_roles_in_bursting_and_regular_spiking_82364_model:IhLevelsRolesInBurstingAndRegularSpiking82364Model
   init_kwargs:
     model_path: data/82364.zip

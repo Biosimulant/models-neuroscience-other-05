@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/120798
   download_url: https://modeldb.science/download/120798
   license: ''
-bsim:
+biosim:
   entrypoint: src.membrane_potential_changes_in_dendritic_spines_d_120798_model:MembranePotentialChangesInDendriticSpinesD120798Model
   init_kwargs:
     model_path: data/120798.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150024
   download_url: https://modeldb.science/download/150024
   license: ''
-bsim:
+biosim:
   entrypoint: src.kv1_channel_governs_cerebellar_output_to_thalamu_150024_model:Kv1ChannelGovernsCerebellarOutputToThalamu150024Model
   init_kwargs:
     model_path: data/150024.zip

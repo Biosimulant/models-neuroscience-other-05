@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/153998
   download_url: https://modeldb.science/download/153998
   license: ''
-bsim:
+biosim:
   entrypoint: src.impact_of_fast_na_channel_inact_on_ap_threshold_153998_model:ImpactOfFastNaChannelInactOnApThreshold153998Model
   init_kwargs:
     model_path: data/153998.zip

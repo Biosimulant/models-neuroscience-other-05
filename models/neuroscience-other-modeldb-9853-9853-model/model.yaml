@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/9853
   download_url: https://modeldb.science/download/9853
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_9853_9853_model:Modeldb98539853Model
   init_kwargs:
     model_path: data/9853.zip

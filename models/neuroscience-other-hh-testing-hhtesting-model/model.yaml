@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/hh-testing
   download_url: https://github.com/OpenSourceBrain/hh-testing.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.hh_testing_hhtesting_model:HhTestingHhtestingModel
   init_kwargs:
     model_path: data/repo

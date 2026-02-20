@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/142273
   download_url: https://modeldb.science/download/142273
   license: ''
-bsim:
+biosim:
   entrypoint: src.frat_an_amygdala_centered_model_of_fear_conditio_142273_model:FratAnAmygdalaCenteredModelOfFearConditio142273Model
   init_kwargs:
     model_path: data/142273.zip

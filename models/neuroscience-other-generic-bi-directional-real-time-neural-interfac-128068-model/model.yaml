@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128068
   download_url: https://modeldb.science/download/128068
   license: ''
-bsim:
+biosim:
   entrypoint: src.generic_bi_directional_real_time_neural_interfac_128068_model:GenericBiDirectionalRealTimeNeuralInterfac128068Model
   init_kwargs:
     model_path: data/128068.zip

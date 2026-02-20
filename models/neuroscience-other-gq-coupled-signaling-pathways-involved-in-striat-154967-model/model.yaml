@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/154967
   download_url: https://modeldb.science/download/154967
   license: ''
-bsim:
+biosim:
   entrypoint: src.gq_coupled_signaling_pathways_involved_in_striat_154967_model:GqCoupledSignalingPathwaysInvolvedInStriat154967Model
   init_kwargs:
     model_path: data/154967.zip

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/93394
   download_url: https://modeldb.science/download/93394
   license: ''
-bsim:
+biosim:
   entrypoint: src.fast_population_coding_huys_et_al_2007_93394_model:FastPopulationCodingHuysEtAl200793394Model
   init_kwargs:
     model_path: data/93394.zip

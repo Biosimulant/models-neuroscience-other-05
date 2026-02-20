@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/FPGAShowcase
   download_url: https://github.com/OpenSourceBrain/FPGAShowcase.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.fpgashowcase_fpgashowcase_model:FpgashowcaseFpgashowcaseModel
   init_kwargs:
     model_path: data/repo

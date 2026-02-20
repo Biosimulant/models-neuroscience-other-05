@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/156733
   download_url: https://modeldb.science/download/156733
   license: ''
-bsim:
+biosim:
   entrypoint: src.information_transmission_in_cerebellar_granule_c_156733_model:InformationTransmissionInCerebellarGranuleC156733Model
   init_kwargs:
     model_path: data/156733.zip

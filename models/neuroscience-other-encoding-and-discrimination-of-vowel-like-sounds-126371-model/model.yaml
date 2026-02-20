@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/126371
   download_url: https://modeldb.science/download/126371
   license: ''
-bsim:
+biosim:
   entrypoint: src.encoding_and_discrimination_of_vowel_like_sounds_126371_model:EncodingAndDiscriminationOfVowelLikeSounds126371Model
   init_kwargs:
     model_path: data/126371.zip

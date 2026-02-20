@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/155131
   download_url: https://modeldb.science/download/155131
   license: ''
-bsim:
+biosim:
   entrypoint: src.learning_intrinsic_excitability_in_medium_spiny_155131_model:LearningIntrinsicExcitabilityInMediumSpiny155131Model
   init_kwargs:
     model_path: data/155131.zip

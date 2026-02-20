@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114047
   download_url: https://modeldb.science/download/114047
   license: ''
-bsim:
+biosim:
   entrypoint: src.hippocampal_basket_cell_gap_junction_network_dyn_114047_model:HippocampalBasketCellGapJunctionNetworkDyn114047Model
   init_kwargs:
     model_path: data/114047.zip

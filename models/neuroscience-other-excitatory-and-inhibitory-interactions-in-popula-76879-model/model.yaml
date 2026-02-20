@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/76879
   download_url: https://modeldb.science/download/76879
   license: ''
-bsim:
+biosim:
   entrypoint: src.excitatory_and_inhibitory_interactions_in_popula_76879_model:ExcitatoryAndInhibitoryInteractionsInPopula76879Model
   init_kwargs:
     model_path: data/76879.zip

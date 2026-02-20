@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/138421
   download_url: https://modeldb.science/download/138421
   license: ''
-bsim:
+biosim:
   entrypoint: src.gamma_and_theta_rythms_in_biophysical_models_of_138421_model:GammaAndThetaRythmsInBiophysicalModelsOf138421Model
   init_kwargs:
     model_path: data/138421.zip

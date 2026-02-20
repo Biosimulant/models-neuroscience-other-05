@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/181967
   download_url: https://modeldb.science/download/181967
   license: ''
-bsim:
+biosim:
   entrypoint: src.long_time_windows_from_theta_modulated_inhib_in_181967_model:LongTimeWindowsFromThetaModulatedInhibIn181967Model
   init_kwargs:
     model_path: data/181967.zip

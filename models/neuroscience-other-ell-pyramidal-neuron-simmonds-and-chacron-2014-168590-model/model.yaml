@@ -19,7 +19,7 @@ upstream:
   original_url: https://modeldb.science/168590
   download_url: https://modeldb.science/download/168590
   license: ''
-bsim:
+biosim:
   entrypoint: src.ell_pyramidal_neuron_simmonds_and_chacron_2014_168590_model:EllPyramidalNeuronSimmondsAndChacron2014168590Model
   init_kwargs:
     model_path: data/168590.zip

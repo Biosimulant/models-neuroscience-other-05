@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/144468
   download_url: https://modeldb.science/download/144468
   license: ''
-bsim:
+biosim:
   entrypoint: src.markov_chain_based_stochastic_shielding_hodgkin_144468_model:MarkovChainBasedStochasticShieldingHodgkin144468Model
   init_kwargs:
     model_path: data/144468.zip

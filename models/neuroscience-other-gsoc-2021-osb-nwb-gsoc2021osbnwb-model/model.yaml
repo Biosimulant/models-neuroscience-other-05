@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/GSoC_2021_OSB_NWB
   download_url: https://github.com/OpenSourceBrain/GSoC_2021_OSB_NWB.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.gsoc_2021_osb_nwb_gsoc2021osbnwb_model:Gsoc2021OsbNwbGsoc2021osbnwbModel
   init_kwargs:
     model_path: data/repo

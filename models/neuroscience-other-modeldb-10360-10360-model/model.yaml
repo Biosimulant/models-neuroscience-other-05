@@ -18,7 +18,7 @@ upstream:
   original_url: https://modeldb.science/10360
   download_url: https://modeldb.science/download/10360
   license: ''
-bsim:
+biosim:
   entrypoint: src.modeldb_10360_10360_model:Modeldb1036010360Model
   init_kwargs:
     model_path: data/10360.zip

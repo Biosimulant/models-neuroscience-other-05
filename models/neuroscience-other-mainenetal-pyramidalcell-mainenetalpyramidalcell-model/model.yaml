@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/MainenEtAl_PyramidalCell
   download_url: https://github.com/OpenSourceBrain/MainenEtAl_PyramidalCell.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.mainenetal_pyramidalcell_mainenetalpyramidalcell_model:MainenetalPyramidalcellMainenetalpyramidalcellModel
   init_kwargs:
     model_path: data/repo

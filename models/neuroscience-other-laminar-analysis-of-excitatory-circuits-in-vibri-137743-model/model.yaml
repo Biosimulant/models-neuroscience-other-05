@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/137743
   download_url: https://modeldb.science/download/137743
   license: ''
-bsim:
+biosim:
   entrypoint: src.laminar_analysis_of_excitatory_circuits_in_vibri_137743_model:LaminarAnalysisOfExcitatoryCircuitsInVibri137743Model
   init_kwargs:
     model_path: data/137743.zip

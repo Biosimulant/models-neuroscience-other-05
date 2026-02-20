@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/141273
   download_url: https://modeldb.science/download/141273
   license: ''
-bsim:
+biosim:
   entrypoint: src.engaging_distinct_oscillatory_neocortical_circui_141273_model:EngagingDistinctOscillatoryNeocorticalCircui141273Model
   init_kwargs:
     model_path: data/141273.zip

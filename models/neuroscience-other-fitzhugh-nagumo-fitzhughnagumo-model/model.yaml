@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/FitzHugh-Nagumo
   download_url: https://github.com/OpenSourceBrain/FitzHugh-Nagumo.git
   license: NOASSERTION
-bsim:
+biosim:
   entrypoint: src.fitzhugh_nagumo_fitzhughnagumo_model:FitzhughNagumoFitzhughnagumoModel
   init_kwargs:
     model_path: data/repo

@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/127967
   download_url: https://modeldb.science/download/127967
   license: ''
-bsim:
+biosim:
   entrypoint: src.generating_coherent_patterns_of_activity_from_ch_127967_model:GeneratingCoherentPatternsOfActivityFromCh127967Model
   init_kwargs:
     model_path: data/127967.zip

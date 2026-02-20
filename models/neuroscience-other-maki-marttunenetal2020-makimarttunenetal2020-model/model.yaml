@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/Maki-MarttunenEtAl2020
   download_url: https://github.com/OpenSourceBrain/Maki-MarttunenEtAl2020.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.maki_marttunenetal2020_makimarttunenetal2020_model:MakiMarttunenetal2020Makimarttunenetal2020Model
   init_kwargs:
     model_path: data/repo

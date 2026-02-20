@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/128816
   download_url: https://modeldb.science/download/128816
   license: ''
-bsim:
+biosim:
   entrypoint: src.medial_reticular_formation_of_the_brainstem_anat_128816_model:MedialReticularFormationOfTheBrainstemAnat128816Model
   init_kwargs:
     model_path: data/128816.zip

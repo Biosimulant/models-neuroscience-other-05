@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/51196
   download_url: https://modeldb.science/download/51196
   license: ''
-bsim:
+biosim:
   entrypoint: src.ltp_in_cerebellar_mossy_fiber_granule_cell_synap_51196_model:LtpInCerebellarMossyFiberGranuleCellSynap51196Model
   init_kwargs:
     model_path: data/51196.zip

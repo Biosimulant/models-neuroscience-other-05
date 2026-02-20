@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/118195
   download_url: https://modeldb.science/download/118195
   license: ''
-bsim:
+biosim:
   entrypoint: src.evaluation_of_stochastic_diff_eq_approximation_o_118195_model:EvaluationOfStochasticDiffEqApproximationO118195Model
   init_kwargs:
     model_path: data/118195.zip

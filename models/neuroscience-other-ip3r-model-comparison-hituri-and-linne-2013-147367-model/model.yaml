@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/147367
   download_url: https://modeldb.science/download/147367
   license: ''
-bsim:
+biosim:
   entrypoint: src.ip3r_model_comparison_hituri_and_linne_2013_147367_model:Ip3rModelComparisonHituriAndLinne2013147367Model
   init_kwargs:
     model_path: data/147367.zip

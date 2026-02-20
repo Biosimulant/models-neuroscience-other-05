@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/62287
   download_url: https://modeldb.science/download/62287
   license: ''
-bsim:
+biosim:
   entrypoint: src.kv4_3_kv1_4_encoded_k_channel_in_heart_cells_gre_62287_model:Kv43Kv14EncodedKChannelInHeartCellsGre62287Model
   init_kwargs:
     model_path: data/62287.zip

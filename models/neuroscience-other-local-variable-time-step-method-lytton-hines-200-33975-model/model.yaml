@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/33975
   download_url: https://modeldb.science/download/33975
   license: ''
-bsim:
+biosim:
   entrypoint: src.local_variable_time_step_method_lytton_hines_200_33975_model:LocalVariableTimeStepMethodLyttonHines20033975Model
   init_kwargs:
     model_path: data/33975.zip

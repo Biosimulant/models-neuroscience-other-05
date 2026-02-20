@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/150691
   download_url: https://modeldb.science/download/150691
   license: ''
-bsim:
+biosim:
   entrypoint: src.model_of_arrhythmias_in_a_cardiac_cells_network_150691_model:ModelOfArrhythmiasInACardiacCellsNetwork150691Model
   init_kwargs:
     model_path: data/150691.zip

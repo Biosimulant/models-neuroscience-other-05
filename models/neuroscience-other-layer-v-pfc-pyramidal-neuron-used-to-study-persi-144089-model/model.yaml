@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/144089
   download_url: https://modeldb.science/download/144089
   license: ''
-bsim:
+biosim:
   entrypoint: src.layer_v_pfc_pyramidal_neuron_used_to_study_persi_144089_model:LayerVPfcPyramidalNeuronUsedToStudyPersi144089Model
   init_kwargs:
     model_path: data/144089.zip

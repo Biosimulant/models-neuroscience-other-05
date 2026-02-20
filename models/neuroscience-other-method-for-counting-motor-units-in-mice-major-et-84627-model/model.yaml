@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/84627
   download_url: https://modeldb.science/download/84627
   license: ''
-bsim:
+biosim:
   entrypoint: src.method_for_counting_motor_units_in_mice_major_et_84627_model:MethodForCountingMotorUnitsInMiceMajorEt84627Model
   init_kwargs:
     model_path: data/84627.zip

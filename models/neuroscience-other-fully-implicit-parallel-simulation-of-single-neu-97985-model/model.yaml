@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/97985
   download_url: https://modeldb.science/download/97985
   license: ''
-bsim:
+biosim:
   entrypoint: src.fully_implicit_parallel_simulation_of_single_neu_97985_model:FullyImplicitParallelSimulationOfSingleNeu97985Model
   init_kwargs:
     model_path: data/97985.zip

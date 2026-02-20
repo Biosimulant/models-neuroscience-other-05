@@ -18,7 +18,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/FarinellaEtAl_NMDAspikes
   download_url: https://github.com/OpenSourceBrain/FarinellaEtAl_NMDAspikes.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.farinellaetal_nmdaspikes_farinellaetalnmdaspikes_model:FarinellaetalNmdaspikesFarinellaetalnmdaspikesModel
   init_kwargs:
     model_path: data/repo

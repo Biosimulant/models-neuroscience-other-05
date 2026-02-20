@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/136315
   download_url: https://modeldb.science/download/136315
   license: ''
-bsim:
+biosim:
   entrypoint: src.globus_pallidus_neuron_models_with_differing_den_136315_model:GlobusPallidusNeuronModelsWithDifferingDen136315Model
   init_kwargs:
     model_path: data/136315.zip

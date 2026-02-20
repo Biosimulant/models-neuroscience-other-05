@@ -19,7 +19,7 @@ upstream:
   original_url: https://github.com/OpenSourceBrain/MejiasEtAl2016
   download_url: https://github.com/OpenSourceBrain/MejiasEtAl2016.git
   license: ''
-bsim:
+biosim:
   entrypoint: src.mejiasetal2016_mejiasetal2016_model:Mejiasetal2016Mejiasetal2016Model
   init_kwargs:
     model_path: data/repo

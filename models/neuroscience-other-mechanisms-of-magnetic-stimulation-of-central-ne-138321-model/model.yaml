@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/138321
   download_url: https://modeldb.science/download/138321
   license: ''
-bsim:
+biosim:
   entrypoint: src.mechanisms_of_magnetic_stimulation_of_central_ne_138321_model:MechanismsOfMagneticStimulationOfCentralNe138321Model
   init_kwargs:
     model_path: data/138321.zip

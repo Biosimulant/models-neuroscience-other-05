@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/115357
   download_url: https://modeldb.science/download/115357
   license: ''
-bsim:
+biosim:
   entrypoint: src.generalized_carnevale_hines_algorithm_van_elburg_115357_model:GeneralizedCarnevaleHinesAlgorithmVanElburg115357Model
   init_kwargs:
     model_path: data/115357.zip

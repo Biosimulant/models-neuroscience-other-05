@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/140299
   download_url: https://modeldb.science/download/140299
   license: ''
-bsim:
+biosim:
   entrypoint: src.four_cortical_interneuron_subtypes_kubota_et_al_140299_model:FourCorticalInterneuronSubtypesKubotaEtAl140299Model
   init_kwargs:
     model_path: data/140299.zip

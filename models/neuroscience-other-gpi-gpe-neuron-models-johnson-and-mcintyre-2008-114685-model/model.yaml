@@ -20,7 +20,7 @@ upstream:
   original_url: https://modeldb.science/114685
   download_url: https://modeldb.science/download/114685
   license: ''
-bsim:
+biosim:
   entrypoint: src.gpi_gpe_neuron_models_johnson_and_mcintyre_2008_114685_model:GpiGpeNeuronModelsJohnsonAndMcintyre2008114685Model
   init_kwargs:
     model_path: data/114685.zip
