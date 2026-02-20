@@ -1,0 +1,44 @@
+modules:
+  inhibitory_contr_1:
+    class: src.inhibitory_control_by_an_integral_feedback_signa_62268_model:InhibitoryControlByAnIntegralFeedbackSigna62268Model
+    args:
+      model_path: data/62268.zip
+  inhibitory_plast_2:
+    class: src.inhibitory_plasticity_balances_excitation_and_in_143751_model:InhibitoryPlasticityBalancesExcitationAndIn143751Model
+    args:
+      model_path: data/143751.zip
+  input_fluctuatio_3:
+    class: src.input_fluctuations_effects_on_f_i_curves_arsiero_83590_model:InputFluctuationsEffectsOnFICurvesArsiero83590Model
+    args:
+      model_path: data/83590.zip
+  intracortical_sy_4:
+    class: src.intracortical_synaptic_potential_modulation_by_p_135787_model:IntracorticalSynapticPotentialModulationByP135787Model
+    args:
+      model_path: data/135787.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: inhibitory_contr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: inhibitory_plast_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: input_fluctuatio_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: intracortical_sy_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

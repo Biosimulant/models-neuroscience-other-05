@@ -1,0 +1,28 @@
+modules:
+  generating_coher_1:
+    class: src.generating_coherent_patterns_of_activity_from_ch_127967_model:GeneratingCoherentPatternsOfActivityFromCh127967Model
+    args:
+      model_path: data/127967.zip
+  generation_of_2:
+    class: src.generation_of_granule_cell_dendritic_morphology_167638_model:GenerationOfGranuleCellDendriticMorphology167638Model
+    args:
+      model_path: data/167638.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: generating_coher_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: generation_of_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

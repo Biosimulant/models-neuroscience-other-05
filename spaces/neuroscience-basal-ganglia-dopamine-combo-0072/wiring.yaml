@@ -1,0 +1,44 @@
+modules:
+  globus_pallidus_1:
+    class: src.globus_pallidus_neuron_models_with_differing_den_136315_model:GlobusPallidusNeuronModelsWithDifferingDen136315Model
+    args:
+      model_path: data/136315.zip
+  gq_coupled_2:
+    class: src.gq_coupled_signaling_pathways_involved_in_striat_154967_model:GqCoupledSignalingPathwaysInvolvedInStriat154967Model
+    args:
+      model_path: data/154967.zip
+  high_frequency_3:
+    class: src.high_frequency_stimulation_of_the_subthalamic_nu_116867_model:HighFrequencyStimulationOfTheSubthalamicNu116867Model
+    args:
+      model_path: data/116867.zip
+  investigation_of_4:
+    class: src.investigation_of_different_targets_in_deep_brain_122369_model:InvestigationOfDifferentTargetsInDeepBrain122369Model
+    args:
+      model_path: data/122369.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: globus_pallidus_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gq_coupled_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: high_frequency_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: investigation_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

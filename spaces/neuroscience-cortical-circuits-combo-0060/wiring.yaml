@@ -1,0 +1,44 @@
+modules:
+  kv4_kv1_1:
+    class: src.kv4_3_kv1_4_encoded_k_channel_in_heart_cells_and_62654_model:Kv43Kv14EncodedKChannelInHeartCellsAnd62654Model
+    args:
+      model_path: data/62654.zip
+  kv4_kv1_2:
+    class: src.kv4_3_kv1_4_encoded_k_channel_in_heart_cells_gre_62287_model:Kv43Kv14EncodedKChannelInHeartCellsGre62287Model
+    args:
+      model_path: data/62287.zip
+  l23pyramidalcell_3:
+    class: src.l23pyramidalcelltutorial_l23pyramidalcelltutorial_model:L23pyramidalcelltutorialL23pyramidalcelltutorialModel
+    args:
+      model_path: data/repo
+  l5_pfc_4:
+    class: src.l5_pfc_microcircuit_used_to_study_persistent_act_155057_model:L5PfcMicrocircuitUsedToStudyPersistentAct155057Model
+    args:
+      model_path: data/155057.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kv4_kv1_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kv4_kv1_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: l23pyramidalcell_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: l5_pfc_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

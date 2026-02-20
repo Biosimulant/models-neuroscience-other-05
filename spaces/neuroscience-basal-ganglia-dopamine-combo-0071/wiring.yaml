@@ -1,0 +1,44 @@
+modules:
+  erg_current_1:
+    class: src.erg_current_in_repolarizing_plateau_potentials_i_100603_model:ErgCurrentInRepolarizingPlateauPotentialsI100603Model
+    args:
+      model_path: data/100603.zip
+  fs_striatal_2:
+    class: src.fs_striatal_interneuron_k_currents_solve_signal_79465_model:FsStriatalInterneuronKCurrentsSolveSignal79465Model
+    args:
+      model_path: data/79465.zip
+  gap_junction_3:
+    class: src.gap_junction_coupled_network_of_striatal_fast_sp_118389_model:GapJunctionCoupledNetworkOfStriatalFastSp118389Model
+    args:
+      model_path: data/118389.zip
+  globus_pallidus_4:
+    class: src.globus_pallidus_multi_compartmental_model_neuron_114639_model:GlobusPallidusMultiCompartmentalModelNeuron114639Model
+    args:
+      model_path: data/114639.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: erg_current_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fs_striatal_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: gap_junction_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: globus_pallidus_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

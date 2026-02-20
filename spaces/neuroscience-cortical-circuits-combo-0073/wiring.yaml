@@ -1,0 +1,44 @@
+modules:
+  meg_of_1:
+    class: src.meg_of_somatosensory_neocortex_jones_et_al_2007_113732_model:MegOfSomatosensoryNeocortexJonesEtAl2007113732Model
+    args:
+      model_path: data/113732.zip
+  mejiasetal2016_2:
+    class: src.mejiasetal2016_mejiasetal2016_model:Mejiasetal2016Mejiasetal2016Model
+    args:
+      model_path: data/repo
+  microcircuits_of_3:
+    class: src.microcircuits_of_l5_thick_tufted_pyramidal_cells_156780_model:MicrocircuitsOfL5ThickTuftedPyramidalCells156780Model
+    args:
+      model_path: data/156780.zip
+  microglial_cytok_4:
+    class: src.microglial_cytokine_network_anderson_et_al_2015_170029_model:MicroglialCytokineNetworkAndersonEtAl2015170029Model
+    args:
+      model_path: data/170029.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: meg_of_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: mejiasetal2016_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: microcircuits_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: microglial_cytok_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

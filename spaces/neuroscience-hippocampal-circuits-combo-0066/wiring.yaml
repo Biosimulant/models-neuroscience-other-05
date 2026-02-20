@@ -1,0 +1,44 @@
+modules:
+  fergusonetal2013_1:
+    class: src.fergusonetal2013_pvfastfiringcell_fergusonetal2013pvfastfiringcell_model:Fergusonetal2013PvfastfiringcellFergusonetal2013pvfastfiringcellModel
+    args:
+      model_path: data/repo
+  fergusonetal2014_2:
+    class: src.fergusonetal2014_ca1pyrcell_fergusonetal2014ca1pyrcell_model:Fergusonetal2014Ca1pyrcellFergusonetal2014ca1pyrcellModel
+    args:
+      model_path: data/repo
+  ferrante2009_den_3:
+    class: src.ferrante2009_dentategyrusgranulecell_ferrante2009dentategyrusgranulecell_model:Ferrante2009DentategyrusgranulecellFerrante2009dentategyrusgranulecellModel
+    args:
+      model_path: data/repo
+  functional_impac_4:
+    class: src.functional_impact_of_dendritic_branch_point_morp_146509_model:FunctionalImpactOfDendriticBranchPointMorp146509Model
+    args:
+      model_path: data/146509.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fergusonetal2013_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fergusonetal2014_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ferrante2009_den_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: functional_impac_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

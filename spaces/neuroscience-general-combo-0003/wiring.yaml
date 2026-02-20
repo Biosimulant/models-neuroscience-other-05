@@ -1,0 +1,28 @@
+modules:
+  endothelin_actio_1:
+    class: src.endothelin_action_on_pituitary_latotrophs_bertra_91899_model:EndothelinActionOnPituitaryLatotrophsBertra91899Model
+    args:
+      model_path: data/91899.zip
+  evaluation_of_2:
+    class: src.evaluation_of_stochastic_diff_eq_approximation_o_118195_model:EvaluationOfStochasticDiffEqApproximationO118195Model
+    args:
+      model_path: data/118195.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: endothelin_actio_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: evaluation_of_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

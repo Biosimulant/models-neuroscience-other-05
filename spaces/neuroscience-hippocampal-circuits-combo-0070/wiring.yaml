@@ -1,0 +1,44 @@
+modules:
+  ionic_mechanisms_1:
+    class: src.ionic_mechanisms_of_bursting_in_ca3_pyramidal_ne_114337_model:IonicMechanismsOfBurstingInCa3PyramidalNe114337Model
+    args:
+      model_path: data/114337.zip
+  ketamine_disrupt_2:
+    class: src.ketamine_disrupts_theta_modulation_of_gamma_in_a_139421_model:KetamineDisruptsThetaModulationOfGammaInA139421Model
+    args:
+      model_path: data/139421.zip
+  linear_vs_3:
+    class: src.linear_vs_non_linear_integration_in_ca1_oblique_144450_model:LinearVsNonLinearIntegrationInCa1Oblique144450Model
+    args:
+      model_path: data/144450.zip
+  long_time_4:
+    class: src.long_time_windows_from_theta_modulated_inhib_in_181967_model:LongTimeWindowsFromThetaModulatedInhibIn181967Model
+    args:
+      model_path: data/181967.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ionic_mechanisms_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ketamine_disrupt_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: linear_vs_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: long_time_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

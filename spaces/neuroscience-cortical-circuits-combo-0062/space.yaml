@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Neuroscience: Cortical Circuits (COMBO_0062)'
+description: Neuroscience cortical circuits comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: large_scale_1
+  manifest_path: models/neuroscience-other-large-scale-model-of-neocortical-slice-in-vitro-156072-model/model.yaml
+  parameters:
+    model_path: data/156072.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: larkumetal2009_2
+  manifest_path: models/neuroscience-other-larkumetal2009-larkumetal2009-model/model.yaml
+  parameters:
+    model_path: data/repo
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: late_emergence_3
+  manifest_path: models/neuroscience-other-late-emergence-of-the-whisker-direction-selectiv-154348-model/model.yaml
+  parameters:
+    model_path: data/154348.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: layer_pyramidal_4
+  manifest_path: models/neuroscience-other-layer-5-pyramidal-neuron-shai-et-al-2015-180373-model/model.yaml
+  parameters:
+    model_path: data/180373.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: large_scale_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: larkumetal2009_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: late_emergence_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: layer_pyramidal_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do cortical circuit motifs transform and propagate activity?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-large-scale-model-of-neocortical-slice-in-vitro-156072-model
+    :: modeldb:156072 :: https://modeldb.science/156072'
+  - 'neuroscience-other-larkumetal2009-larkumetal2009-model :: opensourcebrain:LarkumEtAl2009
+    :: https://github.com/OpenSourceBrain/LarkumEtAl2009'
+  - 'neuroscience-other-late-emergence-of-the-whisker-direction-selectiv-154348-model
+    :: modeldb:154348 :: https://modeldb.science/154348'
+  - 'neuroscience-other-layer-5-pyramidal-neuron-shai-et-al-2015-180373-model :: modeldb:180373
+    :: https://modeldb.science/180373'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

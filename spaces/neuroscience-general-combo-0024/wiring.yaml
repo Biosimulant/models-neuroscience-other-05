@@ -1,0 +1,28 @@
+modules:
+  gsoc_osb_1:
+    class: src.gsoc_2021_osb_nwb_gsoc2021osbnwb_model:Gsoc2021OsbNwbGsoc2021osbnwbModel
+    args:
+      model_path: data/repo
+  half_center_2:
+    class: src.half_center_oscillator_database_of_leech_heart_i_144518_model:HalfCenterOscillatorDatabaseOfLeechHeartI144518Model
+    args:
+      model_path: data/144518.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gsoc_osb_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: half_center_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

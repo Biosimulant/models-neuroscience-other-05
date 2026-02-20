@@ -1,0 +1,36 @@
+modules:
+  jitcon_just_1:
+    class: src.jitcon_just_in_time_connectivity_for_large_spiki_106891_model:JitconJustInTimeConnectivityForLargeSpiki106891Model
+    args:
+      model_path: data/106891.zip
+  joglekaretal18_2:
+    class: src.joglekaretal18_joglekaretal18_model:Joglekaretal18Joglekaretal18Model
+    args:
+      model_path: data/repo
+  kinetics_of_3:
+    class: src.kinetics_of_the_p2x7_receptor_as_expressed_in_xe_95990_model:KineticsOfTheP2x7ReceptorAsExpressedInXe95990Model
+    args:
+      model_path: data/95990.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: jitcon_just_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: joglekaretal18_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kinetics_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

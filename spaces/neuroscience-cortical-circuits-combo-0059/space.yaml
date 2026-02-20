@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Neuroscience: Cortical Circuits (COMBO_0059)'
+description: Neuroscience cortical circuits comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: irregular_spikin_1
+  manifest_path: models/neuroscience-other-irregular-spiking-in-nmda-driven-prefrontal-cort-82784-model/model.yaml
+  parameters:
+    model_path: data/82784.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: kinetic_nmda_2
+  manifest_path: models/neuroscience-other-kinetic-nmda-receptor-model-kampa-et-al-2004-50207-model/model.yaml
+  parameters:
+    model_path: data/50207.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: kinetic_properti_3
+  manifest_path: models/neuroscience-other-kinetic-properties-of-voltage-gated-na-channel-n-111967-model/model.yaml
+  parameters:
+    model_path: data/111967.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: kv1_channel_4
+  manifest_path: models/neuroscience-other-kv1-channel-governs-cerebellar-output-to-thalamu-150024-model/model.yaml
+  parameters:
+    model_path: data/150024.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: irregular_spikin_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kinetic_nmda_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kinetic_properti_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: kv1_channel_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do cortical circuit motifs transform and propagate activity?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-irregular-spiking-in-nmda-driven-prefrontal-cort-82784-model
+    :: modeldb:82784 :: https://modeldb.science/82784'
+  - 'neuroscience-other-kinetic-nmda-receptor-model-kampa-et-al-2004-50207-model ::
+    modeldb:50207 :: https://modeldb.science/50207'
+  - 'neuroscience-other-kinetic-properties-of-voltage-gated-na-channel-n-111967-model
+    :: modeldb:111967 :: https://modeldb.science/111967'
+  - 'neuroscience-other-kv1-channel-governs-cerebellar-output-to-thalamu-150024-model
+    :: modeldb:150024 :: https://modeldb.science/150024'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

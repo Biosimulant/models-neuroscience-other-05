@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Neuroscience: Cortical Circuits (COMBO_0064)'
+description: Neuroscience cortical circuits comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: mathematical_mod_1
+  manifest_path: models/neuroscience-other-mathematical-model-for-windup-aguiar-et-al-2010-128559-model/model.yaml
+  parameters:
+    model_path: data/128559.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: mechanisms_for_2
+  manifest_path: models/neuroscience-other-mechanisms-for-stable-robust-and-adaptive-develo-151951-model/model.yaml
+  parameters:
+    model_path: data/151951.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: mechanisms_under_3
+  manifest_path: models/neuroscience-other-mechanisms-underlying-subunit-independence-in-py-167694-model/model.yaml
+  parameters:
+    model_path: data/167694.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: meg_of_4
+  manifest_path: models/neuroscience-other-meg-of-somatosensory-neocortex-jones-et-al-2007-113732-model/model.yaml
+  parameters:
+    model_path: data/113732.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: mathematical_mod_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: mechanisms_for_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mechanisms_under_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: meg_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do cortical circuit motifs transform and propagate activity?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-mathematical-model-for-windup-aguiar-et-al-2010-128559-model
+    :: modeldb:128559 :: https://modeldb.science/128559'
+  - 'neuroscience-other-mechanisms-for-stable-robust-and-adaptive-develo-151951-model
+    :: modeldb:151951 :: https://modeldb.science/151951'
+  - 'neuroscience-other-mechanisms-underlying-subunit-independence-in-py-167694-model
+    :: modeldb:167694 :: https://modeldb.science/167694'
+  - 'neuroscience-other-meg-of-somatosensory-neocortex-jones-et-al-2007-113732-model
+    :: modeldb:113732 :: https://modeldb.science/113732'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

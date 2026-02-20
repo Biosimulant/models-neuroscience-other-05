@@ -1,0 +1,44 @@
+modules:
+  irregular_spikin_1:
+    class: src.irregular_spiking_in_nmda_driven_prefrontal_cort_82784_model:IrregularSpikingInNmdaDrivenPrefrontalCort82784Model
+    args:
+      model_path: data/82784.zip
+  kinetic_nmda_2:
+    class: src.kinetic_nmda_receptor_model_kampa_et_al_2004_50207_model:KineticNmdaReceptorModelKampaEtAl200450207Model
+    args:
+      model_path: data/50207.zip
+  kinetic_properti_3:
+    class: src.kinetic_properties_of_voltage_gated_na_channel_n_111967_model:KineticPropertiesOfVoltageGatedNaChannelN111967Model
+    args:
+      model_path: data/111967.zip
+  kv1_channel_4:
+    class: src.kv1_channel_governs_cerebellar_output_to_thalamu_150024_model:Kv1ChannelGovernsCerebellarOutputToThalamu150024Model
+    args:
+      model_path: data/150024.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: irregular_spikin_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: kinetic_nmda_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: kinetic_properti_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: kv1_channel_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

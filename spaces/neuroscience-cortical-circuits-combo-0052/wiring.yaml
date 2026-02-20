@@ -1,0 +1,36 @@
+modules:
+  emergence_of_1:
+    class: src.emergence_of_physiological_oscillation_frequenci_138379_model:EmergenceOfPhysiologicalOscillationFrequenci138379Model
+    args:
+      model_path: data/138379.zip
+  engaging_distinc_2:
+    class: src.engaging_distinct_oscillatory_neocortical_circui_141273_model:EngagingDistinctOscillatoryNeocorticalCircui141273Model
+    args:
+      model_path: data/141273.zip
+  excitability_of_3:
+    class: src.excitability_of_pfc_basal_dendrites_acker_and_an_117207_model:ExcitabilityOfPfcBasalDendritesAckerAndAn117207Model
+    args:
+      model_path: data/117207.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: emergence_of_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: engaging_distinc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: excitability_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

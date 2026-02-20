@@ -1,0 +1,44 @@
+modules:
+  hippocampal_bask_1:
+    class: src.hippocampal_basket_cell_gap_junction_network_dyn_114047_model:HippocampalBasketCellGapJunctionNetworkDyn114047Model
+    args:
+      model_path: data/114047.zip
+  hippocampal_ca3_2:
+    class: src.hippocampal_ca3_network_and_circadian_regulation_142104_model:HippocampalCa3NetworkAndCircadianRegulation142104Model
+    args:
+      model_path: data/142104.zip
+  hippocampal_cont_3:
+    class: src.hippocampal_context_dependent_retrieval_hasselmo_83516_model:HippocampalContextDependentRetrievalHasselmo83516Model
+    args:
+      model_path: data/83516.zip
+  hippocampus_ca1_4:
+    class: src.hippocampus_ca1_simulations_of_ltp_signaling_pat_139655_model:HippocampusCa1SimulationsOfLtpSignalingPat139655Model
+    args:
+      model_path: data/139655.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hippocampal_bask_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hippocampal_ca3_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: hippocampal_cont_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: hippocampus_ca1_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

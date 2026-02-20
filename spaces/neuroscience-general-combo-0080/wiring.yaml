@@ -1,0 +1,44 @@
+modules:
+  encoding_and_1:
+    class: src.encoding_and_discrimination_of_vowel_like_sounds_126371_model:EncodingAndDiscriminationOfVowelLikeSounds126371Model
+    args:
+      model_path: data/126371.zip
+  endothelin_actio_2:
+    class: src.endothelin_action_on_pituitary_latotrophs_bertra_91899_model:EndothelinActionOnPituitaryLatotrophsBertra91899Model
+    args:
+      model_path: data/91899.zip
+  evaluation_of_3:
+    class: src.evaluation_of_stochastic_diff_eq_approximation_o_118195_model:EvaluationOfStochasticDiffEqApproximationO118195Model
+    args:
+      model_path: data/118195.zip
+  event_related_4:
+    class: src.event_related_simulation_of_neural_processing_in_140964_model:EventRelatedSimulationOfNeuralProcessingIn140964Model
+    args:
+      model_path: data/140964.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: encoding_and_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: endothelin_actio_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: evaluation_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: event_related_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

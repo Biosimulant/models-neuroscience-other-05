@@ -1,0 +1,44 @@
+modules:
+  ell_pyramidal_1:
+    class: src.ell_pyramidal_neuron_simmonds_and_chacron_2014_168590_model:EllPyramidalNeuronSimmondsAndChacron2014168590Model
+    args:
+      model_path: data/168590.zip
+  encoding_and_2:
+    class: src.encoding_and_discrimination_of_vowel_like_sounds_126371_model:EncodingAndDiscriminationOfVowelLikeSounds126371Model
+    args:
+      model_path: data/126371.zip
+  endothelin_actio_3:
+    class: src.endothelin_action_on_pituitary_latotrophs_bertra_91899_model:EndothelinActionOnPituitaryLatotrophsBertra91899Model
+    args:
+      model_path: data/91899.zip
+  evaluation_of_4:
+    class: src.evaluation_of_stochastic_diff_eq_approximation_o_118195_model:EvaluationOfStochasticDiffEqApproximationO118195Model
+    args:
+      model_path: data/118195.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ell_pyramidal_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: encoding_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: endothelin_actio_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: evaluation_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

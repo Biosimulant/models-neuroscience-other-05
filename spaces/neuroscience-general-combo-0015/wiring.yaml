@@ -1,0 +1,28 @@
+modules:
+  gating_of_1:
+    class: src.gating_of_steering_signals_through_phasic_modula_151338_model:GatingOfSteeringSignalsThroughPhasicModula151338Model
+    args:
+      model_path: data/151338.zip
+  generalized_carn_2:
+    class: src.generalized_carnevale_hines_algorithm_van_elburg_115357_model:GeneralizedCarnevaleHinesAlgorithmVanElburg115357Model
+    args:
+      model_path: data/115357.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gating_of_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: generalized_carn_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

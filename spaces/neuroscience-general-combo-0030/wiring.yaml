@@ -1,0 +1,28 @@
+modules:
+  hodgkin_huxley_1:
+    class: src.hodgkin_huxley_with_dynamic_ion_concentrations_h_167714_model:HodgkinHuxleyWithDynamicIonConcentrationsH167714Model
+    args:
+      model_path: data/167714.zip
+  hopfield_and_2:
+    class: src.hopfield_and_brody_model_hopfield_brody_2000_neu_144549_model:HopfieldAndBrodyModelHopfieldBrody2000Neu144549Model
+    args:
+      model_path: data/144549.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hodgkin_huxley_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hopfield_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,36 @@
+modules:
+  implementation_i_1:
+    class: src.implementation_issues_in_approximate_methods_for_93315_model:ImplementationIssuesInApproximateMethodsFor93315Model
+    args:
+      model_path: data/93315.zip
+  ina_and_2:
+    class: src.ina_and_ikv4_3_heterogeneity_in_canine_lv_myocyt_83491_model:InaAndIkv43HeterogeneityInCanineLvMyocyt83491Model
+    args:
+      model_path: data/83491.zip
+  increased_comput_3:
+    class: src.increased_computational_accuracy_in_multi_compar_129149_model:IncreasedComputationalAccuracyInMultiCompar129149Model
+    args:
+      model_path: data/129149.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: implementation_i_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ina_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: increased_comput_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

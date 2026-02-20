@@ -1,0 +1,75 @@
+schema_version: '2.0'
+title: 'Neuroscience: Synaptic Plasticity (COMBO_0046)'
+description: Neuroscience synaptic plasticity comparative space with 3 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: excitatory_synap_1
+  manifest_path: models/neuroscience-other-excitatory-synaptic-interactions-in-pyramidal-ne-151404-model/model.yaml
+  parameters:
+    model_path: data/151404.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: facilitation_mod_2
+  manifest_path: models/neuroscience-other-facilitation-model-based-on-bound-ca2-matveev-et-118797-model/model.yaml
+  parameters:
+    model_path: data/118797.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: facilitation_thr_3
+  manifest_path: models/neuroscience-other-facilitation-through-buffer-saturation-matveev-e-119153-model/model.yaml
+  parameters:
+    model_path: data/119153.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: excitatory_synap_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: facilitation_mod_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: facilitation_thr_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+scientific_context:
+  question: How do synaptic changes influence network-level outcomes?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-excitatory-synaptic-interactions-in-pyramidal-ne-151404-model
+    :: modeldb:151404 :: https://modeldb.science/151404'
+  - 'neuroscience-other-facilitation-model-based-on-bound-ca2-matveev-et-118797-model
+    :: modeldb:118797 :: https://modeldb.science/118797'
+  - 'neuroscience-other-facilitation-through-buffer-saturation-matveev-e-119153-model
+    :: modeldb:119153 :: https://modeldb.science/119153'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

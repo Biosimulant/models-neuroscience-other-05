@@ -1,0 +1,28 @@
+modules:
+  extracellular_ac_1:
+    class: src.extracellular_action_potential_simulations_gold_84589_model:ExtracellularActionPotentialSimulationsGold84589Model
+    args:
+      model_path: data/84589.zip
+  failure_of_2:
+    class: src.failure_of_deep_brain_stimulation_in_a_basal_gan_148637_model:FailureOfDeepBrainStimulationInABasalGan148637Model
+    args:
+      model_path: data/148637.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: extracellular_ac_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: failure_of_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

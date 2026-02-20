@@ -1,0 +1,28 @@
+modules:
+  fitzhugh_nagumo_1:
+    class: src.fitzhugh_nagumo_fitzhughnagumo_model:FitzhughNagumoFitzhughnagumoModel
+    args:
+      model_path: data/repo
+  fly_lobular_2:
+    class: src.fly_lobular_plate_vs_cell_borst_and_haag_1996_et_116956_model:FlyLobularPlateVsCellBorstAndHaag1996Et116956Model
+    args:
+      model_path: data/116956.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fitzhugh_nagumo_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fly_lobular_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

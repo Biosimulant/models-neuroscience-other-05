@@ -1,0 +1,36 @@
+modules:
+  human_attentiona_1:
+    class: src.human_attentional_networks_a_connectionist_model_115813_model:HumanAttentionalNetworksAConnectionistModel115813Model
+    args:
+      model_path: data/115813.zip
+  hyperconnectivit_2:
+    class: src.hyperconnectivity_slow_synapses_in_pfc_mental_re_140033_model:HyperconnectivitySlowSynapsesInPfcMentalRe140033Model
+    args:
+      model_path: data/140033.zip
+  hypocretin_and_3:
+    class: src.hypocretin_and_locus_coeruleus_model_neurons_car_145162_model:HypocretinAndLocusCoeruleusModelNeuronsCar145162Model
+    args:
+      model_path: data/145162.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: human_attentiona_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hyperconnectivit_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: hypocretin_and_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

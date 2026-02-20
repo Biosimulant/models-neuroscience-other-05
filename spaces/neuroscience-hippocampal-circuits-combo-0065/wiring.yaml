@@ -1,0 +1,44 @@
+modules:
+  encoding_and_1:
+    class: src.encoding_and_retrieval_in_a_model_of_the_hippoca_123815_model:EncodingAndRetrievalInAModelOfTheHippoca123815Model
+    args:
+      model_path: data/123815.zip
+  epilepsy_may_2:
+    class: src.epilepsy_may_be_caused_by_very_small_functional_124392_model:EpilepsyMayBeCausedByVerySmallFunctional124392Model
+    args:
+      model_path: data/124392.zip
+  excitability_of_3:
+    class: src.excitability_of_the_soma_in_central_nervous_syst_62266_model:ExcitabilityOfTheSomaInCentralNervousSyst62266Model
+    args:
+      model_path: data/62266.zip
+  fast_sodium_4:
+    class: src.fast_sodium_channel_gating_in_mossy_fiber_axons_128079_model:FastSodiumChannelGatingInMossyFiberAxons128079Model
+    args:
+      model_path: data/128079.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: encoding_and_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: epilepsy_may_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: excitability_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: fast_sodium_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

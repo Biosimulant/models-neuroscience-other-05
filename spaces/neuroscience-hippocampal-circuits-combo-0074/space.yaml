@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Neuroscience: Hippocampal Circuits (COMBO_0074)'
+description: Neuroscience hippocampal circuits comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: long_time_1
+  manifest_path: models/neuroscience-other-long-time-windows-from-theta-modulated-inhib-in-181967-model/model.yaml
+  parameters:
+    model_path: data/181967.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: ltp_in_2
+  manifest_path: models/neuroscience-other-ltp-in-cerebellar-mossy-fiber-granule-cell-synap-51196-model/model.yaml
+  parameters:
+    model_path: data/51196.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: mec_layer_3
+  manifest_path: models/neuroscience-other-mec-layer-ii-stellate-cell-synaptic-mechanisms-o-150239-model/model.yaml
+  parameters:
+    model_path: data/150239.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: model_of_4
+  manifest_path: models/neuroscience-other-model-of-long-range-transmission-of-gamma-oscill-137505-model/model.yaml
+  parameters:
+    model_path: data/137505.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: long_time_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ltp_in_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mec_layer_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: model_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do recurrent hippocampal motifs shape network dynamics over time?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-long-time-windows-from-theta-modulated-inhib-in-181967-model
+    :: modeldb:181967 :: https://modeldb.science/181967'
+  - 'neuroscience-other-ltp-in-cerebellar-mossy-fiber-granule-cell-synap-51196-model
+    :: modeldb:51196 :: https://modeldb.science/51196'
+  - 'neuroscience-other-mec-layer-ii-stellate-cell-synaptic-mechanisms-o-150239-model
+    :: modeldb:150239 :: https://modeldb.science/150239'
+  - 'neuroscience-other-model-of-long-range-transmission-of-gamma-oscill-137505-model
+    :: modeldb:137505 :: https://modeldb.science/137505'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

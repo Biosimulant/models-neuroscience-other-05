@@ -1,0 +1,36 @@
+modules:
+  inferior_olive_1:
+    class: src.inferior_olive_subthreshold_oscillations_torben_144502_model:InferiorOliveSubthresholdOscillationsTorben144502Model
+    args:
+      model_path: data/144502.zip
+  information_tran_2:
+    class: src.information_transmission_in_cerebellar_granule_c_156733_model:InformationTransmissionInCerebellarGranuleC156733Model
+    args:
+      model_path: data/156733.zip
+  input_strength_3:
+    class: src.input_strength_and_time_varying_oscillation_peak_154770_model:InputStrengthAndTimeVaryingOscillationPeak154770Model
+    args:
+      model_path: data/154770.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: inferior_olive_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: information_tran_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: input_strength_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  fast_spiking_1:
+    class: src.fast_spiking_cortical_interneuron_golomb_et_al_2_97747_model:FastSpikingCorticalInterneuronGolombEtAl297747Model
+    args:
+      model_path: data/97747.zip
+  ffv1mt_a_2:
+    class: src.ffv1mt_a_v1_mt_feedforward_architecture_for_opti_181035_model:Ffv1mtAV1MtFeedforwardArchitectureForOpti181035Model
+    args:
+      model_path: data/181035.zip
+  firing_neocortic_3:
+    class: src.firing_neocortical_layer_v_pyramidal_neuron_reet_168148_model:FiringNeocorticalLayerVPyramidalNeuronReet168148Model
+    args:
+      model_path: data/168148.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fast_spiking_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ffv1mt_a_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: firing_neocortic_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

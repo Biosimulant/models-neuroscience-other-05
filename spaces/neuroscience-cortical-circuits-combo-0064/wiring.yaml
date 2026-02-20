@@ -1,0 +1,44 @@
+modules:
+  mathematical_mod_1:
+    class: src.mathematical_model_for_windup_aguiar_et_al_2010_128559_model:MathematicalModelForWindupAguiarEtAl2010128559Model
+    args:
+      model_path: data/128559.zip
+  mechanisms_for_2:
+    class: src.mechanisms_for_stable_robust_and_adaptive_develo_151951_model:MechanismsForStableRobustAndAdaptiveDevelo151951Model
+    args:
+      model_path: data/151951.zip
+  mechanisms_under_3:
+    class: src.mechanisms_underlying_subunit_independence_in_py_167694_model:MechanismsUnderlyingSubunitIndependenceInPy167694Model
+    args:
+      model_path: data/167694.zip
+  meg_of_4:
+    class: src.meg_of_somatosensory_neocortex_jones_et_al_2007_113732_model:MegOfSomatosensoryNeocortexJonesEtAl2007113732Model
+    args:
+      model_path: data/113732.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: mathematical_mod_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: mechanisms_for_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mechanisms_under_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: meg_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

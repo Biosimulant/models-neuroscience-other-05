@@ -1,0 +1,44 @@
+modules:
+  human_sleep_1:
+    class: src.human_sleep_wake_cycle_rempe_et_al_2010_147748_model:HumanSleepWakeCycleRempeEtAl2010147748Model
+    args:
+      model_path: data/147748.zip
+  huntington_s_2:
+    class: src.huntington_s_disease_model_gambazzi_et_al_2010_125748_model:HuntingtonSDiseaseModelGambazziEtAl2010125748Model
+    args:
+      model_path: data/125748.zip
+  information_proc_3:
+    class: src.information_processing_in_lamina_specific_cortic_82385_model:InformationProcessingInLaminaSpecificCortic82385Model
+    args:
+      model_path: data/82385.zip
+  inhibitory_cells_4:
+    class: src.inhibitory_cells_enable_sparse_coding_in_v1_mode_182373_model:InhibitoryCellsEnableSparseCodingInV1Mode182373Model
+    args:
+      model_path: data/182373.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: human_sleep_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: huntington_s_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: information_proc_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: inhibitory_cells_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

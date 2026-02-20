@@ -1,0 +1,28 @@
+modules:
+  granulecellvscs_1:
+    class: src.granulecellvscs_granulecellvscs_model:GranulecellvscsGranulecellvscsModel
+    args:
+      model_path: data/repo
+  grid_cell_2:
+    class: src.grid_cell_oscillatory_interference_with_noisy_ne_128812_model:GridCellOscillatoryInterferenceWithNoisyNe128812Model
+    args:
+      model_path: data/128812.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: granulecellvscs_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: grid_cell_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

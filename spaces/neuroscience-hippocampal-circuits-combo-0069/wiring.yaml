@@ -1,0 +1,44 @@
+modules:
+  hippocampus_ca1_1:
+    class: src.hippocampus_ca1_temporal_sensitivity_of_signalin_125733_model:HippocampusCa1TemporalSensitivityOfSignalin125733Model
+    args:
+      model_path: data/125733.zip
+  hippocampus3ddem_2:
+    class: src.hippocampus3ddemo_hippocampus3ddemo_model:Hippocampus3ddemoHippocampus3ddemoModel
+    args:
+      model_path: data/repo
+  ih_tunes_3:
+    class: src.ih_tunes_oscillations_in_an_in_silico_ca3_model_151282_model:IhTunesOscillationsInAnInSilicoCa3Model151282Model
+    args:
+      model_path: data/151282.zip
+  impact_of_4:
+    class: src.impact_of_dendritic_atrophy_on_intrinsic_and_syn_147867_model:ImpactOfDendriticAtrophyOnIntrinsicAndSyn147867Model
+    args:
+      model_path: data/147867.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hippocampus_ca1_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hippocampus3ddem_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ih_tunes_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: impact_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

@@ -1,0 +1,36 @@
+modules:
+  extraction_and_1:
+    class: src.extraction_and_classification_of_three_cortical_143148_model:ExtractionAndClassificationOfThreeCortical143148Model
+    args:
+      model_path: data/143148.zip
+  farinellaetal_nm_2:
+    class: src.farinellaetal_nmdaspikes_farinellaetalnmdaspikes_model:FarinellaetalNmdaspikesFarinellaetalnmdaspikesModel
+    args:
+      model_path: data/repo
+  fast_population_3:
+    class: src.fast_population_coding_huys_et_al_2007_93394_model:FastPopulationCodingHuysEtAl200793394Model
+    args:
+      model_path: data/93394.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: extraction_and_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: farinellaetal_nm_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: fast_population_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

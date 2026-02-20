@@ -1,0 +1,44 @@
+modules:
+  long_time_1:
+    class: src.long_time_windows_from_theta_modulated_inhib_in_181967_model:LongTimeWindowsFromThetaModulatedInhibIn181967Model
+    args:
+      model_path: data/181967.zip
+  ltp_in_2:
+    class: src.ltp_in_cerebellar_mossy_fiber_granule_cell_synap_51196_model:LtpInCerebellarMossyFiberGranuleCellSynap51196Model
+    args:
+      model_path: data/51196.zip
+  mec_layer_3:
+    class: src.mec_layer_ii_stellate_cell_synaptic_mechanisms_o_150239_model:MecLayerIiStellateCellSynapticMechanismsO150239Model
+    args:
+      model_path: data/150239.zip
+  model_of_4:
+    class: src.model_of_long_range_transmission_of_gamma_oscill_137505_model:ModelOfLongRangeTransmissionOfGammaOscill137505Model
+    args:
+      model_path: data/137505.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: long_time_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ltp_in_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mec_layer_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: model_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

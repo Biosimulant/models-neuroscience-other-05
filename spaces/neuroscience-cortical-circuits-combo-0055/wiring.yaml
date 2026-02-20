@@ -1,0 +1,36 @@
+modules:
+  four_cortical_1:
+    class: src.four_cortical_interneuron_subtypes_kubota_et_al_140299_model:FourCorticalInterneuronSubtypesKubotaEtAl140299Model
+    args:
+      model_path: data/140299.zip
+  functional_conse_2:
+    class: src.functional_consequences_of_cortical_circuit_abno_144477_model:FunctionalConsequencesOfCorticalCircuitAbno144477Model
+    args:
+      model_path: data/144477.zip
+  generating_oscil_3:
+    class: src.generating_oscillatory_bursts_from_a_network_of_120783_model:GeneratingOscillatoryBurstsFromANetworkOf120783Model
+    args:
+      model_path: data/120783.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: four_cortical_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: functional_conse_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: generating_oscil_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

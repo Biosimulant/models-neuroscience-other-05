@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: 'Neuroscience: General (COMBO_0005)'
+description: Neuroscience general comparative space with 2 models, configured as non-causal
+  co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: excitation_contr_1
+  manifest_path: models/neuroscience-other-excitation-contraction-coupling-mitochondrial-en-105383-model/model.yaml
+  parameters:
+    model_path: data/105383.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: excitatory_and_2
+  manifest_path: models/neuroscience-other-excitatory-and-inhibitory-interactions-in-popula-76879-model/model.yaml
+  parameters:
+    model_path: data/76879.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: excitation_contr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: excitatory_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+scientific_context:
+  question: How do general mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-excitation-contraction-coupling-mitochondrial-en-105383-model
+    :: modeldb:105383 :: https://modeldb.science/105383'
+  - 'neuroscience-other-excitatory-and-inhibitory-interactions-in-popula-76879-model
+    :: modeldb:76879 :: https://modeldb.science/76879'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

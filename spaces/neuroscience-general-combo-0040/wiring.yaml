@@ -1,0 +1,36 @@
+modules:
+  kinness_a_1:
+    class: src.kinness_a_modular_framework_for_computational_ne_113939_model:KinnessAModularFrameworkForComputationalNe113939Model
+    args:
+      model_path: data/113939.zip
+  laminar_analysis_2:
+    class: src.laminar_analysis_of_excitatory_circuits_in_vibri_137743_model:LaminarAnalysisOfExcitatoryCircuitsInVibri137743Model
+    args:
+      model_path: data/137743.zip
+  laminar_connecti_3:
+    class: src.laminar_connectivity_matrix_simulation_weiler_et_114655_model:LaminarConnectivityMatrixSimulationWeilerEt114655Model
+    args:
+      model_path: data/114655.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kinness_a_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: laminar_analysis_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: laminar_connecti_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

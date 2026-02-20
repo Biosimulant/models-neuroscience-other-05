@@ -1,0 +1,36 @@
+modules:
+  ion_channel_1:
+    class: src.ion_channel_modeling_with_whole_cell_and_a_genet_97756_model:IonChannelModelingWithWholeCellAndAGenet97756Model
+    args:
+      model_path: data/97756.zip
+  ion_concentratio_2:
+    class: src.ion_concentration_dynamics_as_a_mechanism_for_ne_142630_model:IonConcentrationDynamicsAsAMechanismForNe142630Model
+    args:
+      model_path: data/142630.zip
+  ionic_basis_3:
+    class: src.ionic_basis_of_alternans_and_timothy_syndrome_fo_104623_model:IonicBasisOfAlternansAndTimothySyndromeFo104623Model
+    args:
+      model_path: data/104623.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ion_channel_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ion_concentratio_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ionic_basis_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

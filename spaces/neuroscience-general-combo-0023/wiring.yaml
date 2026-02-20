@@ -1,0 +1,28 @@
+modules:
+  grid_cell_1:
+    class: src.grid_cell_spatial_firing_models_zilli_2012_144006_model:GridCellSpatialFiringModelsZilli2012144006Model
+    args:
+      model_path: data/144006.zip
+  grid_cells_2:
+    class: src.grid_cells_from_place_cells_castro_and_aguiar_20_150846_model:GridCellsFromPlaceCellsCastroAndAguiar20150846Model
+    args:
+      model_path: data/150846.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: grid_cell_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: grid_cells_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

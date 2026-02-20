@@ -1,0 +1,28 @@
+modules:
+  formation_of_1:
+    class: src.formation_of_synfire_chains_jun_and_jin_2007_126471_model:FormationOfSynfireChainsJunAndJin2007126471Model
+    args:
+      model_path: data/126471.zip
+  fpgashowcase_2:
+    class: src.fpgashowcase_fpgashowcase_model:FpgashowcaseFpgashowcaseModel
+    args:
+      model_path: data/repo
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: formation_of_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fpgashowcase_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,28 @@
+modules:
+  experimental_and_1:
+    class: src.experimental_and_modeling_studies_of_desensitiza_117691_model:ExperimentalAndModelingStudiesOfDesensitiza117691Model
+    args:
+      model_path: data/117691.zip
+  explaining_patho_2:
+    class: src.explaining_pathological_changes_in_axonal_excita_143072_model:ExplainingPathologicalChangesInAxonalExcita143072Model
+    args:
+      model_path: data/143072.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: experimental_and_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: explaining_patho_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,28 @@
+modules:
+  github_1:
+    class: src.github_github_model:GithubGithubModel
+    args:
+      model_path: data/repo
+  global_structure_2:
+    class: src.global_structure_robustness_and_modulation_of_ne_127878_model:GlobalStructureRobustnessAndModulationOfNe127878Model
+    args:
+      model_path: data/127878.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: github_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: global_structure_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

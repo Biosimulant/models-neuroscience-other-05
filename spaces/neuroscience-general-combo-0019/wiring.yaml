@@ -1,0 +1,28 @@
+modules:
+  golgicelldendgap_1:
+    class: src.golgicelldendgapjunctions_golgicelldendgapjunctions_model:GolgicelldendgapjunctionsGolgicelldendgapjunctionsModel
+    args:
+      model_path: data/repo
+  gp_neuron_2:
+    class: src.gp_neuron_somatic_and_dendritic_phase_response_c_137846_model:GpNeuronSomaticAndDendriticPhaseResponseC137846Model
+    args:
+      model_path: data/137846.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: golgicelldendgap_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gp_neuron_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

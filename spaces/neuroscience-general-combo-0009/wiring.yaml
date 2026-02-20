@@ -1,0 +1,28 @@
+modules:
+  firing_patterns_1:
+    class: src.firing_patterns_in_stuttering_fast_spiking_inter_140254_model:FiringPatternsInStutteringFastSpikingInter140254Model
+    args:
+      model_path: data/140254.zip
+  fisher_and_2:
+    class: src.fisher_and_shannon_information_in_finite_neural_142990_model:FisherAndShannonInformationInFiniteNeural142990Model
+    args:
+      model_path: data/142990.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: firing_patterns_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fisher_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

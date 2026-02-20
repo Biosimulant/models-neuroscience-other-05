@@ -1,0 +1,36 @@
+modules:
+  excitatory_synap_1:
+    class: src.excitatory_synaptic_interactions_in_pyramidal_ne_151404_model:ExcitatorySynapticInteractionsInPyramidalNe151404Model
+    args:
+      model_path: data/151404.zip
+  facilitation_mod_2:
+    class: src.facilitation_model_based_on_bound_ca2_matveev_et_118797_model:FacilitationModelBasedOnBoundCa2MatveevEt118797Model
+    args:
+      model_path: data/118797.zip
+  facilitation_thr_3:
+    class: src.facilitation_through_buffer_saturation_matveev_e_119153_model:FacilitationThroughBufferSaturationMatveevE119153Model
+    args:
+      model_path: data/119153.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: excitatory_synap_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: facilitation_mod_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: facilitation_thr_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

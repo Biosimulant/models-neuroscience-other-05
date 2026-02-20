@@ -1,0 +1,44 @@
+modules:
+  grancelllayer_1:
+    class: src.grancelllayer_grancelllayer_model:GrancelllayerGrancelllayerModel
+    args:
+      model_path: data/repo
+  granularlayersol_2:
+    class: src.granularlayersolinasnieusdangelo2010_granularlayersolinasnieusdangelo2010_model:Granularlayersolinasnieusdangelo2010Granularlayersolinasnieusdangelo2010Model
+    args:
+      model_path: data/repo
+  high_dimensional_3:
+    class: src.high_dimensional_dynamics_and_low_dimensional_re_82394_model:HighDimensionalDynamicsAndLowDimensionalRe82394Model
+    args:
+      model_path: data/82394.zip
+  hmm_of_4:
+    class: src.hmm_of_nav1_7_wt_and_f1449v_gurkiewicz_et_al_201_138082_model:HmmOfNav17WtAndF1449vGurkiewiczEtAl201138082Model
+    args:
+      model_path: data/138082.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: grancelllayer_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: granularlayersol_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: high_dimensional_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: hmm_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

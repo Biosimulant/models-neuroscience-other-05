@@ -1,0 +1,44 @@
+modules:
+  large_scale_1:
+    class: src.large_scale_model_of_neocortical_slice_in_vitro_156072_model:LargeScaleModelOfNeocorticalSliceInVitro156072Model
+    args:
+      model_path: data/156072.zip
+  larkumetal2009_2:
+    class: src.larkumetal2009_larkumetal2009_model:Larkumetal2009Larkumetal2009Model
+    args:
+      model_path: data/repo
+  late_emergence_3:
+    class: src.late_emergence_of_the_whisker_direction_selectiv_154348_model:LateEmergenceOfTheWhiskerDirectionSelectiv154348Model
+    args:
+      model_path: data/154348.zip
+  layer_pyramidal_4:
+    class: src.layer_5_pyramidal_neuron_shai_et_al_2015_180373_model:Layer5PyramidalNeuronShaiEtAl2015180373Model
+    args:
+      model_path: data/180373.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: large_scale_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: larkumetal2009_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: late_emergence_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: layer_pyramidal_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

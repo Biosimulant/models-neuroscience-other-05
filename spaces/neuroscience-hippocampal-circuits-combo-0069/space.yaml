@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Neuroscience: Hippocampal Circuits (COMBO_0069)'
+description: Neuroscience hippocampal circuits comparative space with 4 models, configured
+  as non-causal co-simulation.
+models:
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: hippocampus_ca1_1
+  manifest_path: models/neuroscience-other-hippocampus-ca1-temporal-sensitivity-of-signalin-125733-model/model.yaml
+  parameters:
+    model_path: data/125733.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: hippocampus3ddem_2
+  manifest_path: models/neuroscience-other-hippocampus3ddemo-hippocampus3ddemo-model/model.yaml
+  parameters:
+    model_path: data/repo
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: ih_tunes_3
+  manifest_path: models/neuroscience-other-ih-tunes-oscillations-in-an-in-silico-ca3-model-151282-model/model.yaml
+  parameters:
+    model_path: data/151282.zip
+- repo: Biosimulant/models-neuroscience-other-05
+  alias: impact_of_4
+  manifest_path: models/neuroscience-other-impact-of-dendritic-atrophy-on-intrinsic-and-syn-147867-model/model.yaml
+  parameters:
+    model_path: data/147867.zip
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 0.3
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: hippocampus_ca1_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hippocampus3ddem_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ih_tunes_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: impact_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do recurrent hippocampal motifs shape network dynamics over time?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'neuroscience-other-hippocampus-ca1-temporal-sensitivity-of-signalin-125733-model
+    :: modeldb:125733 :: https://modeldb.science/125733'
+  - 'neuroscience-other-hippocampus3ddemo-hippocampus3ddemo-model :: opensourcebrain:Hippocampus3DDemo
+    :: https://github.com/OpenSourceBrain/Hippocampus3DDemo'
+  - 'neuroscience-other-ih-tunes-oscillations-in-an-in-silico-ca3-model-151282-model
+    :: modeldb:151282 :: https://modeldb.science/151282'
+  - 'neuroscience-other-impact-of-dendritic-atrophy-on-intrinsic-and-syn-147867-model
+    :: modeldb:147867 :: https://modeldb.science/147867'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

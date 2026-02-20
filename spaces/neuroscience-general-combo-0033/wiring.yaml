@@ -1,0 +1,36 @@
+modules:
+  ih_levels_1:
+    class: src.ih_levels_roles_in_bursting_and_regular_spiking_82364_model:IhLevelsRolesInBurstingAndRegularSpiking82364Model
+    args:
+      model_path: data/82364.zip
+  impact_of_2:
+    class: src.impact_of_dendritic_size_and_topology_on_pyramid_114359_model:ImpactOfDendriticSizeAndTopologyOnPyramid114359Model
+    args:
+      model_path: data/114359.zip
+  impact_of_3:
+    class: src.impact_of_fast_na_channel_inact_on_ap_threshold_153998_model:ImpactOfFastNaChannelInactOnApThreshold153998Model
+    args:
+      model_path: data/153998.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ih_levels_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: impact_of_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: impact_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

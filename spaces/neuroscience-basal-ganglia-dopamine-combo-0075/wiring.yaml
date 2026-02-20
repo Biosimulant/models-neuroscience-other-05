@@ -1,0 +1,44 @@
+modules:
+  investigation_of_1:
+    class: src.investigation_of_different_targets_in_deep_brain_122369_model:InvestigationOfDifferentTargetsInDeepBrain122369Model
+    args:
+      model_path: data/122369.zip
+  linking_stdp_2:
+    class: src.linking_stdp_and_dopamine_action_to_solve_the_di_84167_model:LinkingStdpAndDopamineActionToSolveTheDi84167Model
+    args:
+      model_path: data/84167.zip
+  low_dose_3:
+    class: src.low_dose_of_dopamine_may_stimulate_prolactin_sec_91898_model:LowDoseOfDopamineMayStimulateProlactinSec91898Model
+    args:
+      model_path: data/91898.zip
+  model_of_4:
+    class: src.model_of_darpp_32_phosphorylation_in_striatal_me_97743_model:ModelOfDarpp32PhosphorylationInStriatalMe97743Model
+    args:
+      model_path: data/97743.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: investigation_of_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: linking_stdp_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: low_dose_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: model_of_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

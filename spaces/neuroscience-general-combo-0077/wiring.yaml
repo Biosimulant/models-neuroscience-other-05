@@ -1,0 +1,44 @@
+modules:
+  electrodiffusive_1:
+    class: src.electrodiffusive_astrocytic_and_extracellular_io_151945_model:ElectrodiffusiveAstrocyticAndExtracellularIo151945Model
+    args:
+      model_path: data/151945.zip
+  elementary_mecha_2:
+    class: src.elementary_mechanisms_producing_facilitation_of_102871_model:ElementaryMechanismsProducingFacilitationOf102871Model
+    args:
+      model_path: data/102871.zip
+  ell_pyramidal_3:
+    class: src.ell_pyramidal_neuron_simmonds_and_chacron_2014_168590_model:EllPyramidalNeuronSimmondsAndChacron2014168590Model
+    args:
+      model_path: data/168590.zip
+  encoding_and_4:
+    class: src.encoding_and_discrimination_of_vowel_like_sounds_126371_model:EncodingAndDiscriminationOfVowelLikeSounds126371Model
+    args:
+      model_path: data/126371.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: electrodiffusive_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: elementary_mecha_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ell_pyramidal_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: encoding_and_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

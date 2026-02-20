@@ -1,0 +1,36 @@
+modules:
+  functional_balan_1:
+    class: src.functional_balanced_networks_with_synaptic_plast_182784_model:FunctionalBalancedNetworksWithSynapticPlast182784Model
+    args:
+      model_path: data/182784.zip
+  granule_cells_2:
+    class: src.granule_cells_of_the_olfactory_bulb_simoes_de_so_156828_model:GranuleCellsOfTheOlfactoryBulbSimoesDeSo156828Model
+    args:
+      model_path: data/156828.zip
+  homeostatic_syna_3:
+    class: src.homeostatic_synaptic_plasticity_rabinowitch_and_114355_model:HomeostaticSynapticPlasticityRabinowitchAnd114355Model
+    args:
+      model_path: data/114355.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: functional_balan_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: granule_cells_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: homeostatic_syna_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

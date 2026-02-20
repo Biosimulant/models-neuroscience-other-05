@@ -1,0 +1,28 @@
+modules:
+  excitation_contr_1:
+    class: src.excitation_contraction_coupling_mitochondrial_en_105383_model:ExcitationContractionCouplingMitochondrialEn105383Model
+    args:
+      model_path: data/105383.zip
+  excitatory_and_2:
+    class: src.excitatory_and_inhibitory_interactions_in_popula_76879_model:ExcitatoryAndInhibitoryInteractionsInPopula76879Model
+    args:
+      model_path: data/76879.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: excitation_contr_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: excitatory_and_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

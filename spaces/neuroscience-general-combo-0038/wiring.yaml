@@ -1,0 +1,36 @@
+modules:
+  ionic_mechanisms_1:
+    class: src.ionic_mechanisms_of_dendritic_spikes_almog_and_k_151825_model:IonicMechanismsOfDendriticSpikesAlmogAndK151825Model
+    args:
+      model_path: data/151825.zip
+  ip3r_model_2:
+    class: src.ip3r_model_comparison_hituri_and_linne_2013_147367_model:Ip3rModelComparisonHituriAndLinne2013147367Model
+    args:
+      model_path: data/147367.zip
+  izhikevichmodel_3:
+    class: src.izhikevichmodel_izhikevichmodel_model:IzhikevichmodelIzhikevichmodelModel
+    args:
+      model_path: data/repo
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ionic_mechanisms_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ip3r_model_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: izhikevichmodel_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

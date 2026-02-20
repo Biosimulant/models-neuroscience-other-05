@@ -1,0 +1,28 @@
+modules:
+  hodgkin_huxley_1:
+    class: src.hodgkin_huxley_model_of_persistent_activity_in_p_113997_model:HodgkinHuxleyModelOfPersistentActivityInP113997Model
+    args:
+      model_path: data/113997.zip
+  hodgkin_huxley_2:
+    class: src.hodgkin_huxley_model_of_persistent_activity_in_p_144376_model:HodgkinHuxleyModelOfPersistentActivityInP144376Model
+    args:
+      model_path: data/144376.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: hodgkin_huxley_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hodgkin_huxley_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

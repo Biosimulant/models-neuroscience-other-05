@@ -1,0 +1,28 @@
+modules:
+  event_related_1:
+    class: src.event_related_simulation_of_neural_processing_in_140964_model:EventRelatedSimulationOfNeuralProcessingIn140964Model
+    args:
+      model_path: data/140964.zip
+  excitation_contr_2:
+    class: src.excitation_contraction_coupling_in_an_integrativ_62286_model:ExcitationContractionCouplingInAnIntegrativ62286Model
+    args:
+      model_path: data/62286.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: event_related_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: excitation_contr_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

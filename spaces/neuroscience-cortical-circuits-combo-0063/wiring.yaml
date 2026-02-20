@@ -1,0 +1,44 @@
+modules:
+  layer_v_1:
+    class: src.layer_v_pfc_pyramidal_neuron_used_to_study_persi_144089_model:LayerVPfcPyramidalNeuronUsedToStudyPersi144089Model
+    args:
+      model_path: data/144089.zip
+  mainenetal_pyram_2:
+    class: src.mainenetal_pyramidalcell_mainenetalpyramidalcell_model:MainenetalPyramidalcellMainenetalpyramidalcellModel
+    args:
+      model_path: data/repo
+  maki_marttunenet_3:
+    class: src.maki_marttunenetal2020_makimarttunenetal2020_model:MakiMarttunenetal2020Makimarttunenetal2020Model
+    args:
+      model_path: data/repo
+  markov_models_4:
+    class: src.markov_models_of_scn1a_nav1_1_applied_to_abnorma_87278_model:MarkovModelsOfScn1aNav11AppliedToAbnorma87278Model
+    args:
+      model_path: data/87278.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: layer_v_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: mainenetal_pyram_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: maki_marttunenet_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: markov_models_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

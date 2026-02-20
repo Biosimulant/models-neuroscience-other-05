@@ -1,0 +1,36 @@
+modules:
+  leech_heart_1:
+    class: src.leech_heart_he_motor_neuron_conductances_contrib_153355_model:LeechHeartHeMotorNeuronConductancesContrib153355Model
+    args:
+      model_path: data/153355.zip
+  leech_s_2:
+    class: src.leech_s_cell_modulation_of_excitability_by_serot_102279_model:LeechSCellModulationOfExcitabilityBySerot102279Model
+    args:
+      model_path: data/102279.zip
+  lillie_transitio_3:
+    class: src.lillie_transition_onset_of_saltatory_conduction_169208_model:LillieTransitionOnsetOfSaltatoryConduction169208Model
+    args:
+      model_path: data/169208.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: leech_heart_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: leech_s_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: lillie_transitio_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

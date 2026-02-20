@@ -1,0 +1,36 @@
+modules:
+  integrate_and_1:
+    class: src.integrate_and_fire_model_code_for_spike_based_co_126052_model:IntegrateAndFireModelCodeForSpikeBasedCo126052Model
+    args:
+      model_path: data/126052.zip
+  interaural_time_2:
+    class: src.interaural_time_difference_detection_by_slowly_i_150445_model:InterauralTimeDifferenceDetectionBySlowlyI150445Model
+    args:
+      model_path: data/150445.zip
+  intrinsic_sensor_3:
+    class: src.intrinsic_sensory_neurons_of_the_gut_chambers_et_155796_model:IntrinsicSensoryNeuronsOfTheGutChambersEt155796Model
+    args:
+      model_path: data/155796.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: integrate_and_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: interaural_time_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: intrinsic_sensor_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

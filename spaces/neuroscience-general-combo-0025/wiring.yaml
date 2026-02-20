@@ -1,0 +1,28 @@
+modules:
+  herg_k_1:
+    class: src.herg_k_channels_spike_frequency_adaptation_chies_57910_model:HergKChannelsSpikeFrequencyAdaptationChies57910Model
+    args:
+      model_path: data/57910.zip
+  hh_testing_2:
+    class: src.hh_testing_hhtesting_model:HhTestingHhtestingModel
+    args:
+      model_path: data/repo
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: herg_k_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: hh_testing_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

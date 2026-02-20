@@ -1,0 +1,44 @@
+modules:
+  lgncircuit_minim_1:
+    class: src.lgncircuit_minimal_lgn_network_model_of_temporal_153092_model:LgncircuitMinimalLgnNetworkModelOfTemporal153092Model
+    args:
+      model_path: data/153092.zip
+  local_variable_2:
+    class: src.local_variable_time_step_method_lytton_hines_200_33975_model:LocalVariableTimeStepMethodLyttonHines20033975Model
+    args:
+      model_path: data/33975.zip
+  model_of_3:
+    class: src.model_of_working_memory_based_on_negative_deriva_181010_model:ModelOfWorkingMemoryBasedOnNegativeDeriva181010Model
+    args:
+      model_path: data/181010.zip
+  modeling_hebbian_4:
+    class: src.modeling_hebbian_and_homeostatic_plasticity_toyo_180791_model:ModelingHebbianAndHomeostaticPlasticityToyo180791Model
+    args:
+      model_path: data/180791.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lgncircuit_minim_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: local_variable_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: model_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: modeling_hebbian_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

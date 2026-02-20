@@ -1,0 +1,36 @@
+modules:
+  lobster_stg_1:
+    class: src.lobster_stg_pyloric_network_model_with_calcium_s_144387_model:LobsterStgPyloricNetworkModelWithCalciumS144387Model
+    args:
+      model_path: data/144387.zip
+  long_term_2:
+    class: src.long_term_adaptation_with_power_law_dynamics_zil_125855_model:LongTermAdaptationWithPowerLawDynamicsZil125855Model
+    args:
+      model_path: data/125855.zip
+  loss_of_3:
+    class: src.loss_of_phase_locking_in_non_weakly_coupled_inhi_118799_model:LossOfPhaseLockingInNonWeaklyCoupledInhi118799Model
+    args:
+      model_path: data/118799.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lobster_stg_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: long_term_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: loss_of_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,36 @@
+modules:
+  lateral_dendrode_1:
+    class: src.lateral_dendrodenditic_inhibition_in_the_olfacto_116094_model:LateralDendrodenditicInhibitionInTheOlfacto116094Model
+    args:
+      model_path: data/116094.zip
+  learning_intrins_2:
+    class: src.learning_intrinsic_excitability_in_medium_spiny_155131_model:LearningIntrinsicExcitabilityInMediumSpiny155131Model
+    args:
+      model_path: data/155131.zip
+  learning_spatial_3:
+    class: src.learning_spatial_transformations_through_stdp_da_64261_model:LearningSpatialTransformationsThroughStdpDa64261Model
+    args:
+      model_path: data/64261.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: lateral_dendrode_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: learning_intrins_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: learning_spatial_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

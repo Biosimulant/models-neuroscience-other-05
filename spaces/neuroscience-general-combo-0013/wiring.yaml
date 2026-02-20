@@ -1,0 +1,28 @@
+modules:
+  fronto_parietal_1:
+    class: src.fronto_parietal_visuospatial_wm_model_with_hh_ce_98017_model:FrontoParietalVisuospatialWmModelWithHhCe98017Model
+    args:
+      model_path: data/98017.zip
+  fully_implicit_2:
+    class: src.fully_implicit_parallel_simulation_of_single_neu_97985_model:FullyImplicitParallelSimulationOfSingleNeu97985Model
+    args:
+      model_path: data/97985.zip
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fronto_parietal_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: fully_implicit_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
