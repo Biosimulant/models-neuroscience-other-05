@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InterauralTimeDifferenceDetectionBySlowlyI150445Model'
-description: '{"value": "For localization of a sound source, animals and humans process
-  the microsecond interaural time differences of arriving sound waves. How nervous
-  systems, consisting of elements with time con'
+description: "{\"value\": \"For localization of a sound source, animals and humans process the microsecond interaural time differences of arriving sound waves. How nervous systems, consisting of elements with time con."
 standard: other
 tags:
 - neuroscience

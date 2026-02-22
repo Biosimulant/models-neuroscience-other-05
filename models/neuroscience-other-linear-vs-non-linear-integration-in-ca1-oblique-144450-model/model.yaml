@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LinearVsNonLinearIntegrationInCa1Oblique144450Model'
-description: '{"value": "The hippocampus in well known for its role in learning and
-  memory processes. The CA1 region is the output of the hippocampal formation and
-  pyramidal neurons in this region are the elementar'
+description: "{\"value\": \"The hippocampus in well known for its role in learning and memory processes. The CA1 region is the output of the hippocampal formation and pyramidal neurons in this region are the elementar."
 standard: other
 tags:
 - neuroscience

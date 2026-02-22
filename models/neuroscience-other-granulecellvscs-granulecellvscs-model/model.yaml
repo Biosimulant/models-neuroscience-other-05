@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GranulecellvscsGranulecellvscsModel'
-description: GitHub repository for an OSB project containing a cerebellar granule
-  cell developed by Volker Steuber & Chiara Saviane
+description: "GitHub repository for an OSB project containing a cerebellar granule cell developed by Volker Steuber & Chiara Saviane. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

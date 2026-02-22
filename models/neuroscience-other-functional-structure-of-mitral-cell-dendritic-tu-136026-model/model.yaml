@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FunctionalStructureOfMitralCellDendriticTu136026Model'
-description: '{"value": "The computational modeling component of Djurisic et al. 2008
-  addressed two primary questions: whether amplification by active currents is necessary
-  to explain the relatively mild attenuatio'
+description: "{\"value\": \"The computational modeling component of Djurisic et al. 2008 addressed two primary questions: whether amplification by active currents is necessary to explain the relatively mild attenuatio."
 standard: other
 tags:
 - neuroscience

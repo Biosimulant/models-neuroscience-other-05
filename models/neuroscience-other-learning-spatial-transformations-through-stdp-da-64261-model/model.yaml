@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LearningSpatialTransformationsThroughStdpDa64261Model'
-description: '{''value'': ''A common problem in tasks involving the integration of
-  spatial information from multiple senses, or in sensorimotor coordination, is that
-  different modalities represent space in different f'
+description: "{'value': 'A common problem in tasks involving the integration of spatial information from multiple senses, or in sensorimotor coordination, is that different modalities represent space in different f. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

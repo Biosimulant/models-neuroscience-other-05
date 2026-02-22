@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FacilitationThroughBufferSaturationMatveevE119153Model'
-description: '{"value": "\"... Using computer simulations, we\r\nstudy the magnitude
-  of synaptic facilitation (SF) that can be achieved by a buffer saturation mechanism
-  (BSM), and explore its dependence on the\r\ne'
+description: "{\"value\": \"\\\"... Using computer simulations, we\\r\\nstudy the magnitude of synaptic facilitation (SF) that can be achieved by a buffer saturation mechanism (BSM), and explore its dependence on the\\r\\ne."
 standard: other
 tags:
 - neuroscience

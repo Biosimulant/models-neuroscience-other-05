@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Fergusonetal2013PvfastfiringcellFergusonetal2013pvfastfiringcellModel'
-description: Model of CA1 fast-firing parvalbumin-positive interneuron
+description: "Model of CA1 fast-firing parvalbumin-positive interneuron. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

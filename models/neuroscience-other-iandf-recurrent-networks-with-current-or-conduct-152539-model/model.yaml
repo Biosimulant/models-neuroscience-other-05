@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IandfRecurrentNetworksWithCurrentOrConduct152539Model'
-description: '{"value": "Recurrent networks of two populations (excitatory and inhibitory)
-  of randomly connected Leaky Integrate-and-Fire (LIF) neurons with either current-
-  or conductance-based synapses from the pa'
+description: "{\"value\": \"Recurrent networks of two populations (excitatory and inhibitory) of randomly connected Leaky Integrate-and-Fire (LIF) neurons with either current- or conductance-based synapses from the pa. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HighFrequencyStimulationOfTheSubthalamicNu116867Model'
-description: '{"value": "\" ... Using a computational model, this paper considers
-  the hypothesis that DBS works by replacing pathologically rhythmic\r\nbasal ganglia
-  output with tonic, high frequency firing.\r\n\r\'
+description: "{\"value\": \"\\\" ... Using a computational model, this paper considers the hypothesis that DBS works by replacing pathologically rhythmic\\r\\nbasal ganglia output with tonic, high frequency firing.\\r\\n\\r\\."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HodgkinHuxleySimplifed2dAnd3dModelsLundst117330Model'
-description: '{"value": "\"Neuronal responses are often characterized by the\r\nfiring
-  rate as a function of the stimulus mean, or the f\u2013I curve.\r\n\r\nWe introduce
-  a novel classification of neurons into Type'
+description: "{\"value\": \"\\\"Neuronal responses are often characterized by the\\r\\nfiring rate as a function of the stimulus mean, or the f\\u2013I curve.\\r\\n\\r\\nWe introduce a novel classification of neurons into Type. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

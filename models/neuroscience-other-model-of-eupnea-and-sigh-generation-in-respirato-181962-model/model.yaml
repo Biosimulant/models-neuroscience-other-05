@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfEupneaAndSighGenerationInRespirato181962Model'
-description: '{"value": "Based on recent in vitro data obtained in the mouse embryo,
-  we have built a computational model consisting of two compartments, interconnected
-  through appropriate synapses. One compartment '
+description: "{\"value\": \"Based on recent in vitro data obtained in the mouse embryo, we have built a computational model consisting of two compartments, interconnected through appropriate synapses. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ElectrodiffusiveAstrocyticAndExtracellularIo151945Model'
-description: '{"value": "An electrodiffusive formalism was developed for computing
-  the dynamics of the membrane potential\r\nand ion concentrations in the intra- and
-  extracellular space in a one-dimensional geometr'
+description: "{\"value\": \"An electrodiffusive formalism was developed for computing the dynamics of the membrane potential\\r\\nand ion concentrations in the intra- and extracellular space in a one-dimensional geometr. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

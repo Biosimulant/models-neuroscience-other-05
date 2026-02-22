@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: KinnessAModularFrameworkForComputationalNe113939Model'
-description: '{''value'': ''The xml files provided here implement a network of excitatory
-  and inhibitory spiking neurons, governed by either Hodgkin-Huxley or quadratic integrate-and-fire
-  dynamical equations. The code'
+description: "{'value': 'The xml files provided here implement a network of excitatory and inhibitory spiking neurons, governed by either Hodgkin-Huxley or quadratic integrate-and-fire dynamical equations. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

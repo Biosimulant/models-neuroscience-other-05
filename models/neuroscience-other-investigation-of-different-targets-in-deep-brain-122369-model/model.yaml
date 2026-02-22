@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InvestigationOfDifferentTargetsInDeepBrain122369Model'
-description: '{"value": "\"We investigated by a computational model of the basal ganglia
-  the different network effects of deep brain stimulation (DBS) for Parkinson\u2019s
-  disease (PD) in different target sites in '
+description: "{\"value\": \"\\\"We investigated by a computational model of the basal ganglia the different network effects of deep brain stimulation (DBS) for Parkinson\\u2019s disease (PD) in different target sites in. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

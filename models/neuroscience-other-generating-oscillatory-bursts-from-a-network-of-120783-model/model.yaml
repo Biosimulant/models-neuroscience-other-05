@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GeneratingOscillatoryBurstsFromANetworkOf120783Model'
-description: '{"value": "Avian nucleus isthmi pars parvocellularis (Ipc) neurons are
-  reciprocally connected with the tectal layer 10 (L10) neurons and respond with oscillatory
-  bursts to visual stimulation. To eluci'
+description: "{\"value\": \"Avian nucleus isthmi pars parvocellularis (Ipc) neurons are reciprocally connected with the tectal layer 10 (L10) neurons and respond with oscillatory bursts to visual stimulation. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

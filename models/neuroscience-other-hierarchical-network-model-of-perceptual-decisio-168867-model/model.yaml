@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HierarchicalNetworkModelOfPerceptualDecisio168867Model'
-description: '{"value": "Neuronal variability in sensory cortex predicts perceptual
-  decisions. To investigate the interaction of bottom-up and top-down mechanisms during
-  the decision process, we developed a hierarc'
+description: "{\"value\": \"Neuronal variability in sensory cortex predicts perceptual decisions. To investigate the interaction of bottom-up and top-down mechanisms during the decision process, we developed a hierarc."
 standard: other
 tags:
 - neuroscience

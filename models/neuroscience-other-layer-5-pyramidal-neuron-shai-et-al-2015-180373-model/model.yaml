@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Layer5PyramidalNeuronShaiEtAl2015180373Model'
-description: '{"value": "This work contains a NEURON model for a layer 5 pyramidal
-  neuron (based on Hay et al., 2011) with distributed groups of synapses across the
-  basal and tuft dendrites. The results of that sim'
+description: "{\"value\": \"This work contains a NEURON model for a layer 5 pyramidal neuron (based on Hay et al., 2011) with distributed groups of synapses across the basal and tuft dendrites. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

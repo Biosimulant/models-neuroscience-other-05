@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LaminarAnalysisOfExcitatoryCircuitsInVibri137743Model'
-description: '{"value": "\"...\r\nWe mapped local excitatory pathways in each area
-  (primary motor cortex (vM1), primary somatosensory cortex (vS1;\r\nbarrel cortex),
-  and secondary somatosensory cortex (S2)) across '
+description: "{\"value\": \"\\\"...\\r\\nWe mapped local excitatory pathways in each area (primary motor cortex (vM1), primary somatosensory cortex (vS1;\\r\\nbarrel cortex), and secondary somatosensory cortex (S2)) across. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

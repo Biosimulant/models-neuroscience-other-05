@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FunctionalConsequencesOfCorticalCircuitAbno144477Model'
-description: '{"value": "\"Schizophrenia is characterized by cortical circuit abnormalities,
-  which might be reflected in\r\ngamma-frequency (30\u2013100 Hz) oscillations in
-  the electroencephalogram. Here we used a '
+description: "{\"value\": \"\\\"Schizophrenia is characterized by cortical circuit abnormalities, which might be reflected in\\r\\ngamma-frequency (30\\u2013100 Hz) oscillations in the electroencephalogram. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

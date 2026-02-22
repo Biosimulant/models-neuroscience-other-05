@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LillieTransitionOnsetOfSaltatoryConduction169208Model'
-description: '{"value": "Included are the NEURON (.hoc) files needed to generate the
-  data used in our Young, Castelfranco, Hartline (2013) paper. The resulting .dat
-  files are in the same folder as the MATLAB (.m) f'
+description: "{\"value\": \"Included are the NEURON (.hoc) files needed to generate the data used in our Young, Castelfranco, Hartline (2013) paper. The resulting .dat files are in the same folder as the MATLAB (.m) f."
 standard: other
 tags:
 - neuroscience

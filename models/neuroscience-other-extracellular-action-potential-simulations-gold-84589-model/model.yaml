@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ExtracellularActionPotentialSimulationsGold84589Model'
-description: '{''value'': ''This package recreates the the principal experiments described
-  in (Gold, Henze and Koch, 2007) and includes the core code necessary to create your
-  own Extracellular Action Potential Simulat'
+description: "{'value': 'This package recreates the the principal experiments described in (Gold, Henze and Koch, 2007) and includes the core code necessary to create your own Extracellular Action Potential Simulat. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

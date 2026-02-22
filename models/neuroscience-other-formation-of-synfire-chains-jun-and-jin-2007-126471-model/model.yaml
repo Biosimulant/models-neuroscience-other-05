@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FormationOfSynfireChainsJunAndJin2007126471Model'
-description: '{"value": "\"Temporally precise sequences of neuronal spikes that span
-  hundreds of milliseconds are observed in many brain areas,\r\nincluding songbird
-  premotor nucleus, cat visual cortex, and primary'
+description: "{\"value\": \"\\\"Temporally precise sequences of neuronal spikes that span hundreds of milliseconds are observed in many brain areas,\\r\\nincluding songbird premotor nucleus, cat visual cortex, and primary. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

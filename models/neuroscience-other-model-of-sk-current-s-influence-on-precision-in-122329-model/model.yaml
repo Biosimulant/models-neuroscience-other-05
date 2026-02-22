@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfSkCurrentSInfluenceOnPrecisionIn122329Model'
-description: '{"value": "\" ... In numerical simulations, the availability of both
-  Na+ and A-type K+ channels during autonomous firing were reduced when SK channels
-  were removed, and a nearly equal reduction in Na+'
+description: "{\"value\": \"\\\" ... In numerical simulations, the availability of both Na+ and A-type K+ channels during autonomous firing were reduced when SK channels were removed, and a nearly equal reduction in Na+."
 standard: other
 tags:
 - neuroscience

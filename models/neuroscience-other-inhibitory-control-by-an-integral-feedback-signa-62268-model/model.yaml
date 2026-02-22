@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InhibitoryControlByAnIntegralFeedbackSigna62268Model'
-description: "{'value': 'The prefrontal cortex (PFC) is known to be critical for inhibitory\r\
-  \ncontrol of behavior, but the underlying mechanisms are unclear.\r\nHere, we propose\
-  \ that inhibitory control can be inst"
+description: "{'value': 'The prefrontal cortex (PFC) is known to be critical for inhibitory control of behavior, but the underlying mechanisms are unclear. Here, we propose that inhibitory control can be inst."
 standard: other
 tags:
 - neuroscience

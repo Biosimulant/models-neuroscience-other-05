@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MeasuringNeuronalIdentificationQualityInEns141061Model'
-description: '{"value": "\"... Here we describe information theoretic\r\nmeasures
-  of action potential waveform isolation applicable to any dataset, that have an intuitive,\r\nuniversal
-  interpretation, and that are '
+description: "{\"value\": \"\\\"... Here we describe information theoretic\\r\\nmeasures of action potential waveform isolation applicable to any dataset, that have an intuitive,\\r\\nuniversal interpretation, and that are."
 standard: other
 tags:
 - neuroscience

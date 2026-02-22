@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IhLevelsRolesInBurstingAndRegularSpiking82364Model'
-description: "{'value': 'Pyramidal neurons in the subiculum typically display either\
-  \ bursting\r\nor regular-spiking behavior. ... Here we report that bursting neurons\r\
-  \nposses a hyperpolarization-activated cation "
+description: "{'value': 'Pyramidal neurons in the subiculum typically display either bursting or regular-spiking behavior. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

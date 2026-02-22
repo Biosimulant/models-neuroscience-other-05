@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ImpactOfFastNaChannelInactOnApThreshold153998Model'
-description: '{"value": "Slope-threshold relationship with noisy inputs, in the adaptive
-  threshold model.", "attr_id": 24}'
+description: "Slope-threshold relationship with noisy inputs, in the adaptive threshold model. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

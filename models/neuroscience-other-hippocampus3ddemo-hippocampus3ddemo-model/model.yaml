@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Hippocampus3ddemoHippocampus3ddemoModel'
-description: Demo of hippocampal like network for testing OSB
+description: "Neuroscience Hippocampus3ddemo Hippocampus3ddemo Model captures neuroscience hippocampus3ddemo hippocampus3ddemo behavior in the context of neuroscience, opensourcebrain, hippocampus3ddemo using a opensourcebra. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - neuroscience

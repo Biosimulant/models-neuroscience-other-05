@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EpilepticSeizureModelWithMorrisLecarNeuron144010Model'
-description: '{"value": "Here we use phase-response curves (PRC) from Morris-Lecar
-  (M-L) model neurons with synaptic depression and gradually decrease input current
-  to cells within a network simulation. This method'
+description: "{\"value\": \"Here we use phase-response curves (PRC) from Morris-Lecar (M-L) model neurons with synaptic depression and gradually decrease input current to cells within a network simulation. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

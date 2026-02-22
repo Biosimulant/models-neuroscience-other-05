@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: M1networkmodelM1networkmodelModel'
-description: A multiscale model of the M1 region of motor cortex
+description: "A multiscale model of the M1 region of motor cortex. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

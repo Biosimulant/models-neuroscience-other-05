@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LobsterStgPyloricNetworkModelWithCalciumS144387Model'
-description: '{"value": "This pyloric network model simulator is a C/C++ program that
-  saves 384 different calcium sensor values that are candidates for activity sensors
-  (Gunay and Prinz, 2010). The simulator was us'
+description: "{\"value\": \"This pyloric network model simulator is a C/C++ program that saves 384 different calcium sensor values that are candidates for activity sensors (Gunay and Prinz, 2010). It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

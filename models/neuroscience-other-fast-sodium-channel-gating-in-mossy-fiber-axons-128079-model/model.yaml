@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FastSodiumChannelGatingInMossyFiberAxons128079Model'
-description: '{"value": "\"... To study the mechanisms underlying AP initiation in
-  unmyelinated hippocampal mossy fibers of adult mice, we recorded sodium currents
-  in axonal and somatic membrane patches. \r\n\r\nWe'
+description: "{\"value\": \"\\\"... To study the mechanisms underlying AP initiation in unmyelinated hippocampal mossy fibers of adult mice, we recorded sodium currents in axonal and somatic membrane patches."
 standard: other
 tags:
 - neuroscience

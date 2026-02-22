@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GridCellsFromPlaceCellsCastroAndAguiar20150846Model'
-description: '{"value": "\" ...Here we present a novel model for the emergence of
-  gridlike firing patterns that stands on two key hypotheses: (1) spatial information
-  in GCs is provided from PC activity and (2) grid'
+description: "{\"value\": \"\\\" ...Here we present a novel model for the emergence of gridlike firing patterns that stands on two key hypotheses: (1) spatial information in GCs is provided from PC activity and (2) grid. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

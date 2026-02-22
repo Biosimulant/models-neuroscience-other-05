@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IonConcentrationDynamicsAsAMechanismForNe142630Model'
-description: '{"value": "\"We describe a simple conductance-based model neuron that
-  includes intra and\r\nextracellular ion concentration dynamics and show that this
-  model exhibits periodic\r\nbursting. The burstin'
+description: "{\"value\": \"\\\"We describe a simple conductance-based model neuron that includes intra and\\r\\nextracellular ion concentration dynamics and show that this model exhibits periodic\\r\\nbursting. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

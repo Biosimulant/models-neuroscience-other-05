@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FastGlobalOscillationsInNetworksOfIandfNe153633Model'
-description: '{"value": "Dynamics of a network of sparsely connected inhibitory current-based
-  integrate-and-fire neurons. Individual neurons fire irregularly at low rate but
-  the network is in an oscillatory global '
+description: "{\"value\": \"Dynamics of a network of sparsely connected inhibitory current-based integrate-and-fire neurons. Individual neurons fire irregularly at low rate but the network is in an oscillatory global."
 standard: other
 tags:
 - neuroscience

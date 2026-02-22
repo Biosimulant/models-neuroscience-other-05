@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GpNeuronSomaticAndDendriticPhaseResponseC137846Model'
-description: '{"value": "Phase response analysis of a GP neuron model showing type
-  I PRCs for somatic inputs and type II PRCs for dendritic excitation. Analysis of
-  intrinsic currents underlying type II dendritic PR'
+description: "{\"value\": \"Phase response analysis of a GP neuron model showing type I PRCs for somatic inputs and type II PRCs for dendritic excitation. Analysis of intrinsic currents underlying type II dendritic PR."
 standard: other
 tags:
 - neuroscience

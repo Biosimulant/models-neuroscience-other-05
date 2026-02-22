@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IonicBasisOfAlternansAndTimothySyndromeFo104623Model'
-description: '{"value": "From Zhu and Clancy: \"... Here we\r\nemploy theoretical
-  simulations to examine the effects of a Timothy Syndrome (TS) mutation\r\nin the
-  L-type Ca2+ channel on cardiac dynamics over multip'
+description: "{\"value\": \"From Zhu and Clancy: \\\"... Here we\\r\\nemploy theoretical simulations to examine the effects of a Timothy Syndrome (TS) mutation\\r\\nin the L-type Ca2+ channel on cardiac dynamics over multip."
 standard: other
 tags:
 - neuroscience

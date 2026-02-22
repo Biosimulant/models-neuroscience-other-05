@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Modeldb3781937819Model'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Modeldb3781937819Model represents neuroscience modeldb 37819 37819 mechanisms from modeldb reference modeldb:37819. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

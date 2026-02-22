@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FiringPatternsInStutteringFastSpikingInter140254Model'
-description: '{"value": "This is a morphologically extended version of the fast-spiking
-  interneuron by Golomb et al. (2007).\r\n\r\nThe model captures the stuttering firing
-  pattern and subthreshold oscillations in '
+description: "{\"value\": \"This is a morphologically extended version of the fast-spiking interneuron by Golomb et al. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

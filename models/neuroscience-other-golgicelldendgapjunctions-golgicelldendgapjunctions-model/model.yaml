@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GolgicelldendgapjunctionsGolgicelldendgapjunctionsModel'
-description: Code from Szoboszlay et al, Functional Properties of Dendritic Gap Junctions
-  in Cerebellar Golgi Cells, Neuron 2016
+description: "Code from Szoboszlay et al, Functional Properties of Dendritic Gap Junctions in Cerebellar Golgi Cells, Neuron 2016. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

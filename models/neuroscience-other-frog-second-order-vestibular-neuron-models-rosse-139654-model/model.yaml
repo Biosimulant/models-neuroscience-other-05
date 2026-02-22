@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FrogSecondOrderVestibularNeuronModelsRosse139654Model'
-description: '{"value": "This implements spiking Hodgkin-Huxley type models of tonic
-  and phasic second-order vestibular neurons. Models fitted to intracellular spike
-  and membrane potential recordings from frog (Ran'
+description: "{\"value\": \"This implements spiking Hodgkin-Huxley type models of tonic and phasic second-order vestibular neurons. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

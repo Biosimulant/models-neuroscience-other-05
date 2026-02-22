@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IaAndItInteractToSetFirstSpikeLatencyMo59479Model'
-description: '{''value'': ''Using patch clamp and modeling, we illustrate that spike
-  latency characteristics are the product of an interplay between I(A) and low-threshold
-  calcium current (I(T)) that requires a steady'
+description: "{'value': 'Using patch clamp and modeling, we illustrate that spike latency characteristics are the product of an interplay between I(A) and low-threshold calcium current (I(T)) that requires a steady. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ErgCurrentInRepolarizingPlateauPotentialsI100603Model'
-description: '{"value": "\"Blocking the small-conductance (SK) calcium-activated potassium
-  channel promotes\r\nburst firing in dopamine neurons both in vivo and in vitro.\r\n...\r\nWe
-  focus on the underlying platea'
+description: "{\"value\": \"\\\"Blocking the small-conductance (SK) calcium-activated potassium channel promotes\\r\\nburst firing in dopamine neurons both in vivo and in vitro.\\r\\n...\\r\\nWe focus on the underlying platea. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

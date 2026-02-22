@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HippocampusCa1SimulationsOfLtpSignalingPat139655Model'
-description: '{"value": "This is a multi-compartmental, stochastic version of the
-  Kim et al. 2010 paper. There are a few additional reactions, and some of the rate
-  constants have been updated. It addresses the role'
+description: "{\"value\": \"This is a multi-compartmental, stochastic version of the Kim et al. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

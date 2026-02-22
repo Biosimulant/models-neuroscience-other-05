@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Ffv1mtAV1MtFeedforwardArchitectureForOpti181035Model'
-description: '{"value": "A neural feed-forward model composed of two layers that mimic
-  the V1-MT primary motion\r\npathway, derived from previous works by Heeger and Simoncelli.",
-  "attr_id": 24}'
+description: "A neural feed-forward model composed of two layers that mimic the V1-MT primary motion pathway, derived from previous works by Heeger and Simoncelli. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

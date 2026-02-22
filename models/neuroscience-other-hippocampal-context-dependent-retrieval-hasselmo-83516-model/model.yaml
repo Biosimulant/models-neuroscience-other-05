@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HippocampalContextDependentRetrievalHasselmo83516Model'
-description: '{"value": "\"... The model simulates the context-sensitive firing properties
-  of hippocampal neurons including trial-specific firing during spatial\r\nalternation
-  and trial by trial changes in theta ph'
+description: "{\"value\": \"\\\"... The model simulates the context-sensitive firing properties of hippocampal neurons including trial-specific firing during spatial\\r\\nalternation and trial by trial changes in theta ph."
 standard: other
 tags:
 - neuroscience

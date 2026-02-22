@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MicrocircuitsOfL5ThickTuftedPyramidalCells156780Model'
-description: '{"value": "\"...\r\nWe simulated detailed conductance-based models of\r\nTTCs
-  (Layer 5 thick tufted pyramidal cells) forming recurrent microcircuits that were
-  interconnected as\r\nfound experimentally'
+description: "{\"value\": \"\\\"...\\r\\nWe simulated detailed conductance-based models of\\r\\nTTCs (Layer 5 thick tufted pyramidal cells) forming recurrent microcircuits that were interconnected as\\r\\nfound experimentally. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

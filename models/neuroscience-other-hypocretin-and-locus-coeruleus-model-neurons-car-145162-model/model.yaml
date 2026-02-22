@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HypocretinAndLocusCoeruleusModelNeuronsCar145162Model'
-description: '{"value": "Conductance based model of the hypocretin neurons (HCRT)
-  and another one of the Locus Coeruleus one (LC). The HCRT drive the LCs via the
-  HCRT receptor on the LCs. The LCs lead to the awaken'
+description: "{\"value\": \"Conductance based model of the hypocretin neurons (HCRT) and another one of the Locus Coeruleus one (LC). The HCRT drive the LCs via the HCRT receptor on the LCs."
 standard: other
 tags:
 - neuroscience

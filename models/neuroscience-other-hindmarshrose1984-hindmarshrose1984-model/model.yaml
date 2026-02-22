@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Hindmarshrose1984Hindmarshrose1984Model'
-description: HindmarshRose 1984 cell model
+description: "Neuroscience Hindmarshrose1984Hindmarshrose1984Model captures neuroscience hindmarshrose1984 hindmarshrose1984 behavior in the context of neuroscience, opensourcebrain, hindmarshrose1984 using a opensourcebrain. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - neuroscience

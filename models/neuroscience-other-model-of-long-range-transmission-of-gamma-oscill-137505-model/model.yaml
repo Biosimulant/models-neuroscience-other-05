@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfLongRangeTransmissionOfGammaOscill137505Model'
-description: '{"value": "\"...\r\nA minimal mathematical model was developed for a\r\npreliminary
-  study of long-range neural transmission of gamma\r\noscillation from the CA3 to
-  the entorhinal cortex via the CAI\r\'
+description: "{\"value\": \"\\\"...\\r\\nA minimal mathematical model was developed for a\\r\\npreliminary study of long-range neural transmission of gamma\\r\\noscillation from the CA3 to the entorhinal cortex via the CAI\\r\\. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

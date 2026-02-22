@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: KetamineDisruptsThetaModulationOfGammaInA139421Model'
-description: '{"value": "\"Abnormalities in oscillations have been suggested to play
-  a role in schizophrenia. \r\n\r\nWe studied theta-modulated gamma oscillations in
-  a computer model of hippocampal CA3 in vivo wit'
+description: "{\"value\": \"\\\"Abnormalities in oscillations have been suggested to play a role in schizophrenia. \\r\\n\\r\\nWe studied theta-modulated gamma oscillations in a computer model of hippocampal CA3 in vivo wit."
 standard: other
 tags:
 - neuroscience

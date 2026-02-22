@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Modeldb4683946839Model'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Modeldb4683946839Model models neuroscience modeldb 46839 46839 dynamics as a OTHER simulation curated from modeldb (modeldb:46839), focused on neuroscience, modeldb, 46839. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FratAnAmygdalaCenteredModelOfFearConditio142273Model'
-description: '{"value": "Model of Pavlovian fear conditioning and extinction (due
-  to neuromodulator-controlled LTP on principal cells and inhibory interneurons)occur
-  in amygdala and contextual representations are l'
+description: "{\"value\": \"Model of Pavlovian fear conditioning and extinction (due to neuromodulator-controlled LTP on principal cells and inhibory interneurons)occur in amygdala and contextual representations are l. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

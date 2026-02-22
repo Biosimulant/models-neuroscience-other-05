@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LateEmergenceOfTheWhiskerDirectionSelectiv154348Model'
-description: '{"value": "\"... We discovered that the emergence of a direction map
-  in rat barrel cortex occurs long after all known critical periods in the somatosensory
-  system.\r\n\r\nThis map is remarkably specif'
+description: "{\"value\": \"\\\"... We discovered that the emergence of a direction map in rat barrel cortex occurs long after all known critical periods in the somatosensory system.\\r\\n\\r\\nThis map is remarkably specif."
 standard: other
 tags:
 - neuroscience

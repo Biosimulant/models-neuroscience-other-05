@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MathematicalFoundationsOfNeuroscienceErmentr141835Model'
-description: '{"value": "Ermentrout and Terman''s book on dynamical systems and computational
-  methods in neuroscience has associated computer code available at http://www.math.pitt.edu/~bard/bardware/neurobook/allod'
+description: "{\"value\": \"Ermentrout and Terman's book on dynamical systems and computational methods in neuroscience has associated computer code available at http://www.math.pitt.edu/~bard/bardware/neurobook/allod. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

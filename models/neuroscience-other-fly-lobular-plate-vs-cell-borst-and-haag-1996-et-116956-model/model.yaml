@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FlyLobularPlateVsCellBorstAndHaag1996Et116956Model'
-description: '{"value": "In a series of papers the authors conducted experiments to
-  develop understanding and models of fly visual system HS, CS, and VS neurons. This
-  model recreates the VS neurons from those paper'
+description: "{\"value\": \"In a series of papers the authors conducted experiments to develop understanding and models of fly visual system HS, CS, and VS neurons. This model recreates the VS neurons from those paper."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MedialVestibularNeuronModelsQuadroniAndKno53876Model'
-description: '{''value'': ''The structure and the parameters of the model cells were
-  chosen to reproduce the responses of type A and type B MVNns as described in electrophysiological
-  recordings. The emergence of oscil'
+description: "{'value': 'The structure and the parameters of the model cells were chosen to reproduce the responses of type A and type B MVNns as described in electrophysiological recordings. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

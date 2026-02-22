@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: L5bPcModelConstrainedForBacFiringAndPeri139653Model'
-description: '{"value": "\"...\r\nL5b pyramidal cells have been the subject of extensive
-  experimental and modeling studies, yet conductance-based models of these cells that
-  faithfully reproduce both their perisomat'
+description: "{\"value\": \"\\\"...\\r\\nL5b pyramidal cells have been the subject of extensive experimental and modeling studies, yet conductance-based models of these cells that faithfully reproduce both their perisomat. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

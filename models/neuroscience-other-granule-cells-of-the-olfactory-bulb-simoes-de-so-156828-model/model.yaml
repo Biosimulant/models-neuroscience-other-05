@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GranuleCellsOfTheOlfactoryBulbSimoesDeSo156828Model'
-description: '{"value": "Electrical responses of three classes of granule cells of
-  the olfactory bulb to synaptic activation in different dendritic locations. The
-  constructed models were based on morphological deta'
+description: "{\"value\": \"Electrical responses of three classes of granule cells of the olfactory bulb to synaptic activation in different dendritic locations. The constructed models were based on morphological deta."
 standard: other
 tags:
 - neuroscience

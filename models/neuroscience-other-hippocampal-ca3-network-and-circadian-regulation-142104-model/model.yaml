@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HippocampalCa3NetworkAndCircadianRegulation142104Model'
-description: '{"value": "This model produces the hippocampal CA3 neural network model
-  used \r\nin the paper below. It has two modes of operation, a default mode and a
-  circadian mode. In the circadian mode, paramete'
+description: "{\"value\": \"This model produces the hippocampal CA3 neural network model used \\r\\nin the paper below. It has two modes of operation, a default mode and a circadian mode."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: KineticPropertiesOfVoltageGatedNaChannelN111967Model'
-description: '{''value'': ''Here we illustrate novel non-linear properties of voltage
-  gated Na+ channel induced by sustained membrane depolarization. In cell-attached
-  patch clamp recordings of rNav1.2 channels express'
+description: "{'value': 'Here we illustrate novel non-linear properties of voltage gated Na+ channel induced by sustained membrane depolarization. In cell-attached patch clamp recordings of rNav1.2 channels express."
 standard: other
 tags:
 - neuroscience

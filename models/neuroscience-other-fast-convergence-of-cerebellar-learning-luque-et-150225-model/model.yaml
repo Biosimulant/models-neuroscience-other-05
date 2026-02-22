@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FastConvergenceOfCerebellarLearningLuqueEt150225Model'
-description: '{"value": "The cerebellum is known to play a critical role in learning
-  relevant patterns of activity for adaptive motor control, but the underlying network
-  mechanisms are only partly understood. The c'
+description: "{\"value\": \"The cerebellum is known to play a critical role in learning relevant patterns of activity for adaptive motor control, but the underlying network mechanisms are only partly understood. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

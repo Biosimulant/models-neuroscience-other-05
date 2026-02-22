@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LeechSCellModulationOfExcitabilityBySerot102279Model'
-description: '{''value'': ''Serotonergic modulation of the afterhyperpolarization
-  (AHP) contributes to the regulation of the excitability of the leech S cell, a neuron
-  critical for sensitization of the shortening refl'
+description: "{'value': 'Serotonergic modulation of the afterhyperpolarization (AHP) contributes to the regulation of the excitability of the leech S cell, a neuron critical for sensitization of the shortening refl. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

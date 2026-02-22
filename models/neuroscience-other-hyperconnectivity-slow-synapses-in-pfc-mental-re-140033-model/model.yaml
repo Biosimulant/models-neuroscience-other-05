@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HyperconnectivitySlowSynapsesInPfcMentalRe140033Model'
-description: '{"value": "The subdirectory ''matlab'' contains MATLAB scripts (The
-  Mathworks, USA) that can be used to reproduce the panels of Figures 4-5.\r\n\r\nThis
-  directory contains files to reproduce sample comp'
+description: "{\"value\": \"The subdirectory 'matlab' contains MATLAB scripts (The Mathworks, USA) that can be used to reproduce the panels of Figures 4-5.\\r\\n\\r\\nThis directory contains files to reproduce sample comp. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FastOscillationsInInhibitoryNetworksMaexDe50392Model'
-description: '{''value'': ''We observed a new phenomenon of resonant synchronization
-  in computer-simulated networks of inhibitory neurons in which the synaptic current
-  has a delayed onset, reflecting finite spike prop'
+description: "{'value': 'We observed a new phenomenon of resonant synchronization in computer-simulated networks of inhibitory neurons in which the synaptic current has a delayed onset, reflecting finite spike prop. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

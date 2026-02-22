@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Ferrante2009DentategyrusgranulecellFerrante2009dentategyrusgranulecellModel'
-description: Feed-forward inhibition as a buffer of the neuronal input-output relation
-  Ferrante M., Migliore M. and Ascoli GA., 2009
+description: "Feed-forward inhibition as a buffer of the neuronal input-output relation Ferrante M., Migliore M. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

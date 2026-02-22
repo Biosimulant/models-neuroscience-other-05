@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MarkovChainBasedStochasticShieldingHodgkin144468Model'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Markov Chain Based Stochastic Shielding Hodgkin144468Model represents core biological mechanisms from modeldb reference modeldb:144468. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

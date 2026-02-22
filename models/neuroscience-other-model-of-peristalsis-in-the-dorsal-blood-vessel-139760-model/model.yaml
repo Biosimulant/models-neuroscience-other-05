@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfPeristalsisInTheDorsalBloodVessel139760Model'
-description: '{"value": "The blackworm, Lumbriculus variegatus, has a segmented dorsal
-  blood vessel that acts as a peristaltic pump to move blood through its closed circulatory
-  system. Here, we conducted a kinemati'
+description: "{\"value\": \"The blackworm, Lumbriculus variegatus, has a segmented dorsal blood vessel that acts as a peristaltic pump to move blood through its closed circulatory system. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

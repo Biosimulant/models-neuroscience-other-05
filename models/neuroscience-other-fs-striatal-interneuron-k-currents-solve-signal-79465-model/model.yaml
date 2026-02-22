@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FsStriatalInterneuronKCurrentsSolveSignal79465Model'
-description: "{'value': '... We show that a transient\r\npotassium (KA) current allows\
-  \ the Fast Spiking (FS) interneuron to strike a balance\r\nbetween sensitivity to\
-  \ correlated input and robustness to noise,\r\nth"
+description: "{'value': '... We show that a transient potassium (KA) current allows the Fast Spiking (FS) interneuron to strike a balance between sensitivity to correlated input and robustness to noise, th."
 standard: other
 tags:
 - neuroscience

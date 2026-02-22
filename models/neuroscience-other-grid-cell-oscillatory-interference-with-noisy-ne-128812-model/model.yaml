@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GridCellOscillatoryInterferenceWithNoisyNe128812Model'
-description: '{"value": "To examine whether an oscillatory interference model of grid
-  cell activity could work if the oscillators were noisy neurons, we implemented these
-  simulations. Here the oscillators are netwo'
+description: "{\"value\": \"To examine whether an oscillatory interference model of grid cell activity could work if the oscillators were noisy neurons, we implemented these simulations. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

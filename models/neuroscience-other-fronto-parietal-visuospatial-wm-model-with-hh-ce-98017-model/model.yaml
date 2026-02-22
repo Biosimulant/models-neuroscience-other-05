@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FrontoParietalVisuospatialWmModelWithHhCe98017Model'
-description: '{''value'': ''1) J Cogn Neurosci: 3 structural mechanisms that had been
-  hypothesized to underlie vsWM development during childhood were evaluated by simulating
-  the model and comparing results to fMRI. It'
+description: "{'value': '1) J Cogn Neurosci: 3 structural mechanisms that had been hypothesized to underlie vsWM development during childhood were evaluated by simulating the model and comparing results to fMRI. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

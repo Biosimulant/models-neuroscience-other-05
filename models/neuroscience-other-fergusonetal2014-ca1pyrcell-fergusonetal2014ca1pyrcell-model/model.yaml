@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Fergusonetal2014Ca1pyrcellFergusonetal2014ca1pyrcellModel'
-description: Izhikevich-based models of CA1 pyramidal cells, with parameters constrained
-  based on a whole hippocampus preparation.
+description: "Izhikevich-based models of CA1 pyramidal cells, with parameters constrained based on a whole hippocampus preparation. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

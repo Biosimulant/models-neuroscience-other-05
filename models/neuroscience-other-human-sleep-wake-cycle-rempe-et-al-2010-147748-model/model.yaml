@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HumanSleepWakeCycleRempeEtAl2010147748Model'
-description: '{"value": "This model simulates sleep in the human brain and is consistent
-  with both the flip/flop concept and the two-process model of sleep regulation. The
-  model also gives a possible mechanism for '
+description: "{\"value\": \"This model simulates sleep in the human brain and is consistent with both the flip/flop concept and the two-process model of sleep regulation. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

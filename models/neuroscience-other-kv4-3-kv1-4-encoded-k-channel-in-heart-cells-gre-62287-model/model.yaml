@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Kv43Kv14EncodedKChannelInHeartCellsGre62287Model'
-description: "{'value': 'A model of canine I:(to1) (the Ca(2+)-independent transient\
-  \ outward current) is formulated as the combination of Kv4.3 and Kv1.4 \r\ncurrents\
-  \ and is incorporated into an existing canine ven"
+description: "{'value': 'A model of canine I:(to1) (the Ca(2+)-independent transient outward current) is formulated as the combination of Kv4.3 and Kv1.4 currents and is incorporated into an existing canine ven. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

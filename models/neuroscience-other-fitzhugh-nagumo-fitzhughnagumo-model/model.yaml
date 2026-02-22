@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FitzhughNagumoFitzhughnagumoModel'
-description: The Fitzhugh Nagumo model is a two-dimensional simplification of the
-  Hodgkin-Huxley model of spike generation in squid giant axons.
+description: "The Fitzhugh Nagumo model is a two-dimensional simplification of the Hodgkin-Huxley model of spike generation in squid giant axons. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

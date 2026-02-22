@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IrregularSpikingInNmdaDrivenPrefrontalCort82784Model'
-description: '{''value'': ''Slow N-Methyl-D-aspartic acid (NMDA) synaptic currents
-  are assumed to strongly contribute to the persistently elevated firing rates observed
-  in prefrontal cortex (PFC) during working memory'
+description: "{'value': 'Slow N-Methyl-D-aspartic acid (NMDA) synaptic currents are assumed to strongly contribute to the persistently elevated firing rates observed in prefrontal cortex (PFC) during working memory. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

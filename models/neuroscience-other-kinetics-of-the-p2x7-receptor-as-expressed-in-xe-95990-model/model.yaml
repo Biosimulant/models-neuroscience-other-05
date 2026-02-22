@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: KineticsOfTheP2x7ReceptorAsExpressedInXe95990Model'
-description: '{"value": "\"Human P2X7 receptors were expressed in Xenopus laevis oocytes
-  and\r\nsingle channels were recorded using the patch-clamp technique in the\r\noutside-out
-  configuration. ATP4- evoked two ty'
+description: "{\"value\": \"\\\"Human P2X7 receptors were expressed in Xenopus laevis oocytes and\\r\\nsingle channels were recorded using the patch-clamp technique in the\\r\\noutside-out configuration. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

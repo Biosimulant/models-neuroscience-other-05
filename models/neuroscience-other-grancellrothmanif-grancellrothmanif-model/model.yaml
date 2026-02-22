@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GrancellrothmanifGrancellrothmanifModel'
-description: A conductance-based integrate and fire model for the cerebellar granule
-  cell, with AMPA+NMDA mossy fibre synapse.
+description: "A conductance-based integrate and fire model for the cerebellar granule cell, with AMPA+NMDA mossy fibre synapse. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

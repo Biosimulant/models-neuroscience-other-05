@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LearningIntrinsicExcitabilityInMediumSpiny155131Model'
-description: '{"value": "\"We present an unsupervised, local activation-dependent
-  learning rule for intrinsic plasticity (IP) which affects the composition of ion
-  channel conductances for single neurons in a use-de'
+description: "{\"value\": \"\\\"We present an unsupervised, local activation-dependent learning rule for intrinsic plasticity (IP) which affects the composition of ion channel conductances for single neurons in a use-de. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FunctionalImpactOfDendriticBranchPointMorp146509Model'
-description: '{"value": "\" ... Here, we first quantified the morphological variability
-  of branch points from two-photon images of rat CA1 pyramidal neurons. We then investigated
-  the geometrical features affecting '
+description: "{\"value\": \"\\\" ... Here, we first quantified the morphological variability of branch points from two-photon images of rat CA1 pyramidal neurons."
 standard: other
 tags:
 - neuroscience

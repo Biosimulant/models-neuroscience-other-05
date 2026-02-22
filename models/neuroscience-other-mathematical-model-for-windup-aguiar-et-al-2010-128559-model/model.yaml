@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MathematicalModelForWindupAguiarEtAl2010128559Model'
-description: '{"value": "\"Windup is characterized as a frequency-dependent\r\nincrease
-  in the number of evoked action potentials in dorsal\r\nhorn neurons in response
-  to electrical stimulation of afferent C-fibers'
+description: "{\"value\": \"\\\"Windup is characterized as a frequency-dependent\\r\\nincrease in the number of evoked action potentials in dorsal\\r\\nhorn neurons in response to electrical stimulation of afferent C-fibers. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

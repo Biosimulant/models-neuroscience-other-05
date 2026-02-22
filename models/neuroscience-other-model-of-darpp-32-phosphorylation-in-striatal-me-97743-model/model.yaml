@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfDarpp32PhosphorylationInStriatalMe97743Model'
-description: '{''value'': ''The work describes a model of how transient calcium and
-  dopamine inputs might affect phosphorylation of DARPP-32 in the medium spiny neurons
-  in the striatum. The model is relevant for under'
+description: "{'value': 'The work describes a model of how transient calcium and dopamine inputs might affect phosphorylation of DARPP-32 in the medium spiny neurons in the striatum. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

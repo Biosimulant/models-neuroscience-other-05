@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EncodingAndRetrievalInAModelOfTheHippoca123815Model'
-description: '{"value": "This NEURON code implements a small network model (100 pyramidal
-  cells\r\nand 4 types of inhibitory interneuron) of storage and recall of patterns\r\nin
-  the CA1 region of the mammalian hipp'
+description: "{\"value\": \"This NEURON code implements a small network model (100 pyramidal cells\\r\\nand 4 types of inhibitory interneuron) of storage and recall of patterns\\r\\nin the CA1 region of the mammalian hipp. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

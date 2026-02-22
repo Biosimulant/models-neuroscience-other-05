@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfAngiiSignalingAndMembraneElectrophy156830Model'
-description: '{"value": "We developed a novel multiscale model to bridge neuropeptide
-  receptor-activated signaling pathway with membrane electrophysiology. \r\nThe model
-  studies the effects of Angiotensin II (AngII'
+description: "{\"value\": \"We developed a novel multiscale model to bridge neuropeptide receptor-activated signaling pathway with membrane electrophysiology. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

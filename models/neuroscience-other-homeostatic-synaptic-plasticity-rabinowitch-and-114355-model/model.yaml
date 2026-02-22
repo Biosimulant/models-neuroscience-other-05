@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HomeostaticSynapticPlasticityRabinowitchAnd114355Model'
-description: '{"value": "(2006a): \"We investigated analytically and numerically the
-  interplay between two opposing forms of synaptic plasticity: positive-feedback,
-  long-term potentiation/depression (LTP/LTD), and '
+description: "{\"value\": \"(2006a): \\\"We investigated analytically and numerically the interplay between two opposing forms of synaptic plasticity: positive-feedback, long-term potentiation/depression (LTP/LTD), and. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

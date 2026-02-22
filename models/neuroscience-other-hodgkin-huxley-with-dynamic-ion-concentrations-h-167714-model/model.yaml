@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HodgkinHuxleyWithDynamicIonConcentrationsH167714Model'
-description: '{"value": "The classical Hodgkin--Huxley (HH) model neglects the time-dependence
-  of ion concentrations in spiking dynamics. The dynamics is therefore limited to
-  a time scale of milliseconds, which is '
+description: "{\"value\": \"The classical Hodgkin--Huxley (HH) model neglects the time-dependence of ion concentrations in spiking dynamics. The dynamics is therefore limited to a time scale of milliseconds, which is."
 standard: other
 tags:
 - neuroscience

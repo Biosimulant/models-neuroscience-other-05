@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FractionalLeakyIntegrateAndFireModelTekaE155856Model'
-description: '{"value": "We developed the Fractional Leaky Integrate-and-Fire model
-  that can produce downward and upward spike time adaptions observed on pyramidal
-  cells.The adaptation emerges from the fractional e'
+description: "{\"value\": \"We developed the Fractional Leaky Integrate-and-Fire model that can produce downward and upward spike time adaptions observed on pyramidal cells.The adaptation emerges from the fractional e. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

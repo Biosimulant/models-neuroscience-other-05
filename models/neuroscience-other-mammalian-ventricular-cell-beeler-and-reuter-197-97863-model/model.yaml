@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MammalianVentricularCellBeelerAndReuter19797863Model'
-description: '{"value": "This classic model of ventricular myocardial fibres was implemented
-  by Francois Gannier. \"... Four individual components of ionic current were formulated
-  mathematically\r\nin terms of Hodg'
+description: "{\"value\": \"This classic model of ventricular myocardial fibres was implemented by Francois Gannier. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

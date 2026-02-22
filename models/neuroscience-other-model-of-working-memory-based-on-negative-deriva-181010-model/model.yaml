@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfWorkingMemoryBasedOnNegativeDeriva181010Model'
-description: '{"value": "We proposed a model of working memory in which recurrent
-  synaptic interactions provide a corrective feedback that enables persistent activity
-  to be maintained stably for prolonged durations'
+description: "{\"value\": \"We proposed a model of working memory in which recurrent synaptic interactions provide a corrective feedback that enables persistent activity to be maintained stably for prolonged durations. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

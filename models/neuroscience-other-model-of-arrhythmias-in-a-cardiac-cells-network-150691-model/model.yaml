@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfArrhythmiasInACardiacCellsNetwork150691Model'
-description: '{"value": "\" ... Here we explore the possible processes leading to
-  the occasional onset and termination of the (usually) non-fatal arrhythmias widely
-  observed in the heart.\r\n\r\nUsing a computation'
+description: "{\"value\": \"\\\" ... Here we explore the possible processes leading to the occasional onset and termination of the (usually) non-fatal arrhythmias widely observed in the heart.\\r\\n\\r\\nUsing a computation."
 standard: other
 tags:
 - neuroscience

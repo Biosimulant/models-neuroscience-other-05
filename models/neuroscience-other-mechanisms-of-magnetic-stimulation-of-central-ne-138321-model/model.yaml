@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MechanismsOfMagneticStimulationOfCentralNe138321Model'
-description: '{"value": "Transcranial magnetic stimulation (TMS) is a widely applied
-  tool for probing cognitive function in humans and is one of the best tools for clinical
-  treatments and interfering with cognitive'
+description: "{\"value\": \"Transcranial magnetic stimulation (TMS) is a widely applied tool for probing cognitive function in humans and is one of the best tools for clinical treatments and interfering with cognitive. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

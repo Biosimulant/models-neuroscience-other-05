@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EllPyramidalNeuronSimmondsAndChacron2014168590Model'
-description: '{"value": "network model of ELL pyramidal neurons receiving both feedforward
-  and feedback inputs", "attr_id": 24}'
+description: "network model of ELL pyramidal neurons receiving both feedforward and feedback inputs. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

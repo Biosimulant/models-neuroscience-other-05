@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelingHebbianAndHomeostaticPlasticityToyo180791Model'
-description: '{"value": "\"...\r\nWe propose a\r\nmodel in which synaptic strength
-  is the product of\r\na synapse-specific Hebbian factor and a postsynaptic-\r\ncell-specific
-  homeostatic factor, with each factor\r\'
+description: "{\"value\": \"\\\"...\\r\\nWe propose a\\r\\nmodel in which synaptic strength is the product of\\r\\na synapse-specific Hebbian factor and a postsynaptic-\\r\\ncell-specific homeostatic factor, with each factor\\r\\. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

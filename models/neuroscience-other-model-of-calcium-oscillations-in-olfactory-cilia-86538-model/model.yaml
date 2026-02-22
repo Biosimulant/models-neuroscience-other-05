@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfCalciumOscillationsInOlfactoryCilia86538Model'
-description: '{''value'': ''Simulation of experiments on olfactory receptor neurons
-  (ORNs). Focussing on the negative feedback that calcium (through calmodulin) has
-  on its own influx through CNG channels, this model i'
+description: "{'value': 'Simulation of experiments on olfactory receptor neurons (ORNs). Focussing on the negative feedback that calcium (through calmodulin) has on its own influx through CNG channels, this model i."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HodgkinHuxleyModelsOfDifferentClassesOfCo123623Model'
-description: '{"value": "\"We review here the development of Hodgkin-\r\nHuxley (HH)
-  type models of cerebral cortex and thalamic\r\nneurons for network simulations.\r\n\r\nThe
-  intrinsic electrophysiological\r\nprop'
+description: "{\"value\": \"\\\"We review here the development of Hodgkin-\\r\\nHuxley (HH) type models of cerebral cortex and thalamic\\r\\nneurons for network simulations.\\r\\n\\r\\nThe intrinsic electrophysiological\\r\\nprop. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

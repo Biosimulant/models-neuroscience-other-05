@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IhTunesOscillationsInAnInSilicoCa3Model151282Model'
-description: '{"value": "\" ... We investigated oscillatory control using a multiscale
-  computer model of hippocampal CA3, where each cell class\r\n(pyramidal, basket,
-  and oriens-lacunosum moleculare cells), contain'
+description: "{\"value\": \"\\\" ... We investigated oscillatory control using a multiscale computer model of hippocampal CA3, where each cell class\\r\\n(pyramidal, basket, and oriens-lacunosum moleculare cells), contain."
 standard: other
 tags:
 - neuroscience

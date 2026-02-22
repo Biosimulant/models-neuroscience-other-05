@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GenericBiDirectionalRealTimeNeuralInterfac128068Model'
-description: '{"value": "Matlab/Simulink toolkit for generic multi-channel short-latency
-  bi-directional neural-computer interactions. High-bandwidth (> 10 megabit per second)
-  neural recording data can be analyzed i'
+description: "{\"value\": \"Matlab/Simulink toolkit for generic multi-channel short-latency bi-directional neural-computer interactions. High-bandwidth (> 10 megabit per second) neural recording data can be analyzed i."
 standard: other
 tags:
 - neuroscience

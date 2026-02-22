@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EmergenceOfConnectivityMotifsInNetworksOf150211Model'
-description: '{"value": "Recent evidence suggests that short-term dynamics of excitatory
-  synaptic transmission is correlated to stereotypical connectivity motifs. \r\nWe
-  show that these connectivity motifs emerge i'
+description: "{\"value\": \"Recent evidence suggests that short-term dynamics of excitatory synaptic transmission is correlated to stereotypical connectivity motifs. \\r\\nWe show that these connectivity motifs emerge i."
 standard: other
 tags:
 - neuroscience

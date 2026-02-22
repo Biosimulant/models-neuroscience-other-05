@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HighFrequencyOscillationsInducedInThreeGap114735Model'
-description: '{"value": "Here we showed experimentally that high frequency oscillations
-  (up to 600 Hz) were easily induced in a purely gap-junction coupled network by simple
-  two stimuli with very short interval. Th'
+description: "{\"value\": \"Here we showed experimentally that high frequency oscillations (up to 600 Hz) were easily induced in a purely gap-junction coupled network by simple two stimuli with very short interval. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

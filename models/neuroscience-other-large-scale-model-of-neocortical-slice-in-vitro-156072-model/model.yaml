@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LargeScaleModelOfNeocorticalSliceInVitro156072Model'
-description: '{"value": "This model contains 15 neuron populations (8 excitatory,
-  7 inhibitory) arranged into 4 cortical layers (layer 1 empty, layers 2/3 combined).
-  It produces a persistent gamma oscillation drive'
+description: "{\"value\": \"This model contains 15 neuron populations (8 excitatory, 7 inhibitory) arranged into 4 cortical layers (layer 1 empty, layers 2/3 combined). It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

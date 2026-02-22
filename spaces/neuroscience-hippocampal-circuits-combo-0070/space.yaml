@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Hippocampal Circuits (COMBO_0070)'
-description: Neuroscience hippocampal circuits comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Neuroscience Hippocampal Circuits (COMBO_0070) brings together ionic_mechanisms_1, ketamine_disrupt_2, linear_vs_3 in a comparative space to examine how recurrent hippocampal motifs shape network dynamics over time. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-neuroscience-other-05
   alias: ionic_mechanisms_1

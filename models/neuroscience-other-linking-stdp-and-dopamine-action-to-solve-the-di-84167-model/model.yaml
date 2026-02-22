@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LinkingStdpAndDopamineActionToSolveTheDi84167Model'
-description: '{"value": "\"... How does the brain know what firing patterns of what
-  neurons are responsible for the reward if 1) the patterns are no longer there when
-  the reward arrives and 2) all\r\nneurons and sy'
+description: "{\"value\": \"\\\"... How does the brain know what firing patterns of what neurons are responsible for the reward if 1) the patterns are no longer there when the reward arrives and 2) all\\r\\nneurons and sy."
 standard: other
 tags:
 - neuroscience

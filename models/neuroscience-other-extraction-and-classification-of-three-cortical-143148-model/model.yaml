@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ExtractionAndClassificationOfThreeCortical143148Model'
-description: '{"value": "This script proposes a new convex fitting procedure that
-  allows the parameters estimation of a large class of stochastic Integrate-and-Fire
-  model upgraded with spike-triggered current and m'
+description: "{\"value\": \"This script proposes a new convex fitting procedure that allows the parameters estimation of a large class of stochastic Integrate-and-Fire model upgraded with spike-triggered current and m. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

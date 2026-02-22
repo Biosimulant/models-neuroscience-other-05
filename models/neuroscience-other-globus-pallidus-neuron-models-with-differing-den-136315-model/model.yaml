@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GlobusPallidusNeuronModelsWithDifferingDen136315Model'
-description: '{"value": "A set of 9 multi-compartmental rat GP neuron models (585
-  compartments) differing only in their expression of dendritic fast sodium channels
-  were compared in their synaptic integration prope'
+description: "{\"value\": \"A set of 9 multi-compartmental rat GP neuron models (585 compartments) differing only in their expression of dendritic fast sodium channels were compared in their synaptic integration prope. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

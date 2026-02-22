@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModeldbshowcaseModeldbshowcaseModel'
-description: OSB Showcase project for investigating options for interactions between
-  ModelDB and OSB
+description: "OSB Showcase project for investigating options for interactions between ModelDB and OSB. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

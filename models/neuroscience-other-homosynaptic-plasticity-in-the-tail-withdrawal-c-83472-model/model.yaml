@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HomosynapticPlasticityInTheTailWithdrawalC83472Model'
-description: '{''value'': ''The tail-withdrawal circuit of Aplysia provides a useful
-  model system for investigating synaptic dynamics. Sensory neurons within the circuit
-  manifest several forms of synaptic plasticity. '
+description: "{'value': 'The tail-withdrawal circuit of Aplysia provides a useful model system for investigating synaptic dynamics. Sensory neurons within the circuit manifest several forms of synaptic plasticity."
 standard: other
 tags:
 - neuroscience

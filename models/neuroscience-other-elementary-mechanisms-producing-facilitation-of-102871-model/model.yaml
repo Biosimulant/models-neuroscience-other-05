@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ElementaryMechanismsProducingFacilitationOf102871Model'
-description: '{"value": "\"The regulation of Ca(V)2.1 (P/Q-type) channels by calmodulin
-  (CaM) showcases the powerful Ca(2+) decoding capabilities of CaM in complex with
-  the family of Ca(V)1-2 Ca(2+) channels. \r\n\'
+description: "{\"value\": \"\\\"The regulation of Ca(V)2.1 (P/Q-type) channels by calmodulin (CaM) showcases the powerful Ca(2+) decoding capabilities of CaM in complex with the family of Ca(V)1-2 Ca(2+) channels. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

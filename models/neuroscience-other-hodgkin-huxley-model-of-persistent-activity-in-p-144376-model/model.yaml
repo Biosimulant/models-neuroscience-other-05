@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HodgkinHuxleyModelOfPersistentActivityInP144376Model'
-description: '{"value": "The paper demonstrate a form of graded persistent activity
-  activated by hyperpolarization. This phenomenon is modeled based on a slow calcium
-  regulation of Ih, similar to that introduced\r\'
+description: "{\"value\": \"The paper demonstrate a form of graded persistent activity activated by hyperpolarization. This phenomenon is modeled based on a slow calcium regulation of Ih, similar to that introduced\\r\\."
 standard: other
 tags:
 - neuroscience

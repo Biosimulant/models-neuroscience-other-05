@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Larkumetal2009Larkumetal2009Model'
-description: Synaptic integration in L5 Pyramidal cell
+description: "Neuroscience Larkumetal2009Larkumetal2009Model represents neuroscience larkumetal2009 larkumetal2009 mechanisms from opensourcebrain reference opensourcebrain:LarkumEtAl2009. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

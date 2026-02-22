@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HuntingtonSDiseaseModelGambazziEtAl2010125748Model'
-description: '{"value": "\"Although previous studies of Huntington\u2019s disease
-  (HD) have addressed many potential mechanisms of striatal neuron dysfunction and
-  death, it is also known based on clinical findings '
+description: "{\"value\": \"\\\"Although previous studies of Huntington\\u2019s disease (HD) have addressed many potential mechanisms of striatal neuron dysfunction and death, it is also known based on clinical findings. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

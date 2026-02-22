@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ImplementationIssuesInApproximateMethodsFor93315Model'
-description: "{'value': 'Four different algorithms for implementing Hodgkin\u2013\
-  Huxley models\r\nwith stochastic sodium channels: Strassberg and\r\nDeFelice (1993),\
-  \ Rubinstein (1995), Chow and White\r\n(1996), and"
+description: "{'value': 'Four different algorithms for implementing Hodgkin\u2013Huxley models with stochastic sodium channels: Strassberg and DeFelice (1993), Rubinstein (1995), Chow and White (1996), and. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

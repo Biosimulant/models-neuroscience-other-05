@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GapJunctionCoupledNetworkActivityDependsOn112633Model'
-description: '{"value": "\"... We have previously shown that the amplitude of electrical
-  signals propagating across gap-junctionally coupled passive cables is maximized
-  at a unique diameter. This suggests that thre'
+description: "{\"value\": \"\\\"... We have previously shown that the amplitude of electrical signals propagating across gap-junctionally coupled passive cables is maximized at a unique diameter."
 standard: other
 tags:
 - neuroscience

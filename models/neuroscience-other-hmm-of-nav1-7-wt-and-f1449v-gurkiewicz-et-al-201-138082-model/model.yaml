@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HmmOfNav17WtAndF1449vGurkiewiczEtAl201138082Model'
-description: '{"value": "Neuron mod files for the WT and F1449V Na+ currents from
-  the paper:\r\nKinetic Modeling of Nav1.7 Provides Insight Into Erythromelalgia-associated
-  F1449V Mutation\r\nM. Gurkiewicz, A. Korng'
+description: "{\"value\": \"Neuron mod files for the WT and F1449V Na+ currents from the paper:\\r\\nKinetic Modeling of Nav1.7 Provides Insight Into Erythromelalgia-associated F1449V Mutation\\r\\nM. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

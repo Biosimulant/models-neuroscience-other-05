@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HalfCenterOscillatorDatabaseOfLeechHeartI144518Model'
-description: '{"value": "We have created a database (HCO-db) of instances of a half-center
-  oscillator computational model [Hill et al., 2001] for analyzing how neuronal parameters
-  influence network activity. We sys'
+description: "{\"value\": \"We have created a database (HCO-db) of instances of a half-center oscillator computational model [Hill et al., 2001] for analyzing how neuronal parameters influence network activity. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

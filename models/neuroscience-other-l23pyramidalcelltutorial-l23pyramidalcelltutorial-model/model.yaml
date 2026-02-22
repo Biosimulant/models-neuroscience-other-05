@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: L23pyramidalcelltutorialL23pyramidalcelltutorialModel'
-description: A tutorial introducing OSB's ability to visualise, analyse and simulate
-  biophysically realistic, multicompartmental cells.
+description: "A tutorial introducing OSB's ability to visualise, analyse and simulate biophysically realistic, multicompartmental cells. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

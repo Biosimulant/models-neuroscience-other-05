@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LeakyIntegrateAndFireModelOfSpikeFrequenc128449Model'
-description: '{"value": "This will reproduce Figure 9 of Gabbiani and Krapp (2006)
-  J Neurophysiol 96:2951-2962.\r\n\r\nThe figure simply shows that a leaky-integrate-and-fire
-  model cannot reproduce spike frequency '
+description: "{\"value\": \"This will reproduce Figure 9 of Gabbiani and Krapp (2006) J Neurophysiol 96:2951-2962.\\r\\n\\r\\nThe figure simply shows that a leaky-integrate-and-fire model cannot reproduce spike frequency. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

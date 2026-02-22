@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MechanismsOfVeryFastOscillationsInAxonNet120907Model'
-description: '{"value": "Axons connected by gap junctions can produce very fast oscillations
-  (VFOs, > 80 Hz) when stimulated randomly at a low rate. The models here explore
-  the mechanisms of VFOs that can be seen i'
+description: "{\"value\": \"Axons connected by gap junctions can produce very fast oscillations (VFOs, > 80 Hz) when stimulated randomly at a low rate. The models here explore the mechanisms of VFOs that can be seen i."
 standard: other
 tags:
 - neuroscience

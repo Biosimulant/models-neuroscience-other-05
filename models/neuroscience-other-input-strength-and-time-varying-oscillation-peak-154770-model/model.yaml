@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InputStrengthAndTimeVaryingOscillationPeak154770Model'
-description: '{"value": "The purpose of this paper is to argue that a single neural
-  functional principle\u2014temporal fluctuations in oscillation peak frequency (\u201cfrequency
-  sliding\u201d)\u2014can be used as '
+description: "{\"value\": \"The purpose of this paper is to argue that a single neural functional principle\\u2014temporal fluctuations in oscillation peak frequency (\\u201cfrequency sliding\\u201d)\\u2014can be used as. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

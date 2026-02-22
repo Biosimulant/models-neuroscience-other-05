@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FastPopulationCodingHuysEtAl200793394Model'
-description: '{"value": "\"Uncertainty coming from the noise in its neurons and the
-  ill-posed nature of many tasks plagues neural computations. Maybe surprisingly,
-  many studies show that the brain manipulates these'
+description: "{\"value\": \"\\\"Uncertainty coming from the noise in its neurons and the ill-posed nature of many tasks plagues neural computations. Maybe surprisingly, many studies show that the brain manipulates these."
 standard: other
 tags:
 - neuroscience

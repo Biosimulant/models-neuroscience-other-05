@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LongTermAdaptationWithPowerLawDynamicsZil125855Model'
-description: '{"value": "...\r\nA model of rate adaptation at the synapse between
-  inner hair cells and auditory-nerve\r\n(AN) fibers that includes both exponential
-  and power-law dynamics is presented here.\r\n\r\nE'
+description: "{\"value\": \"...\\r\\nA model of rate adaptation at the synapse between inner hair cells and auditory-nerve\\r\\n(AN) fibers that includes both exponential and power-law dynamics is presented here.\\r\\n\\r\\nE. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

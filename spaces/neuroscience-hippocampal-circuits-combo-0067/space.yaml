@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Hippocampal Circuits (COMBO_0067)'
-description: Neuroscience hippocampal circuits comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Neuroscience Hippocampal Circuits (COMBO_0067) brings together gamma_and_1, grancellrothmani_2, hemond2008_ca3py_3 in a comparative space to examine how recurrent hippocampal motifs shape network dynamics over time. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-neuroscience-other-05
   alias: gamma_and_1

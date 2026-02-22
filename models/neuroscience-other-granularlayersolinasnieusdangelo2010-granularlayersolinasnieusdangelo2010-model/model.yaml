@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Granularlayersolinasnieusdangelo2010Granularlayersolinasnieusdangelo2010Model'
-description: A Realistic Large-Scale Model of the Cerebellum Granular Layer Predicts
-  Circuit Spatio-Temporal Filtering Properties
+description: "A Realistic Large-Scale Model of the Cerebellum Granular Layer Predicts Circuit Spatio-Temporal Filtering Properties. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

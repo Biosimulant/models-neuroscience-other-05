@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InformationTransmissionInCerebellarGranuleC156733Model'
-description: '{"value": "\" ... In this modeling study we analyse how electrophysiological\r\ngranule
-  cell properties and spike sampling influence information coded\r\nby firing rate
-  modulation, assuming no signal-'
+description: "{\"value\": \"\\\" ... In this modeling study we analyse how electrophysiological\\r\\ngranule cell properties and spike sampling influence information coded\\r\\nby firing rate modulation, assuming no signal-."
 standard: other
 tags:
 - neuroscience

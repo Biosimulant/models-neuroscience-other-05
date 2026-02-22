@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelingInteractionsInAplysiaNeuronR15YuE83575Model'
-description: '{"value": "\"The biophysical properties of neuron R15 in Aplysia endow
-  it with the ability to express multiple modes of oscillatory electrical activity,
-  such as beating and bursting. Previous modeling'
+description: "{\"value\": \"\\\"The biophysical properties of neuron R15 in Aplysia endow it with the ability to express multiple modes of oscillatory electrical activity, such as beating and bursting. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

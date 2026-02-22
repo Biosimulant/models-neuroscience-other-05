@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FisherAndShannonInformationInFiniteNeural142990Model'
-description: '{"value": "Here we model populations of rate-coding neurons with bell-shaped
-  tuning curves and multiplicative Gaussian noise. This Matlab code supports the calculation
-  of information theoretic (mutual'
+description: "{\"value\": \"Here we model populations of rate-coding neurons with bell-shaped tuning curves and multiplicative Gaussian noise. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

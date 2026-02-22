@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LongTimeWindowsFromThetaModulatedInhibIn181967Model'
-description: '{"value": "\"A recent experimental study (Mizuseki et al., 2009) has
-  shown that the temporal\r\ndelays between population activities in successive entorhinal
-  and hippocampal anatomical stages are\r\nl'
+description: "{\"value\": \"\\\"A recent experimental study (Mizuseki et al., 2009) has shown that the temporal\\r\\ndelays between population activities in successive entorhinal and hippocampal anatomical stages are\\r\\nl. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MicroglialCytokineNetworkAndersonEtAl2015170029Model'
-description: '{"value": "This is an ODE model of autocrine/paracrine microglial cytokine
-  interactions. Simulations include analyses of neuroinflammation mechanisms in the
-  context of adaptation and tolerance to LPS.'
+description: "{\"value\": \"This is an ODE model of autocrine/paracrine microglial cytokine interactions. Simulations include analyses of neuroinflammation mechanisms in the context of adaptation and tolerance to LPS."
 standard: other
 tags:
 - neuroscience

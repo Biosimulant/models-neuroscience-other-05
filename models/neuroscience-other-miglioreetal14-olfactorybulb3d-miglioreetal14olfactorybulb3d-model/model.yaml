@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Miglioreetal14Olfactorybulb3dMiglioreetal14olfactorybulb3dModel'
-description: 3D model of the olfactory bulb (Migliore et al. 2014)
+description: "3D model of the olfactory bulb (Migliore et al. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

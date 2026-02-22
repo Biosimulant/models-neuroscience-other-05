@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GatingOfSteeringSignalsThroughPhasicModula151338Model'
-description: '{"value": "\" ... We use the lamprey as a model for investigating the
-  role of this\r\nphasic modulation of the reticulospinal activity, because the\r\nbrainstem\u2013spinal
-  cord networks are known dow'
+description: "{\"value\": \"\\\" ... We use the lamprey as a model for investigating the role of this\\r\\nphasic modulation of the reticulospinal activity, because the\\r\\nbrainstem\\u2013spinal cord networks are known dow."
 standard: other
 tags:
 - neuroscience

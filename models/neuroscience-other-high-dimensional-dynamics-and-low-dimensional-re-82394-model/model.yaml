@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HighDimensionalDynamicsAndLowDimensionalRe82394Model'
-description: "{'value': 'We investigate generic models for cortical microcircuits,\r\
-  \ni.e. recurrent circuits of integrate-and fire neurons with dynamic\r\nsynapses.\
-  \ These complex dynamic systems subserve the amazi"
+description: "{'value': 'We investigate generic models for cortical microcircuits, i.e. recurrent circuits of integrate-and fire neurons with dynamic synapses."
 standard: other
 tags:
 - neuroscience

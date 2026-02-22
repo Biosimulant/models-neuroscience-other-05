@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GammaAndThetaRythmsInBiophysicalModelsOf138421Model'
-description: '{"value": "\" ... the main rhythms displayed by the hippocampus, the
-  gamma (30\u201390 Hz) and theta (4\u201312 Hz) rhythms. We concentrate on modeling\r\nin
-  vitro experiments, but with an eye toward '
+description: "{\"value\": \"\\\" ... the main rhythms displayed by the hippocampus, the gamma (30\\u201390 Hz) and theta (4\\u201312 Hz) rhythms."
 standard: other
 tags:
 - neuroscience

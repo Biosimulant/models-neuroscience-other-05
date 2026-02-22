@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HumanAttentionalNetworksAConnectionistModel115813Model'
-description: '{"value": "\"... We describe a connectionist model of human attentional
-  networks to explore the\r\npossible interplays among the networks from a computational\r\nperspective.
-  This model is developed i'
+description: "{\"value\": \"\\\"... We describe a connectionist model of human attentional networks to explore the\\r\\npossible interplays among the networks from a computational\\r\\nperspective."
 standard: other
 tags:
 - neuroscience

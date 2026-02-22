@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ExcitationContractionCouplingMitochondrialEn105383Model'
-description: '{"value": "\"An intricate network of reactions is involved in matching
-  energy supply with demand in the heart. This complexity\r\narises because energy
-  production both modulates and is modulated by th'
+description: "{\"value\": \"\\\"An intricate network of reactions is involved in matching energy supply with demand in the heart. This complexity\\r\\narises because energy production both modulates and is modulated by th."
 standard: other
 tags:
 - neuroscience

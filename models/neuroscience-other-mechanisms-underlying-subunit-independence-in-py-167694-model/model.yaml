@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MechanismsUnderlyingSubunitIndependenceInPy167694Model'
-description: '{"value": "\"...Using a detailed compartmental model of a layer 5 pyramidal
-  neuron, and an improved method for quantifying subunit independence that incorporates
-  a more accurate model of dendritic int'
+description: "{\"value\": \"\\\"...Using a detailed compartmental model of a layer 5 pyramidal neuron, and an improved method for quantifying subunit independence that incorporates a more accurate model of dendritic int. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

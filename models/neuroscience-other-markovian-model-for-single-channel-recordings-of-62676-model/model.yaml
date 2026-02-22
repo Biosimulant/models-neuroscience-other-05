@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MarkovianModelForSingleChannelRecordingsOf62676Model'
-description: '{''value'': ''The interaction between many currents in a cardiac ventricular
-  model are examined in this paper. One of the main contributions come from a current
-  called IK_1. An XPP version of this model '
+description: "{'value': 'The interaction between many currents in a cardiac ventricular model are examined in this paper. One of the main contributions come from a current called IK_1."
 standard: other
 tags:
 - neuroscience

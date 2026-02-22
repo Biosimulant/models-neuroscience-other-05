@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LayerVPfcPyramidalNeuronUsedToStudyPersi144089Model'
-description: '{"value": "\"... Here, we use a compartmental modeling approach to search
-  for discriminatory features in the properties of incoming stimuli to a PFC pyramidal
-  neuron and/or its response that signal wh'
+description: "{\"value\": \"\\\"... Here, we use a compartmental modeling approach to search for discriminatory features in the properties of incoming stimuli to a PFC pyramidal neuron and/or its response that signal wh."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ExperimentalAndModelingStudiesOfDesensitiza117691Model'
-description: '{"value": "\"The function of ATP-activated P2X3 receptors involved in
-  pain sensation is modulated by desensitization, a phenomenon poorly understood.\r\n\r\nThe
-  present study used patch-clamp recordin'
+description: "{\"value\": \"\\\"The function of ATP-activated P2X3 receptors involved in pain sensation is modulated by desensitization, a phenomenon poorly understood.\\r\\n\\r\\nThe present study used patch-clamp recordin. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

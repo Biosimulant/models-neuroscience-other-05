@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfRepetitiveFiringInGruenebergGanglio151817Model'
-description: '{"value": "This model is constructed based on properties of Na+ and
-  K+ currents observed in whole-cell patch clamp recordings of mouse Grueneberg ganglion
-  neurons in acute slices. Two distinct Na+ con'
+description: "{\"value\": \"This model is constructed based on properties of Na+ and K+ currents observed in whole-cell patch clamp recordings of mouse Grueneberg ganglion neurons in acute slices. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

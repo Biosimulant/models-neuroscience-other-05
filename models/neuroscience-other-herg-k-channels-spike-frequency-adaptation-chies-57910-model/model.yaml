@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HergKChannelsSpikeFrequencyAdaptationChies57910Model'
-description: "{'value': 'Spike frequency adaptation has contributions from the IHERG\
-  \ current (encoded by the human eag-related gene\r\n(HERG); Warmke & Ganetzky, 1994),\
-  \ which develops with\r\nslow kinetics during d"
+description: "{'value': 'Spike frequency adaptation has contributions from the IHERG current (encoded by the human eag-related gene (HERG); Warmke & Ganetzky, 1994), which develops with slow kinetics during d. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

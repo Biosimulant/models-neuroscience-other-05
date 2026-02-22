@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InputFluctuationsEffectsOnFICurvesArsiero83590Model'
-description: '{"value": "\"... We examined in vitro frequency versus current (f-I)
-  relationships of layer 5 (L5) pyramidal cells of the rat medial prefrontal cortex
-  (mPFC) using fluctuating stimuli. ...our results '
+description: "{\"value\": \"\\\"... We examined in vitro frequency versus current (f-I) relationships of layer 5 (L5) pyramidal cells of the rat medial prefrontal cortex (mPFC) using fluctuating stimuli."
 standard: other
 tags:
 - neuroscience

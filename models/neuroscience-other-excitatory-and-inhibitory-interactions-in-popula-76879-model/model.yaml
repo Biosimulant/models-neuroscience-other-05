@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ExcitatoryAndInhibitoryInteractionsInPopula76879Model'
-description: "{'value': 'Coupled nonlinear differential equations are derived for\
-  \ the dynamics\r\nof spatially localized populations containing both excitatory\
-  \ and inhibitory model\r\nneurons. Phase plane methods a"
+description: "{'value': 'Coupled nonlinear differential equations are derived for the dynamics of spatially localized populations containing both excitatory and inhibitory model neurons. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

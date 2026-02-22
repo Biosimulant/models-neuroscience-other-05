@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EpilepsyMayBeCausedByVerySmallFunctional124392Model'
-description: '{"value": "We used a previously published model of the dentate gyrus
-  with varying degrees of mossy fibre sprouting.We preformed a sensitivity analysis
-  where we systematically varied individual propert'
+description: "{\"value\": \"We used a previously published model of the dentate gyrus with varying degrees of mossy fibre sprouting.We preformed a sensitivity analysis where we systematically varied individual propert. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

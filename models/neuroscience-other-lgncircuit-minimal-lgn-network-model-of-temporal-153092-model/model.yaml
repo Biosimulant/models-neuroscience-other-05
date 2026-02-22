@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LgncircuitMinimalLgnNetworkModelOfTemporal153092Model'
-description: '{"value": "The responses of relay cells in the lateral geniculate nucleus
-  (LGN) are shaped by their diverse set of impinging inputs: feedforward synaptic
-  inputs stemming from retina, and feedback inpu'
+description: "{\"value\": \"The responses of relay cells in the lateral geniculate nucleus (LGN) are shaped by their diverse set of impinging inputs: feedforward synaptic inputs stemming from retina, and feedback inpu. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GqCoupledSignalingPathwaysInvolvedInStriat154967Model'
-description: '{"value": "Model of Gq coupled signaling pathways underlying synaptic
-  plasticity in striatal medium spiny projection neurons. Reactions and diffusion
-  are implemented stochastically in a dendrite with '
+description: "{\"value\": \"Model of Gq coupled signaling pathways underlying synaptic plasticity in striatal medium spiny projection neurons. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

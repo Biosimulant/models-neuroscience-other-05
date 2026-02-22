@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: HopfieldAndBrodyModelHopfieldBrody2000Neu144549Model'
-description: '{"value": "Demonstration of Hopfield-Brody snychronization using artificial
-  cells in NEURON+python.", "attr_id": 24}'
+description: "Demonstration of Hopfield-Brody snychronization using artificial cells in NEURON+python. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

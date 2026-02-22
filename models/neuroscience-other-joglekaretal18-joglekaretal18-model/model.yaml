@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Joglekaretal18Joglekaretal18Model'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Joglekaretal18Joglekaretal18Model models neuroscience joglekaretal18 joglekaretal18 dynamics as a OTHER simulation curated from opensourcebrain (opensourcebrain:JoglekarEtAl18), focused on neurosci. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - neuroscience

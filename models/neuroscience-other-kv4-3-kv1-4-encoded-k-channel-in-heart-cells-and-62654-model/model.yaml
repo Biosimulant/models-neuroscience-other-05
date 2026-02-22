@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Kv43Kv14EncodedKChannelInHeartCellsAnd62654Model'
-description: '{''value'': ''(1999) We present a model of the canine midmyocardial
-  ventricular action potential and Ca2+ transient. The model is used to estimate the
-  degree of functional upregulation and downregulation'
+description: "{'value': '(1999) We present a model of the canine midmyocardial ventricular action potential and Ca2+ transient. The model is used to estimate the degree of functional upregulation and downregulation."
 standard: other
 tags:
 - neuroscience

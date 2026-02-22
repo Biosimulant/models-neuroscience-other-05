@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LgmdVariabilityAndLogarithmicCompressionIn144007Model'
-description: '{"value": "A compartmental model of the LGMD with a simplified, rake
-  shaped, excitatory dendrite. It receives spontaneous input and excitatory and inhibitory
-  synaptic inputs triggered by visual stimul'
+description: "{\"value\": \"A compartmental model of the LGMD with a simplified, rake shaped, excitatory dendrite. It receives spontaneous input and excitatory and inhibitory synaptic inputs triggered by visual stimul."
 standard: other
 tags:
 - neuroscience

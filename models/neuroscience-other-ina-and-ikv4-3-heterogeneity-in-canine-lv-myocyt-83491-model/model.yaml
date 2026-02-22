@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InaAndIkv43HeterogeneityInCanineLvMyocyt83491Model'
-description: '{"value": "\"The roles of sustained components of INa and IKv43 in shaping
-  the\r\naction potentials (AP) of myocytes isolated from the canine left\r\nventricle
-  (LV) have not been studied in detail. He'
+description: "{\"value\": \"\\\"The roles of sustained components of INa and IKv43 in shaping the\\r\\naction potentials (AP) of myocytes isolated from the canine left\\r\\nventricle (LV) have not been studied in detail. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

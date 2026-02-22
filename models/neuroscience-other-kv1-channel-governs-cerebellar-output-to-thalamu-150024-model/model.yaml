@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Kv1ChannelGovernsCerebellarOutputToThalamu150024Model'
-description: '{"value": "The output of the cerebellum to the motor axis of the central
-  nervous system is\r\norchestrated mainly by synaptic inputs and intrinsic pacemaker
-  activity of deep cerebellar nuclear\r\n(DCN'
+description: "{\"value\": \"The output of the cerebellum to the motor axis of the central nervous system is\\r\\norchestrated mainly by synaptic inputs and intrinsic pacemaker activity of deep cerebellar nuclear\\r\\n(DCN. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

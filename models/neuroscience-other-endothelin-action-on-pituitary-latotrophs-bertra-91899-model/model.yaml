@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EndothelinActionOnPituitaryLatotrophsBertra91899Model'
-description: '{''value'': ''Endothelin (ET-1, -2, and -3 designate three genes which
-  produce different endothelin isopeptides) is a prolactin inhibiting substance of
-  hypothalmic origin. ET-1 binding is part of at leas'
+description: "{'value': 'Endothelin (ET-1, -2, and -3 designate three genes which produce different endothelin isopeptides) is a prolactin inhibiting substance of hypothalmic origin. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

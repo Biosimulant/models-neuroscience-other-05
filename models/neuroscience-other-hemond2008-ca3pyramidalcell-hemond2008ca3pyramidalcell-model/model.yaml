@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Hemond2008Ca3pyramidalcellHemond2008ca3pyramidalcellModel'
-description: Distinct classes of pyramidal cells exhibit mutually exclusive firing
-  patterns in hippocampal area CA3b. Hemond P., Epstein D., Boley A., Migliore M.,
-  Ascoli GA., Jaffe DB., 2008
+description: "Distinct classes of pyramidal cells exhibit mutually exclusive firing patterns in hippocampal area CA3b. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

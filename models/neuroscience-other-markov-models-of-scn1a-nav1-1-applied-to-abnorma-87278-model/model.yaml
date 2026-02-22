@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MarkovModelsOfScn1aNav11AppliedToAbnorma87278Model'
-description: '{"value": "\"Recently, some forms of idiopathic epilepsy have been causally
-  related to\r\ngenetic mutations in neuronal ion channels. To understand disease\r\nmechanisms,
-  it is crucial to understand h'
+description: "{\"value\": \"\\\"Recently, some forms of idiopathic epilepsy have been causally related to\\r\\ngenetic mutations in neuronal ion channels. To understand disease\\r\\nmechanisms, it is crucial to understand h."
 standard: other
 tags:
 - neuroscience

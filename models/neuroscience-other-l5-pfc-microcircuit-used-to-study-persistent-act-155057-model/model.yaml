@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: L5PfcMicrocircuitUsedToStudyPersistentAct155057Model'
-description: '{"value": "Using a heavily constrained biophysical model of a L5 PFC
-  microcircuit we investigate the mechanisms that underlie persistent activity emergence
-  (ON) and termination (OFF) and search for th'
+description: "{\"value\": \"Using a heavily constrained biophysical model of a L5 PFC microcircuit we investigate the mechanisms that underlie persistent activity emergence (ON) and termination (OFF) and search for th. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

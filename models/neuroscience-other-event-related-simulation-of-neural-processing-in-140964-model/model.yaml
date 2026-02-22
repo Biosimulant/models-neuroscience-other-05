@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EventRelatedSimulationOfNeuralProcessingIn140964Model'
-description: '{"value": "\"... We here present an environment for the\r\nimplementation
-  of large networks of generalized integrate-and-fire\r\nneurons which uses an asynchronous
-  event-based algorithm.\r\n...\r\nThe'
+description: "{\"value\": \"\\\"... We here present an environment for the\\r\\nimplementation of large networks of generalized integrate-and-fire\\r\\nneurons which uses an asynchronous event-based algorithm.\\r\\n...\\r\\nThe."
 standard: other
 tags:
 - neuroscience

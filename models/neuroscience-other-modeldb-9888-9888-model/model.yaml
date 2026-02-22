@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Modeldb98889888Model'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Modeldb98889888Model represents neuroscience modeldb 9888 9888 mechanisms from modeldb reference modeldb:9888. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

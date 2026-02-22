@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InferiorOliveSubthresholdOscillationsTorben144502Model'
-description: '{"value": "The Inferior Olive is a brain structure in which neurons
-  are solely connected to each other through gap-junctions. Its behavior is characterized
-  by spontaneous subthreshold oscillation, fre'
+description: "{\"value\": \"The Inferior Olive is a brain structure in which neurons are solely connected to each other through gap-junctions. Its behavior is characterized by spontaneous subthreshold oscillation, fre."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: EvaluationOfStochasticDiffEqApproximationO118195Model'
-description: '{"value": "Fox and Lu derived an algorithm based on stochastic differential
-  equations for approximating the kinetics of ion channel gating that is simpler and
-  faster than \"exact\" algorithms for simu'
+description: "{\"value\": \"Fox and Lu derived an algorithm based on stochastic differential equations for approximating the kinetics of ion channel gating that is simpler and faster than \\\"exact\\\" algorithms for simu. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

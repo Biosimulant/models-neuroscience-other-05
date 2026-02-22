@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InhibitoryCellsEnableSparseCodingInV1Mode182373Model'
-description: '{"value": "\" ... Here we show that adding a separate population\r\nof
-  inhibitory neurons to a spiking model of V1 provides conformance to Dale\u2019s
-  Law, proposes a computational role for at least o'
+description: "{\"value\": \"\\\" ... Here we show that adding a separate population\\r\\nof inhibitory neurons to a spiking model of V1 provides conformance to Dale\\u2019s Law, proposes a computational role for at least o."
 standard: other
 tags:
 - neuroscience

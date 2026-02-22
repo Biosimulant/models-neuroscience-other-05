@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: GithubGithubModel'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Github Github Model represents neuroscience github github mechanisms from opensourcebrain reference opensourcebrain:.github. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

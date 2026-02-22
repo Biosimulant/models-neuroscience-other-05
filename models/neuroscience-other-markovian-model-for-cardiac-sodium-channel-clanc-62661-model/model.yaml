@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MarkovianModelForCardiacSodiumChannelClanc62661Model'
-description: '{''value'': ''Complex physiological interactions determine the functional
-  consequences of gene abnormalities and make mechanistic interpretation of phenotypes
-  extremely difficult. A recent example is a s'
+description: "{'value': 'Complex physiological interactions determine the functional consequences of gene abnormalities and make mechanistic interpretation of phenotypes extremely difficult. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

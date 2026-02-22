@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: Synaptic Plasticity (COMBO_0046)'
-description: Neuroscience synaptic plasticity comparative space with 3 models, configured
-  as non-causal co-simulation.
+description: "Neuroscience Synaptic Plasticity (COMBO_0046) assembles excitatory_synap_1, facilitation_mod_2, facilitation_thr_3 as a comparative composed simulation to examine how synaptic changes influence network-level outcomes. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-neuroscience-other-05
   alias: excitatory_synap_1

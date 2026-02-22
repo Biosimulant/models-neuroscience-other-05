@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FunctionalBalancedNetworksWithSynapticPlast182784Model'
-description: '{"value": "The model investigates the impact of learning on functional
-  sensory networks. \r\nIt uses large-scale recurrent networks of excitatory and inhibitory
-  spiking neurons equipped with synaptic '
+description: "{\"value\": \"The model investigates the impact of learning on functional sensory networks. \\r\\nIt uses large-scale recurrent networks of excitatory and inhibitory spiking neurons equipped with synaptic."
 standard: other
 tags:
 - neuroscience

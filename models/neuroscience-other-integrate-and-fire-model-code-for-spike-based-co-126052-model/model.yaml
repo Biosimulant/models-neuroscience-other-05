@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: IntegrateAndFireModelCodeForSpikeBasedCo126052Model'
-description: '{"value": "Model code relevant to three papers; two on level discrimination
-  and one on masked detection at low frequencies.", "attr_id": 24}'
+description: "Model code relevant to three papers; two on level discrimination and one on masked detection at low frequencies. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

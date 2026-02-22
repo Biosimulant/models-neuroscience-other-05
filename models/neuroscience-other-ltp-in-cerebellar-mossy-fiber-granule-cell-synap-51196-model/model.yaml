@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LtpInCerebellarMossyFiberGranuleCellSynap51196Model'
-description: '{''value'': ''We simulated synaptic transmission and modified a simple
-  model of long-term potentiation (LTP) and long-term depression (LTD) in order to
-  describe long-term plasticity related changes in ce'
+description: "{'value': 'We simulated synaptic transmission and modified a simple model of long-term potentiation (LTP) and long-term depression (LTD) in order to describe long-term plasticity related changes in ce. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

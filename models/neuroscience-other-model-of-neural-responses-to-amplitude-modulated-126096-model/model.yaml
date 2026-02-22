@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: ModelOfNeuralResponsesToAmplitudeModulated126096Model'
-description: '{"value": "\"A phenomenological model with time-varying excitation and
-  inhibition was developed to study\r\npossible neural mechanisms underlying changes
-  in the representation of temporal envelopes al'
+description: "{\"value\": \"\\\"A phenomenological model with time-varying excitation and inhibition was developed to study\\r\\npossible neural mechanisms underlying changes in the representation of temporal envelopes al. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

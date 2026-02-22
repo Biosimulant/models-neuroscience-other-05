@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: JitconJustInTimeConnectivityForLargeSpiki106891Model'
-description: "{'value': 'This simulation is primarily an illustration and is not well\
-  \ optimized for actually running large\r\n networks.\r\njitcon.mod contains a large\
-  \ amount of C level code, understanding of which"
+description: "{'value': 'This simulation is primarily an illustration and is not well optimized for actually running large networks. jitcon.mod contains a large amount of C level code, understanding of which."
 standard: other
 tags:
 - neuroscience

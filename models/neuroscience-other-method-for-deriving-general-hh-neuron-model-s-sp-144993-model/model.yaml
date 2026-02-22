@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: MethodForDerivingGeneralHhNeuronModelSSp144993Model'
-description: '{"value": "We derived in paper a method to find semi-analytic input-output
-  relations for general HH-like neuron models (firing rates, spectra, linear filters)under
-  sparse spike stimulation. Here we de'
+description: "{\"value\": \"We derived in paper a method to find semi-analytic input-output relations for general HH-like neuron models (firing rates, spectra, linear filters)under sparse spike stimulation. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

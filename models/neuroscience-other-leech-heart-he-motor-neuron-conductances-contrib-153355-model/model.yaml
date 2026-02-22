@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LeechHeartHeMotorNeuronConductancesContrib153355Model'
-description: '{"value": "\"...\r\n To explore the relationship between conductances,\r\nand
-  in particular how they influence the activity of motor neurons in\r\nthe well characterized
-  leech heartbeat system, we dev'
+description: "{\"value\": \"\\\"...\\r\\n To explore the relationship between conductances,\\r\\nand in particular how they influence the activity of motor neurons in\\r\\nthe well characterized leech heartbeat system, we dev. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience

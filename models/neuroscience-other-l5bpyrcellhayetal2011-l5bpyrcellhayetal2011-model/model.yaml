@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: L5bpyrcellhayetal2011L5bpyrcellhayetal2011Model'
-description: Layer 5b Pyramidal cell - Hay et al. 2011
+description: "Neuroscience L5bpyrcellhayetal2011L5bpyrcellhayetal2011Model represents neuroscience l5bpyrcellhayetal2011 l5bpyrcellhayetal2011 mechanisms from opensourcebrain reference opensourcebrain:L5bPyrCellHayEtAl2011. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - neuroscience

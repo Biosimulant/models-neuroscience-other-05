@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FpgashowcaseFpgashowcaseModel'
-description: Faithful wrapper of upstream OTHER model.
+description: "Neuroscience Fpgashowcase Fpgashowcase Model captures neuroscience fpgashowcase fpgashowcase behavior in the context of neuroscience, opensourcebrain, fpgashowcase using a opensourcebrain-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - neuroscience

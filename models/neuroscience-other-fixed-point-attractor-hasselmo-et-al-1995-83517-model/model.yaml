@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: FixedPointAttractorHasselmoEtAl199583517Model'
-description: '{"value": "\"... In the model, cholinergic suppression of synaptic transmission
-  at excitatory feedback synapses is shown to determine the extent to which activity
-  depends upon new features of the affe'
+description: "{\"value\": \"\\\"... In the model, cholinergic suppression of synaptic transmission at excitatory feedback synapses is shown to determine the extent to which activity depends upon new features of the affe."
 standard: other
 tags:
 - neuroscience

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: LowDoseOfDopamineMayStimulateProlactinSec91898Model'
-description: '{"value": "\".. We considered\r\nthe fast K+ currents flowing through
-  large-conductance\r\nBK channels and through A-type channels. We developed a\r\nminimal
-  lactotroph model to investigate the effect'
+description: "{\"value\": \"\\\".. We considered\\r\\nthe fast K+ currents flowing through large-conductance\\r\\nBK channels and through A-type channels."
 standard: other
 tags:
 - neuroscience

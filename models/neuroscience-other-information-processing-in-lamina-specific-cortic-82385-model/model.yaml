@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Neuroscience: InformationProcessingInLaminaSpecificCortic82385Model'
-description: "{'value': 'A major challenge for computational neuroscience is to understand\r\
-  \nthe computational function of lamina-specific synaptic connection\r\npatterns\
-  \ in stereotypical cortical microcircuits.We"
+description: "{'value': 'A major challenge for computational neuroscience is to understand the computational function of lamina-specific synaptic connection patterns in stereotypical cortical microcircuits.We. It can be used to explore neural activity dynamics and compare response patterns across conditions."
 standard: other
 tags:
 - neuroscience
