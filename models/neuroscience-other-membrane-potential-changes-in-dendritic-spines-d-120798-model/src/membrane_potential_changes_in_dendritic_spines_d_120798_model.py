@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMembranePotentialChangesInDendriticSpinesDuringAps(biosim.BioModule):
-    """BioModule wrapper for: Membrane potential changes in dendritic spines during APs and synaptic input (Palmer & Stuart 2009).""""""
+    """BioModule wrapper for: Membrane potential changes in dendritic spines during APs and synaptic input (Palmer & Stuart 2009)."""
 
     def __init__(self, model_path: str = "data/120798.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMembranePotentialChangesInDendriticSpinesDuringAps(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

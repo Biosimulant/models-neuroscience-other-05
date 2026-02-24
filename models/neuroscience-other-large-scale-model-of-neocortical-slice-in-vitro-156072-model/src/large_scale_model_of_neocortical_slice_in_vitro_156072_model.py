@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherLargeScaleModelOfNeocorticalSliceInVitroExhibiting(biosim.BioModule):
-    """BioModule wrapper for: Large-scale model of neocortical slice in vitro exhibiting persistent gamma (Tomsett et al. 2014).""""""
+    """BioModule wrapper for: Large-scale model of neocortical slice in vitro exhibiting persistent gamma (Tomsett et al. 2014)."""
 
     def __init__(self, model_path: str = "data/156072.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherLargeScaleModelOfNeocorticalSliceInVitroExhibiting(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherErgCurrentInRepolarizingPlateauPotentialsInDopamine(biosim.BioModule):
-    """BioModule wrapper for: ERG current in repolarizing plateau potentials in dopamine neurons (Canavier et al 2007).""""""
+    """BioModule wrapper for: ERG current in repolarizing plateau potentials in dopamine neurons (Canavier et al 2007)."""
 
     def __init__(self, model_path: str = "data/100603.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherErgCurrentInRepolarizingPlateauPotentialsInDopamine(biosim.BioModule)
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

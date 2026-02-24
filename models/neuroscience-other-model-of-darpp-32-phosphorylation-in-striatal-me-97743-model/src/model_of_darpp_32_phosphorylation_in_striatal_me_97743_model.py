@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherModelOfDarpp32PhosphorylationInStriatalMediumSpiny(biosim.BioModule):
-    """BioModule wrapper for: Model of DARPP-32 phosphorylation in striatal medium spiny neurons (Lindskog et al. 2006).""""""
+    """BioModule wrapper for: Model of DARPP-32 phosphorylation in striatal medium spiny neurons (Lindskog et al. 2006)."""
 
     def __init__(self, model_path: str = "data/97743.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherModelOfDarpp32PhosphorylationInStriatalMediumSpiny(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

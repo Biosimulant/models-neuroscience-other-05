@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherIhTunesOscillationsInAnInSilicoCa3ModelNeymotinEt(biosim.BioModule):
-    """BioModule wrapper for: Ih tunes oscillations in an In Silico CA3 model (Neymotin et al. 2013).""""""
+    """BioModule wrapper for: Ih tunes oscillations in an In Silico CA3 model (Neymotin et al. 2013)."""
 
     def __init__(self, model_path: str = "data/151282.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherIhTunesOscillationsInAnInSilicoCa3ModelNeymotinEt(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

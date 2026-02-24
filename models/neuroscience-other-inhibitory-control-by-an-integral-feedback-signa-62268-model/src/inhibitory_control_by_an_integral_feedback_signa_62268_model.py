@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherInhibitoryControlByAnIntegralFeedbackSignalIn(biosim.BioModule):
-    """BioModule wrapper for: Inhibitory control by an integral feedback signal in prefrontal cortex (Miller and Wang 2006).""""""
+    """BioModule wrapper for: Inhibitory control by an integral feedback signal in prefrontal cortex (Miller and Wang 2006)."""
 
     def __init__(self, model_path: str = "data/62268.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherInhibitoryControlByAnIntegralFeedbackSignalIn(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

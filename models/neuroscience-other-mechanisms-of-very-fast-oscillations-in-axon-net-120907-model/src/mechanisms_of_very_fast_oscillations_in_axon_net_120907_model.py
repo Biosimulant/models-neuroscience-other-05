@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMechanismsOfVeryFastOscillationsInAxonNetworks(biosim.BioModule):
-    """BioModule wrapper for: Mechanisms of very fast oscillations in axon networks coupled by gap junctions (Munro, Borgers 2010).""""""
+    """BioModule wrapper for: Mechanisms of very fast oscillations in axon networks coupled by gap junctions (Munro, Borgers 2010)."""
 
     def __init__(self, model_path: str = "data/120907.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMechanismsOfVeryFastOscillationsInAxonNetworks(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

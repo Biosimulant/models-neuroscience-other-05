@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherFrontoParietalVisuospatialWmModelWithHhCellsEdinEt(biosim.BioModule):
-    """BioModule wrapper for: Fronto-parietal visuospatial WM model with HH cells (Edin et al 2007).""""""
+    """BioModule wrapper for: Fronto-parietal visuospatial WM model with HH cells (Edin et al 2007)."""
 
     def __init__(self, model_path: str = "data/98017.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherFrontoParietalVisuospatialWmModelWithHhCellsEdinEt(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

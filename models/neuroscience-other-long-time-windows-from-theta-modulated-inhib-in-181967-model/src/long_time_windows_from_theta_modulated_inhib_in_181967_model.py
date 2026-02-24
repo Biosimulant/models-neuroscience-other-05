@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherLongTimeWindowsFromThetaModulatedInhibIn(biosim.BioModule):
-    """BioModule wrapper for: Long time windows from theta modulated inhib. in entorhinal–hippo. loop (Cutsuridis & Poirazi 2015).""""""
+    """BioModule wrapper for: Long time windows from theta modulated inhib. in entorhinal–hippo. loop (Cutsuridis & Poirazi 2015)."""
 
     def __init__(self, model_path: str = "data/181967.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherLongTimeWindowsFromThetaModulatedInhibIn(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

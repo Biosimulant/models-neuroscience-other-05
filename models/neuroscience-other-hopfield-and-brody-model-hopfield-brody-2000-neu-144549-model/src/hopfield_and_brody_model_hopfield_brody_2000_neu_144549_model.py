@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherHopfieldAndBrodyModelHopfieldBrody2000NeuronPython(biosim.BioModule):
-    """BioModule wrapper for: Hopfield and Brody model (Hopfield, Brody 2000) (NEURON+python).""""""
+    """BioModule wrapper for: Hopfield and Brody model (Hopfield, Brody 2000) (NEURON+python)."""
 
     def __init__(self, model_path: str = "data/144549.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherHopfieldAndBrodyModelHopfieldBrody2000NeuronPython(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

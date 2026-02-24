@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherModelOfPeristalsisInTheDorsalBloodVesselOf(biosim.BioModule):
-    """BioModule wrapper for: Model of peristalsis in the dorsal blood vessel of Lumbriculus variegatus (Halfmann and Crisp 2011).""""""
+    """BioModule wrapper for: Model of peristalsis in the dorsal blood vessel of Lumbriculus variegatus (Halfmann and Crisp 2011)."""
 
     def __init__(self, model_path: str = "data/139760.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherModelOfPeristalsisInTheDorsalBloodVesselOf(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

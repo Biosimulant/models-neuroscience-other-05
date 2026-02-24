@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherHmmOfNav17WtAndF1449vGurkiewiczEtAl2011(biosim.BioModule):
-    """BioModule wrapper for: HMM of Nav1.7 WT and F1449V (Gurkiewicz et al. 2011).""""""
+    """BioModule wrapper for: HMM of Nav1.7 WT and F1449V (Gurkiewicz et al. 2011)."""
 
     def __init__(self, model_path: str = "data/138082.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherHmmOfNav17WtAndF1449vGurkiewiczEtAl2011(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

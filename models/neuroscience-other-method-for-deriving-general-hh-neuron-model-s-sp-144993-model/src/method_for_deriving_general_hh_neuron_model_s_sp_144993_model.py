@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMethodForDerivingGeneralHhNeuronModelSSpikingInput(biosim.BioModule):
-    """BioModule wrapper for: Method for deriving general HH neuron model`s spiking input-output relation (Soudry & Meir 2014).""""""
+    """BioModule wrapper for: Method for deriving general HH neuron model`s spiking input-output relation (Soudry & Meir 2014)."""
 
     def __init__(self, model_path: str = "data/144993.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMethodForDerivingGeneralHhNeuronModelSSpikingInput(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

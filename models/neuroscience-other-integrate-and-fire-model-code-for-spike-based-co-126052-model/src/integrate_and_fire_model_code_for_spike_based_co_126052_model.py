@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherIntegrateAndFireModelCodeForSpikeBasedCoincidence(biosim.BioModule):
-    """BioModule wrapper for: Integrate and fire model code for spike-based coincidence-detection (Heinz et al. 2001, others).""""""
+    """BioModule wrapper for: Integrate and fire model code for spike-based coincidence-detection (Heinz et al. 2001, others)."""
 
     def __init__(self, model_path: str = "data/126052.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherIntegrateAndFireModelCodeForSpikeBasedCoincidence(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

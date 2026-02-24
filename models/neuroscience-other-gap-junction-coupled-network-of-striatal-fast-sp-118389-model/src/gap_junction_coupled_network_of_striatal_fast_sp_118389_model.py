@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherGapJunctionCoupledNetworkOfStriatalFastSpiking(biosim.BioModule):
-    """BioModule wrapper for: Gap junction coupled network of striatal fast spiking interneurons (Hjorth et al. 2009).""""""
+    """BioModule wrapper for: Gap junction coupled network of striatal fast spiking interneurons (Hjorth et al. 2009)."""
 
     def __init__(self, model_path: str = "data/118389.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherGapJunctionCoupledNetworkOfStriatalFastSpiking(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

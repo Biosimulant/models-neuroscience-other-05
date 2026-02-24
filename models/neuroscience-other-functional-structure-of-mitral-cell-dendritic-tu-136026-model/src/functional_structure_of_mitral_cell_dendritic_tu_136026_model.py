@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherFunctionalStructureOfMitralCellDendriticTuftDjurisic(biosim.BioModule):
-    """BioModule wrapper for: Functional structure of mitral cell dendritic tuft (Djurisic et al. 2008).""""""
+    """BioModule wrapper for: Functional structure of mitral cell dendritic tuft (Djurisic et al. 2008)."""
 
     def __init__(self, model_path: str = "data/136026.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherFunctionalStructureOfMitralCellDendriticTuftDjurisic(biosim.BioModule
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

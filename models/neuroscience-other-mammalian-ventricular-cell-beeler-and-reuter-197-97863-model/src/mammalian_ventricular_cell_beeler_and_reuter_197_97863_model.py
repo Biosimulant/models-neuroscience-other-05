@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMammalianVentricularCellBeelerAndReuter1977(biosim.BioModule):
-    """BioModule wrapper for: Mammalian Ventricular Cell (Beeler and Reuter 1977).""""""
+    """BioModule wrapper for: Mammalian Ventricular Cell (Beeler and Reuter 1977)."""
 
     def __init__(self, model_path: str = "data/97863.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMammalianVentricularCellBeelerAndReuter1977(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

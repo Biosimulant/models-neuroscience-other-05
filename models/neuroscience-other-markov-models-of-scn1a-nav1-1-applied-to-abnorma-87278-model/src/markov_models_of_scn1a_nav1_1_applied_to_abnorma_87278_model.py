@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMarkovModelsOfScn1aNav11AppliedToAbnormalGating(biosim.BioModule):
-    """BioModule wrapper for: Markov models of SCN1A (NaV1.1) applied to abnormal gating and epilepsy (Clancy and Kass 2004).""""""
+    """BioModule wrapper for: Markov models of SCN1A (NaV1.1) applied to abnormal gating and epilepsy (Clancy and Kass 2004)."""
 
     def __init__(self, model_path: str = "data/87278.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMarkovModelsOfScn1aNav11AppliedToAbnormalGating(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

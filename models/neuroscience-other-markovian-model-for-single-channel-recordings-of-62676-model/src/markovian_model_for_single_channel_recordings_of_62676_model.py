@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherMarkovianModelForSingleChannelRecordingsOfIk1In(biosim.BioModule):
-    """BioModule wrapper for: Markovian model for single-channel recordings of Ik_1 in ventricular cells (Matsuoka et al 2003).""""""
+    """BioModule wrapper for: Markovian model for single-channel recordings of Ik_1 in ventricular cells (Matsuoka et al 2003)."""
 
     def __init__(self, model_path: str = "data/62676.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherMarkovianModelForSingleChannelRecordingsOfIk1In(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

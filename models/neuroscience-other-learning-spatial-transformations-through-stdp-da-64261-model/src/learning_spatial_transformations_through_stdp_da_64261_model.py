@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherLearningSpatialTransformationsThroughStdpDavison(biosim.BioModule):
-    """BioModule wrapper for: Learning spatial transformations through STDP (Davison, Frégnac 2006).""""""
+    """BioModule wrapper for: Learning spatial transformations through STDP (Davison, Frégnac 2006)."""
 
     def __init__(self, model_path: str = "data/64261.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherLearningSpatialTransformationsThroughStdpDavison(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

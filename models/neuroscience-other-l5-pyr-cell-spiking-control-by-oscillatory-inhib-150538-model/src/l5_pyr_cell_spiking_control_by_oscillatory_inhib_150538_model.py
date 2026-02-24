@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherL5PyrCellSpikingControlByOscillatoryInhibitionIn(biosim.BioModule):
-    """BioModule wrapper for: L5 pyr. cell spiking control by oscillatory  inhibition in distal apical dendrites (Li et al 2013).""""""
+    """BioModule wrapper for: L5 pyr. cell spiking control by oscillatory  inhibition in distal apical dendrites (Li et al 2013)."""
 
     def __init__(self, model_path: str = "data/150538.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherL5PyrCellSpikingControlByOscillatoryInhibitionIn(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

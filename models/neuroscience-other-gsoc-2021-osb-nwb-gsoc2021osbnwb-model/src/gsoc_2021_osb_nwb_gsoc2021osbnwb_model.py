@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherGsoc2021OsbNwb(biosim.BioModule):
-    """BioModule wrapper for: GSoC_2021_OSB_NWB.""""""
+    """BioModule wrapper for: GSoC_2021_OSB_NWB."""
 
     def __init__(self, model_path: str = "data/repo", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherGsoc2021OsbNwb(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

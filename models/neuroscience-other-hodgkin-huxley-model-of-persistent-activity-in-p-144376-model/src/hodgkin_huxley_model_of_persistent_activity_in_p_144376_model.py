@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherHodgkinHuxleyModelOfPersistentActivityInPfcNeurons(biosim.BioModule):
-    """BioModule wrapper for: Hodgkin-Huxley model of persistent activity in PFC neurons (Winograd et al. 2008) (NEURON python).""""""
+    """BioModule wrapper for: Hodgkin-Huxley model of persistent activity in PFC neurons (Winograd et al. 2008) (NEURON python)."""
 
     def __init__(self, model_path: str = "data/144376.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherHodgkinHuxleyModelOfPersistentActivityInPfcNeurons(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

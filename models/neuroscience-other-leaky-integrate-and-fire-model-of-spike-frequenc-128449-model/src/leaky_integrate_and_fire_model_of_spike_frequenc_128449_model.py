@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherLeakyIntegrateAndFireModelOfSpikeFrequency(biosim.BioModule):
-    """BioModule wrapper for: Leaky integrate-and-fire model of spike frequency adaptation in the LGMD (Gabbiani and Krapp 2006).""""""
+    """BioModule wrapper for: Leaky integrate-and-fire model of spike frequency adaptation in the LGMD (Gabbiani and Krapp 2006)."""
 
     def __init__(self, model_path: str = "data/128449.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherLeakyIntegrateAndFireModelOfSpikeFrequency(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

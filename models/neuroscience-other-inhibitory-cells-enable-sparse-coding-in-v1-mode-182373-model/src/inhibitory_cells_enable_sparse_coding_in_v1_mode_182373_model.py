@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherInhibitoryCellsEnableSparseCodingInV1ModelKingEt(biosim.BioModule):
-    """BioModule wrapper for: Inhibitory cells enable sparse coding in V1 model (King et al. 2013).""""""
+    """BioModule wrapper for: Inhibitory cells enable sparse coding in V1 model (King et al. 2013)."""
 
     def __init__(self, model_path: str = "data/182373.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherInhibitoryCellsEnableSparseCodingInV1ModelKingEt(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

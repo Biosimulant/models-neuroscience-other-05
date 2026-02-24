@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherKineticsOfTheP2x7ReceptorAsExpressedInXenopus(biosim.BioModule):
-    """BioModule wrapper for: Kinetics of the P2X7 receptor as expressed in Xenopus oocytes (Riedel et al. 2007a,b).""""""
+    """BioModule wrapper for: Kinetics of the P2X7 receptor as expressed in Xenopus oocytes (Riedel et al. 2007a,b)."""
 
     def __init__(self, model_path: str = "data/95990.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherKineticsOfTheP2x7ReceptorAsExpressedInXenopus(biosim.BioModule):
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 

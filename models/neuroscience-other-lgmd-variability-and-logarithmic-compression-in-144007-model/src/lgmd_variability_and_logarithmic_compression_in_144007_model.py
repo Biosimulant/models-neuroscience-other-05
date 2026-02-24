@@ -20,7 +20,7 @@ import biosim
 from biosim.signals import BioSignal, SignalMetadata
 
 class OtherLgmdVariabilityAndLogarithmicCompressionInDendrites(biosim.BioModule):
-    """BioModule wrapper for: LGMD Variability and logarithmic compression in dendrites (Jones and Gabbiani, 2012, 2012B).""""""
+    """BioModule wrapper for: LGMD Variability and logarithmic compression in dendrites (Jones and Gabbiani, 2012, 2012B)."""
 
     def __init__(self, model_path: str = "data/144007.zip", min_dt: float = 0.01) -> None:
         self.min_dt = min_dt
@@ -87,7 +87,7 @@ class OtherLgmdVariabilityAndLogarithmicCompressionInDendrites(biosim.BioModule)
         return {"state"}
 
     def advance_to(self, t: float) -> None:
-        """Advance simulation — dispatches to detected simulator."""
+        """Advance simulation - dispatches to detected simulator."""
         if self._extracted_dir is None:
             self.setup()
 
