@@ -1,1 +1,0 @@
-initOSBGeppetto("network", network_Migliore2014);

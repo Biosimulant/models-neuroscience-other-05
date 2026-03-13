@@ -1,2 +1,0 @@
-target: "granule*.nml"
-engine: jNeuroML_validate

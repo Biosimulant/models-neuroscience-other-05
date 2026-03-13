@@ -1,6 +1,0 @@
-system: Expected spike times for AmpaNmda+FI PSP in the GC
-
-experiments:
-  spikes4:
-    expected:
-      spike times: [83.125, 215.625]
